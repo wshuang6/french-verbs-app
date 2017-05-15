@@ -19,9 +19,6 @@ if(process.env.NODE_ENV != 'production') {
 
 const app = express();
 
-// const database = {
-// };
-
 app.use(passport.initialize());
 
 passport.use(
@@ -31,14 +28,6 @@ passport.use(
         callbackURL: `/api/auth/google/callback`
     },
     (accessToken, refreshToken, profile, cb) => {
-        // Job 1: Set up Mongo/Mongoose, create a User model which store the
-        // google id, and the access token
-        // Job 2: Update this callback to either update or create the user
-        // so it contains the correct access token
-        // const user = database[accessToken] = {
-        //     googleId: profile.id,
-        //     accessToken: accessToken
-        // };
         return User
             .findOne({googleId: profile.Id})
             .exec()
@@ -52,26 +41,22 @@ passport.use(
                 })
             })
             .then(user => cb(null, {googleId: user.googleId, accessToken: user.accessToken}))
-            .catch(err => {console.error(err)})
+            .catch(err => console.error(err))
     }
 ));
 
 passport.use(
     new BearerStrategy(
         (token, done) => {
-            // Job 3: Update this callback to try to find a user with a
-            // matching access token.  If they exist, let em in, if not,
-            // don't.
             return User.findOne({accessToken: token})
                 .exec()
                 .then((user) => {
                     if (!user) {
                         return done(null, false);
                     }
-                return done(null, {googleId: user.googleId, accessToken: user.accessToken});
-            })
-            .catch(err => console.error(err))
-            
+                    return done(null, {googleId: user.googleId, accessToken: user.accessToken});
+                })
+                .catch(err => console.error(err))
         }
     )
 );
