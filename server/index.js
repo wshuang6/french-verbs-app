@@ -15,7 +15,7 @@ if(process.env.NODE_ENV != 'production') {
 
 const app = express();
 
-const database = {
+const database = { //PRE_DATABASE AUTHENATICATION
 };
 
 app.use(passport.initialize());
@@ -31,7 +31,7 @@ passport.use(
         // google id, and the access token
         // Job 2: Update this callback to either update or create the user
         // so it contains the correct access token
-        const user = database[accessToken] = {
+        const user = database[accessToken] = { //PRE-DATABASE AUTHENTICATION
             googleId: profile.id,
             accessToken: accessToken
         };
