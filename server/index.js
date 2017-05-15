@@ -18,7 +18,8 @@ const { verbsRouter } = require('./routers/verbsRouter');
 
 let secret = {
   CLIENT_ID: process.env.CLIENT_ID,
-  CLIENT_SECRET: process.env.CLIENT_SECRET
+  CLIENT_SECRET: process.env.CLIENT_SECRET,
+  DATABASE_URL: process.env.DATABASE_URL
 }
 
 if(process.env.NODE_ENV != 'production') {
