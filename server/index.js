@@ -43,6 +43,7 @@ passport.use(
             .exec()
             .then(user => {
                 if (user) {
+                    console.log(user)
                     return User.findByIdAndUpdate(user._id, {$set: {accessToken}}, {new: true})
                 }
                 return User.create({
