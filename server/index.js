@@ -1,8 +1,12 @@
 const path = require('path');
 const express = require('express');
 const passport = require('passport');
+const mongoose = require('mongoose');
 const GoogleStrategy = require('passport-google-oauth20').Strategy;
 const BearerStrategy = require('passport-http-bearer').Strategy;
+const {User} = require('./models/users');
+
+mongoose.Promise = global.Promise;
 
 let secret = {
   CLIENT_ID: process.env.CLIENT_ID,
@@ -15,8 +19,8 @@ if(process.env.NODE_ENV != 'production') {
 
 const app = express();
 
-const database = { //PRE_DATABASE AUTHENATICATION
-};
+// const database = {
+// };
 
 app.use(passport.initialize());
 
@@ -31,11 +35,24 @@ passport.use(
         // google id, and the access token
         // Job 2: Update this callback to either update or create the user
         // so it contains the correct access token
-        const user = database[accessToken] = { //PRE-DATABASE AUTHENTICATION
-            googleId: profile.id,
-            accessToken: accessToken
-        };
-        return cb(null, user);
+        // const user = database[accessToken] = {
+        //     googleId: profile.id,
+        //     accessToken: accessToken
+        // };
+        return User
+            .findOne({googleId: profile.Id})
+            .exec()
+            .then(user => {
+                if (user) {
+                    return User.findByIdAndUpdate(user._id, {$set: {accessToken}}, {new: true})
+                }
+                return User.create({
+                    googleId: profile.id,
+                    accessToken
+                })
+            })
+            .then(user => cb(null, {googleId: user.googleId, accessToken: user.accessToken}))
+            .catch(err => {console.error(err)})
     }
 ));
 
@@ -45,10 +62,16 @@ passport.use(
             // Job 3: Update this callback to try to find a user with a
             // matching access token.  If they exist, let em in, if not,
             // don't.
-            if (!(token in database)) {
-                return done(null, false);
-            }
-            return done(null, database[token]);
+            return User.findOne({accessToken: token})
+                .exec()
+                .then((user) => {
+                    if (!user) {
+                        return done(null, false);
+                    }
+                return done(null, {googleId: user.googleId, accessToken: user.accessToken});
+            })
+            .catch(err => console.error(err))
+            
         }
     )
 );
@@ -98,9 +121,17 @@ app.get(/^(?!\/api(\/|$))/, (req, res) => {
 let server;
 function runServer(port=3001) {
     return new Promise((resolve, reject) => {
-        server = app.listen(port, () => {
-            resolve();
-        }).on('error', reject);
+        mongoose.connect(secret.DATABASE_URL, err => {
+            if (err) {
+                return reject(err);
+            }
+            server = app.listen(port, () => {
+                resolve();
+            })
+            .on('error', err => {
+                reject(err);
+            });
+        }); 
     });
 }
 
