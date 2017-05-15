@@ -4,9 +4,18 @@ const passport = require('passport');
 const mongoose = require('mongoose');
 const GoogleStrategy = require('passport-google-oauth20').Strategy;
 const BearerStrategy = require('passport-http-bearer').Strategy;
+const mongoose = require('mongoose');
+
+// Mongoose internally uses a promise-like object,
+// but its better to make Mongoose use built in es6 promises
+mongoose.Promise = global.Promise;
+
+// Require mongoose models
+const { VerbGroup } = require('./models/verbGroup');
 const {User} = require('./models/users');
 
-mongoose.Promise = global.Promise;
+// Require routers
+const { verbsRouter } = require('./routers/verbsRouter');
 
 let secret = {
   CLIENT_ID: process.env.CLIENT_ID,
@@ -21,6 +30,7 @@ const app = express();
 
 app.use(passport.initialize());
 
+// Passport middleware set-up
 passport.use(
     new GoogleStrategy({
         clientID:  secret.CLIENT_ID,
@@ -61,6 +71,7 @@ passport.use(
     )
 );
 
+// Authentication endpoints
 app.get('/api/auth/google',
     passport.authenticate('google', {scope: ['profile']}));
 
@@ -88,10 +99,13 @@ app.get('/api/me',
     })
 );
 
+// API endpoints
 app.get('/api/questions',
     passport.authenticate('bearer', {session: false}),
     (req, res) => res.json(['Question 1', 'Question 2'])
 );
+
+app.use('/api/verbs', verbsRouter);
 
 // Serve the built client
 app.use(express.static(path.resolve(__dirname, '../client/build')));
@@ -105,28 +119,30 @@ app.get(/^(?!\/api(\/|$))/, (req, res) => {
 
 let server;
 function runServer(port=3001) {
-    return new Promise((resolve, reject) => {
-        mongoose.connect(secret.DATABASE_URL, err => {
-            if (err) {
-                return reject(err);
-            }
-            server = app.listen(port, () => {
-                resolve();
-            })
-            .on('error', err => {
-                reject(err);
-            });
-        }); 
-    });
+	return new Promise((resolve, reject) => {
+		mongoose.connect(secret.DATABASE_URL, err => {
+			if (err) {
+				return reject(err);
+			}
+			server = app.listen(port, () => {
+				resolve();
+			})
+			.on('error', err => {
+				reject(err);
+			});
+		});	
+	});
 }
 
 function closeServer() {
-    return new Promise((resolve, reject) => {
-        server.close(err => {
-            if (err) {
-                return reject(err);
-            }
-            resolve();
+    return mongoose.disconnect().then(() => {
+        return new Promise((resolve, reject) => {
+            server.close(err => {
+                if (err) {
+                    return reject(err);
+                }
+                resolve();
+            });
         });
     });
 }

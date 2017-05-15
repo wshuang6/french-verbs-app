@@ -1,0 +1,6100 @@
+  {
+    "group": "er",
+    "verbs": [
+      {
+        "fr": "regarder",
+        "en": "to look, to see, to watch",
+        "present": {
+          "singular": [
+            "regarde",
+            "regardes",
+            "regarde"
+          ],
+          "plural": [
+            "regardons",
+            "regardez",
+            "regardent"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "regardais",
+            "regardais",
+            "regardait"
+          ],
+          "plural": [
+            "regardions",
+            "regardiez",
+            "regardaient"
+          ]
+        },
+        "future": {
+          "singular": [
+            "regarderai",
+            "regarderas",
+            "regardera"
+          ],
+          "plural": [
+            "regarderons",
+            "regarderez",
+            "regarderont"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "regarderais",
+            "regarderais",
+            "regarderait"
+          ],
+          "plural": [
+            "regarderions",
+            "regarderiez",
+            "regarderaient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "regarde",
+            "regardes",
+            "regarde"
+          ],
+          "plural": [
+            "regardions",
+            "regardiez",
+            "regardent"
+          ]
+        }
+      },
+      {
+        "fr": "aimer",
+        "en": "to like, to love",
+        "present": {
+          "singular": [
+            "aime",
+            "aimes",
+            "aime"
+          ],
+          "plural": [
+            "aimons",
+            "aimez",
+            "aiment"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "aimais",
+            "aimais",
+            "aimait"
+          ],
+          "plural": [
+            "aimions",
+            "aimiez",
+            "aimaient"
+          ]
+        },
+        "future": {
+          "singular": [
+            "aimerai",
+            "aimeras",
+            "aimera"
+          ],
+          "plural": [
+            "aimerons",
+            "aimerez",
+            "aimeront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "aimerais",
+            "aimerais",
+            "aimerait"
+          ],
+          "plural": [
+            "aimerions",
+            "aimeriez",
+            "aimeraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "aime",
+            "aimes",
+            "aime"
+          ],
+          "plural": [
+            "aimions",
+            "aimiez",
+            "aiment"
+          ]
+        }
+      },
+      {
+        "fr": "apporter",
+        "en": "to bring",
+        "present": {
+          "singular": [
+            "apporte",
+            "apportes",
+            "apporte"
+          ],
+          "plural": [
+            "apportons",
+            "apportez",
+            "apportent"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "apportais",
+            "apportais",
+            "apportait"
+          ],
+          "plural": [
+            "apportions",
+            "apportiez",
+            "apportent"
+          ]
+        },
+        "future": {
+          "singular": [
+            "apporterai",
+            "apporteras",
+            "apportera"
+          ],
+          "plural": [
+            "apporterons",
+            "apporterez",
+            "apporteront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "apporterais",
+            "apporterais",
+            "apporterait"
+          ],
+          "plural": [
+            "apporterions",
+            "apporteriez",
+            "apporteraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "apporte",
+            "apportes",
+            "apporte"
+          ],
+          "plural": [
+            "apportions",
+            "apportiez",
+            "apportent"
+          ]
+        }
+      },
+      {
+        "fr": "casser",
+        "en": "to break",
+        "present": {
+          "singular": [
+            "casse",
+            "casses",
+            "casse"
+          ],
+          "plural": [
+            "cassons",
+            "cassez",
+            "cassent"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "cassais",
+            "cassais",
+            "cassait"
+          ],
+          "plural": [
+            "cassions",
+            "cassiez",
+            "cassent"
+          ]
+        },
+        "future": {
+          "singular": [
+            "casserai",
+            "casseras",
+            "cassera"
+          ],
+          "plural": [
+            "casserons",
+            "casserez",
+            "casseront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "casserais",
+            "casserais",
+            "casserait"
+          ],
+          "plural": [
+            "casserions",
+            "casseriez",
+            "casseraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "casse",
+            "casses",
+            "casse"
+          ],
+          "plural": [
+            "cassions",
+            "cassiez",
+            "cassent"
+          ]
+        }
+      },
+      {
+        "fr": "chanter",
+        "en": "to sing",
+        "present": {
+          "singular": [
+            "chante",
+            "chantes",
+            "chante"
+          ],
+          "plural": [
+            "chantons",
+            "chantez",
+            "chantent"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "chantais",
+            "chantais",
+            "chantait"
+          ],
+          "plural": [
+            "chantions",
+            "chantiez",
+            "chantent"
+          ]
+        },
+        "future": {
+          "singular": [
+            "chanterai",
+            "chanteras",
+            "chantera"
+          ],
+          "plural": [
+            "chanterons",
+            "chanterez",
+            "chanteront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "chanterais",
+            "chanterais",
+            "chanterait"
+          ],
+          "plural": [
+            "chanterions",
+            "chanteriez",
+            "chanteraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "chante",
+            "chantes",
+            "chante"
+          ],
+          "plural": [
+            "chantions",
+            "chantiez",
+            "chantent"
+          ]
+        }
+      },
+      {
+        "fr": "demander",
+        "en": "to ask",
+        "present": {
+          "singular": [
+            "demande",
+            "demandes",
+            "demande"
+          ],
+          "plural": [
+            "demandons",
+            "demandez",
+            "demandent"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "demandais",
+            "demandais",
+            "demandait"
+          ],
+          "plural": [
+            "demandions",
+            "demandiez",
+            "demandent"
+          ]
+        },
+        "future": {
+          "singular": [
+            "demanderai",
+            "demanderas",
+            "demandera"
+          ],
+          "plural": [
+            "demanderons",
+            "demanderez",
+            "demanderont"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "demanderais",
+            "demanderais",
+            "demanderait"
+          ],
+          "plural": [
+            "demanderions",
+            "demanderiez",
+            "demanderaient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "demande",
+            "demandes",
+            "demande"
+          ],
+          "plural": [
+            "demandions",
+            "demandiez",
+            "demandent"
+          ]
+        }
+      },
+      {
+        "fr": "écouter",
+        "en": "to listen to",
+        "present": {
+          "singular": [
+            "écoute",
+            "écoutes",
+            "écoute"
+          ],
+          "plural": [
+            "écoutons",
+            "écoutez",
+            "écoutent"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "écoutais",
+            "écoutais",
+            "écoutait"
+          ],
+          "plural": [
+            "écoutions",
+            "écoutiez",
+            "écoutent"
+          ]
+        },
+        "future": {
+          "singular": [
+            "écouterai",
+            "écouteras",
+            "écoutera"
+          ],
+          "plural": [
+            "écouterons",
+            "écouterez",
+            "écouteront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "écouterais",
+            "écouterais",
+            "écouterait"
+          ],
+          "plural": [
+            "écouterions",
+            "écouteriez",
+            "écouteraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "écoute",
+            "écoutes",
+            "écoute"
+          ],
+          "plural": [
+            "écoutions",
+            "écoutiez",
+            "écoutent"
+          ]
+        }
+      },
+      {
+        "fr": "donner",
+        "en": "to give",
+        "present": {
+          "singular": [
+            "donne",
+            "donnes",
+            "donne"
+          ],
+          "plural": [
+            "donnons",
+            "donnez",
+            "donnent"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "donnais",
+            "donnais",
+            "donnait"
+          ],
+          "plural": [
+            "donnions",
+            "donniez",
+            "donnent"
+          ]
+        },
+        "future": {
+          "singular": [
+            "donnerai",
+            "donneras",
+            "donnera"
+          ],
+          "plural": [
+            "donnerons",
+            "donnerez",
+            "donneront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "donnerais",
+            "donnerais",
+            "donnerait"
+          ],
+          "plural": [
+            "donnerions",
+            "donneriez",
+            "donneraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "donne",
+            "donnes",
+            "donne"
+          ],
+          "plural": [
+            "donnions",
+            "donniez",
+            "donnent"
+          ]
+        }
+      },
+      {
+        "fr": "fermer",
+        "en": "to close",
+        "present": {
+          "singular": [
+            "ferme",
+            "fermes",
+            "ferme"
+          ],
+          "plural": [
+            "fermons",
+            "fermez",
+            "ferment"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "fermais",
+            "fermais",
+            "fermait"
+          ],
+          "plural": [
+            "fermions",
+            "fermiez",
+            "ferment"
+          ]
+        },
+        "future": {
+          "singular": [
+            "fermerai",
+            "fermeras",
+            "fermera"
+          ],
+          "plural": [
+            "fermerons",
+            "fermerez",
+            "fermeront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "fermerais",
+            "fermerais",
+            "fermerait"
+          ],
+          "plural": [
+            "fermerions",
+            "fermeriez",
+            "fermeraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "ferme",
+            "fermes",
+            "ferme"
+          ],
+          "plural": [
+            "fermions",
+            "fermiez",
+            "ferment"
+          ]
+        }
+      },
+      {
+        "fr": "exprimer",
+        "en": "to express",
+        "present": {
+          "singular": [
+            "exprime",
+            "exprimes",
+            "exprime"
+          ],
+          "plural": [
+            "exprimons",
+            "exprimez",
+            "expriment"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "exprimais",
+            "exprimais",
+            "exprimait"
+          ],
+          "plural": [
+            "exprimions",
+            "exprimiez",
+            "expriment"
+          ]
+        },
+        "future": {
+          "singular": [
+            "exprimerai",
+            "exprimeras",
+            "exprimera"
+          ],
+          "plural": [
+            "exprimerons",
+            "exprimerez",
+            "exprimeront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "exprimerais",
+            "exprimerais",
+            "exprimerait"
+          ],
+          "plural": [
+            "exprimerions",
+            "exprimeriez",
+            "exprimeraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "exprime",
+            "exprimes",
+            "exprime"
+          ],
+          "plural": [
+            "exprimions",
+            "exprimiez",
+            "expriment"
+          ]
+        }
+      },
+      {
+        "fr": "étudier",
+        "en": "to study",
+        "present": {
+          "singular": [
+            "étudie",
+            "étudies",
+            "étudie"
+          ],
+          "plural": [
+            "étudions",
+            "étudiez",
+            "étudient"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "étudiais",
+            "étudiais",
+            "étudiait"
+          ],
+          "plural": [
+            "étudiions",
+            "étudiiez",
+            "étudient"
+          ]
+        },
+        "future": {
+          "singular": [
+            "étudierai",
+            "étudieras",
+            "étudiera"
+          ],
+          "plural": [
+            "étudierons",
+            "étudierez",
+            "étudieront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "étudierais",
+            "étudierais",
+            "étudierait"
+          ],
+          "plural": [
+            "étudierions",
+            "étudieriez",
+            "étudieraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "étudie",
+            "étudies",
+            "étudie"
+          ],
+          "plural": [
+            "étudiions",
+            "étudiiez",
+            "étudient"
+          ]
+        }
+      },
+      {
+        "fr": "enlever",
+        "en": "to remove",
+        "present": {
+          "singular": [
+            "enlève",
+            "enlèves",
+            "enlève"
+          ],
+          "plural": [
+            "enlevons",
+            "enlevez",
+            "enlèvent"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "enlevais",
+            "enlevais",
+            "enlevait"
+          ],
+          "plural": [
+            "enlevions",
+            "enleviez",
+            "enlevent"
+          ]
+        },
+        "future": {
+          "singular": [
+            "enlèverai",
+            "enlèveras",
+            "enlèvera"
+          ],
+          "plural": [
+            "enleverons",
+            "enleverez",
+            "enlèveront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "enlèverais",
+            "enlèverais",
+            "enlèverait"
+          ],
+          "plural": [
+            "enlèverions",
+            "enlèveriez",
+            "enlèveraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "enlève",
+            "enlèves",
+            "enlève"
+          ],
+          "plural": [
+            "enlevions",
+            "enleviez",
+            "enlèvent"
+          ]
+        }
+      },
+      {
+        "fr": "habiter",
+        "en": "to live",
+        "present": {
+          "singular": [
+            "habite",
+            "habites",
+            "habite"
+          ],
+          "plural": [
+            "habitons",
+            "habitez",
+            "habitent"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "habitais",
+            "habitais",
+            "habitait"
+          ],
+          "plural": [
+            "habitions",
+            "habitiez",
+            "habitent"
+          ]
+        },
+        "future": {
+          "singular": [
+            "habiterai",
+            "habiteras",
+            "habitera"
+          ],
+          "plural": [
+            "habiterons",
+            "habiterez",
+            "habiteront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "habiterais",
+            "habiterais",
+            "habiterait"
+          ],
+          "plural": [
+            "habiterions",
+            "habiteriez",
+            "habiteraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "habite",
+            "habites",
+            "habite"
+          ],
+          "plural": [
+            "habitions",
+            "habitiez",
+            "habitent"
+          ]
+        }
+      },
+      {
+        "fr": "montrer",
+        "en": "to show",
+        "present": {
+          "singular": [
+            "montre",
+            "montres",
+            "montre"
+          ],
+          "plural": [
+            "montrons",
+            "montrez",
+            "montrent"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "montrais",
+            "montrais",
+            "montrait"
+          ],
+          "plural": [
+            "montrions",
+            "montriez",
+            "montrent"
+          ]
+        },
+        "future": {
+          "singular": [
+            "montrerai",
+            "montreras",
+            "montrera"
+          ],
+          "plural": [
+            "montrerons",
+            "montrerez",
+            "montreront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "montrerais",
+            "montrerais",
+            "montrerait"
+          ],
+          "plural": [
+            "montrerions",
+            "montreriez",
+            "montreraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "montre",
+            "montres",
+            "montre"
+          ],
+          "plural": [
+            "montrions",
+            "montriez",
+            "montrent"
+          ]
+        }
+      },
+      {
+        "fr": "parler",
+        "en": "to speak",
+        "present": {
+          "singular": [
+            "parle",
+            "parles",
+            "parle"
+          ],
+          "plural": [
+            "parlons",
+            "parlez",
+            "parlent"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "parlais",
+            "parlais",
+            "parlait"
+          ],
+          "plural": [
+            "parlions",
+            "parliez",
+            "parlent"
+          ]
+        },
+        "future": {
+          "singular": [
+            "parlerai",
+            "parleras",
+            "parlera"
+          ],
+          "plural": [
+            "parlerons",
+            "parlerez",
+            "parleront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "parlerais",
+            "parlerais",
+            "parlerait"
+          ],
+          "plural": [
+            "parlerions",
+            "parleriez",
+            "parleraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "parle",
+            "parles",
+            "parle"
+          ],
+          "plural": [
+            "parlions",
+            "parliez",
+            "parlent"
+          ]
+        }
+      },
+      {
+        "fr": "penser",
+        "en": "to think",
+        "present": {
+          "singular": [
+            "pense",
+            "penses",
+            "pense"
+          ],
+          "plural": [
+            "pensons",
+            "pensez",
+            "pensent"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "pensais",
+            "pensais",
+            "pensait"
+          ],
+          "plural": [
+            "pensions",
+            "pensiez",
+            "pensent"
+          ]
+        },
+        "future": {
+          "singular": [
+            "penserai",
+            "penseras",
+            "pensera"
+          ],
+          "plural": [
+            "penserons",
+            "penserez",
+            "penseront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "penserais",
+            "penserais",
+            "penserait"
+          ],
+          "plural": [
+            "penserions",
+            "penseriez",
+            "penseraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "pense",
+            "penses",
+            "pense"
+          ],
+          "plural": [
+            "pensions",
+            "pensiez",
+            "pensent"
+          ]
+        }
+      },
+      {
+        "fr": "porter",
+        "en": "to wear, to carry",
+        "present": {
+          "singular": [
+            "porte",
+            "portes",
+            "porte"
+          ],
+          "plural": [
+            "portons",
+            "portez",
+            "portent"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "portais",
+            "portais",
+            "portait"
+          ],
+          "plural": [
+            "portions",
+            "portiez",
+            "portent"
+          ]
+        },
+        "future": {
+          "singular": [
+            "porterai",
+            "porteras",
+            "portera"
+          ],
+          "plural": [
+            "porterons",
+            "porterez",
+            "porteront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "porterais",
+            "porterais",
+            "porterait"
+          ],
+          "plural": [
+            "porterions",
+            "porteriez",
+            "porteraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "porte",
+            "portes",
+            "porte"
+          ],
+          "plural": [
+            "portions",
+            "portiez",
+            "portent"
+          ]
+        }
+      },
+      {
+        "fr": "rencontrer",
+        "en": "to meet",
+        "present": {
+          "singular": [
+            "rencontre",
+            "rencontres",
+            "rencontre"
+          ],
+          "plural": [
+            "rencontrons",
+            "rencontrez",
+            "rencontrent"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "rencontrais",
+            "rencontrais",
+            "rencontrait"
+          ],
+          "plural": [
+            "rencontrions",
+            "rencontriez",
+            "rencontrent"
+          ]
+        },
+        "future": {
+          "singular": [
+            "rencontrerai",
+            "rencontreras",
+            "rencontrera"
+          ],
+          "plural": [
+            "rencontrerons",
+            "rencontrerez",
+            "rencontreront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "rencontrerais",
+            "rencontrerais",
+            "rencontrerait"
+          ],
+          "plural": [
+            "rencontrerions",
+            "rencontreriez",
+            "rencontreraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "rencontre",
+            "rencontres",
+            "rencontre"
+          ],
+          "plural": [
+            "rencontrions",
+            "rencontriez",
+            "rencontrent"
+          ]
+        }
+      },
+      {
+        "fr": "rester",
+        "en": "to stay",
+        "present": {
+          "singular": [
+            "reste",
+            "restes",
+            "reste"
+          ],
+          "plural": [
+            "restons",
+            "restez",
+            "restent"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "restais",
+            "restais",
+            "restait"
+          ],
+          "plural": [
+            "restions",
+            "restiez",
+            "restent"
+          ]
+        },
+        "future": {
+          "singular": [
+            "resterai",
+            "resteras",
+            "restera"
+          ],
+          "plural": [
+            "resterons",
+            "resterez",
+            "resteront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "resterais",
+            "resterais",
+            "resterait"
+          ],
+          "plural": [
+            "resterions",
+            "resteriez",
+            "resteraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "reste",
+            "restes",
+            "reste"
+          ],
+          "plural": [
+            "restions",
+            "restiez",
+            "restent"
+          ]
+        }
+      },
+      {
+        "fr": "tomber",
+        "en": "to fall",
+        "present": {
+          "singular": [
+            "tombe",
+            "tombes",
+            "tombe"
+          ],
+          "plural": [
+            "tombons",
+            "tombez",
+            "tombent"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "tombais",
+            "tombais",
+            "tombait"
+          ],
+          "plural": [
+            "tombions",
+            "tombiez",
+            "tombent"
+          ]
+        },
+        "future": {
+          "singular": [
+            "tomberai",
+            "tomberas",
+            "tombera"
+          ],
+          "plural": [
+            "tomberons",
+            "tomberez",
+            "tomberont"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "tomberais",
+            "tomberais",
+            "tomberait"
+          ],
+          "plural": [
+            "tomberions",
+            "tomberiez",
+            "tomberaient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "tombe",
+            "tombes",
+            "tombe"
+          ],
+          "plural": [
+            "tombions",
+            "tombiez",
+            "tombent"
+          ]
+        }
+      },
+      {
+        "fr": "travailler",
+        "en": "to work",
+        "present": {
+          "singular": [
+            "travaille",
+            "travailles",
+            "travaille"
+          ],
+          "plural": [
+            "travaillons",
+            "travaillez",
+            "trouvent"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "travaillais",
+            "travaillais",
+            "travaillait"
+          ],
+          "plural": [
+            "travaillions",
+            "travailliez",
+            "travaillent"
+          ]
+        },
+        "future": {
+          "singular": [
+            "travaillerai",
+            "travailleras",
+            "travaillera"
+          ],
+          "plural": [
+            "travaillerons",
+            "travaillerez",
+            "trouveront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "travaillerais",
+            "travaillerais",
+            "travaillerait"
+          ],
+          "plural": [
+            "travaillerions",
+            "travailleriez",
+            "travailleraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "travaille",
+            "travailles",
+            "travaille"
+          ],
+          "plural": [
+            "travaillions",
+            "travailliez",
+            "trouvent"
+          ]
+        }
+      },
+      {
+        "fr": "trouver",
+        "en": "to find",
+        "present": {
+          "singular": [
+            "trouve",
+            "trouves",
+            "trouve"
+          ],
+          "plural": [
+            "trouvons",
+            "trouvez",
+            "trouvent"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "trouvais",
+            "trouvais",
+            "trouvait"
+          ],
+          "plural": [
+            "trouvions",
+            "trouviez",
+            "trouvent"
+          ]
+        },
+        "future": {
+          "singular": [
+            "trouverai",
+            "trouveras",
+            "trouvera"
+          ],
+          "plural": [
+            "trouverons",
+            "trouverez",
+            "trouveront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "trouverais",
+            "trouverais",
+            "trouverait"
+          ],
+          "plural": [
+            "trouverions",
+            "trouveriez",
+            "trouveraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "trouve",
+            "trouves",
+            "trouve"
+          ],
+          "plural": [
+            "trouvions",
+            "trouviez",
+            "trouvent"
+          ]
+        }
+      },
+      {
+        "fr": "utiliser",
+        "en": "to use",
+        "present": {
+          "singular": [
+            "utilise",
+            "utilises",
+            "utilise"
+          ],
+          "plural": [
+            "utilisons",
+            "utilisez",
+            "utilisent"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "utilisais",
+            "utilisais",
+            "utilisait"
+          ],
+          "plural": [
+            "utilisions",
+            "utilisiez",
+            "utilisent"
+          ]
+        },
+        "future": {
+          "singular": [
+            "utiliserai",
+            "utiliseras",
+            "utilisera"
+          ],
+          "plural": [
+            "utiliserons",
+            "utiliserez",
+            "utiliseront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "utiliserais",
+            "utiliserais",
+            "utiliserait"
+          ],
+          "plural": [
+            "utiliserions",
+            "utiliseriez",
+            "utiliseraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "utilise",
+            "utilises",
+            "utilise"
+          ],
+          "plural": [
+            "utilisions",
+            "utilisiez",
+            "utilisent"
+          ]
+        }
+      },
+      {
+        "fr": "saluer",
+        "en": "to greet",
+        "present": {
+          "singular": [
+            "salue",
+            "salues",
+            "salue"
+          ],
+          "plural": [
+            "saluons",
+            "saluez",
+            "saluent"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "saluais",
+            "saluais",
+            "saluait"
+          ],
+          "plural": [
+            "saluions",
+            "saluiez",
+            "saluent"
+          ]
+        },
+        "future": {
+          "singular": [
+            "saluerai",
+            "salueras",
+            "saluera"
+          ],
+          "plural": [
+            "saluerons",
+            "saluerez",
+            "salueront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "saluerais",
+            "saluerais",
+            "saluerait"
+          ],
+          "plural": [
+            "saluerions",
+            "salueriez",
+            "salueraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "salue",
+            "salues",
+            "salue"
+          ],
+          "plural": [
+            "saluions",
+            "saluiez",
+            "saluent"
+          ]
+        }
+      },
+      {
+        "fr": "couper",
+        "en": "to cut",
+        "present": {
+          "singular": [
+            "coupe",
+            "coupes",
+            "coupe"
+          ],
+          "plural": [
+            "coupons",
+            "coupez",
+            "coupent"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "coupais",
+            "coupais",
+            "coupait"
+          ],
+          "plural": [
+            "coupions",
+            "coupiez",
+            "coupent"
+          ]
+        },
+        "future": {
+          "singular": [
+            "couperai",
+            "couperas",
+            "coupera"
+          ],
+          "plural": [
+            "couperons",
+            "couperez",
+            "couperont"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "couperais",
+            "couperais",
+            "couperait"
+          ],
+          "plural": [
+            "couperions",
+            "couperiez",
+            "couperaient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "coupe",
+            "coupes",
+            "coupe"
+          ],
+          "plural": [
+            "coupions",
+            "coupiez",
+            "coupent"
+          ]
+        }
+      }
+    ]
+  }
+  {
+    "group": "ir",
+    "verbs": [
+      {
+        "fr": "accomplir",
+        "en": "to accomplish",
+        "present": {
+          "singular": [
+            "accomplis",
+            "accomplis",
+            "accomplit"
+          ],
+          "plural": [
+            "accomplissons",
+            "accomplissez",
+            "accomplissent"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "accomplissais",
+            "accomplissais",
+            "accomplissait"
+          ],
+          "plural": [
+            "accomplissions",
+            "accomplissiez",
+            "accomplissaient"
+          ]
+        },
+        "future": {
+          "singular": [
+            "accomplirai",
+            "accompliras",
+            "accomplira"
+          ],
+          "plural": [
+            "accomplirons",
+            "accomplirez",
+            "accompliront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "accomplirais",
+            "accomplirais",
+            "accomplirait"
+          ],
+          "plural": [
+            "accomplirions",
+            "accompliriez",
+            "accompliraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "accomplisse",
+            "accomplisses",
+            "accomplisse"
+          ],
+          "plural": [
+            "accomplissions",
+            "accomplissiez",
+            "accomplissent"
+          ]
+        }
+      },
+      {
+        "fr": "agir",
+        "en": "to act",
+        "present": {
+          "singular": [
+            "agis",
+            "agis",
+            "agit"
+          ],
+          "plural": [
+            "agissons",
+            "agissez",
+            "agissent"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "agissais",
+            "agissais",
+            "agissait"
+          ],
+          "plural": [
+            "agissions",
+            "agissiez",
+            "agissaient"
+          ]
+        },
+        "future": {
+          "singular": [
+            "agirai",
+            "agiras",
+            "agira"
+          ],
+          "plural": [
+            "agirons",
+            "agirez",
+            "agiront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "agirais",
+            "agirais",
+            "agirait"
+          ],
+          "plural": [
+            "agirions",
+            "agiriez",
+            "agiraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "agisse",
+            "agisses",
+            "agisse"
+          ],
+          "plural": [
+            "agissions",
+            "agissiez",
+            "agissent"
+          ]
+        }
+      },
+      {
+        "fr": "choisir",
+        "en": "to choose",
+        "present": {
+          "singular": [
+            "choisis",
+            "choisis",
+            "choisit"
+          ],
+          "plural": [
+            "choisissons",
+            "choisissez",
+            "choisissent"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "choisissais",
+            "choisissais",
+            "choisissait"
+          ],
+          "plural": [
+            "choisissions",
+            "choisissiez",
+            "choisissaient"
+          ]
+        },
+        "future": {
+          "singular": [
+            "choisirai",
+            "choisiras",
+            "choisira"
+          ],
+          "plural": [
+            "choisirons",
+            "choisirez",
+            "choisiront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "choisirais",
+            "choisirais",
+            "choisirait"
+          ],
+          "plural": [
+            "choisirions",
+            "choisiriez",
+            "choisiraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "choisisse",
+            "choisisses",
+            "choisisse"
+          ],
+          "plural": [
+            "choisissions",
+            "choisissiez",
+            "choisissent"
+          ]
+        }
+      },
+      {
+        "fr": "définir",
+        "en": "to define",
+        "present": {
+          "singular": [
+            "définis",
+            "définis",
+            "définit"
+          ],
+          "plural": [
+            "définissons",
+            "définissez",
+            "définissent"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "définissais",
+            "définissais",
+            "définissait"
+          ],
+          "plural": [
+            "définissions",
+            "définissiez",
+            "définissaient"
+          ]
+        },
+        "future": {
+          "singular": [
+            "définirai",
+            "définiras",
+            "définira"
+          ],
+          "plural": [
+            "définirons",
+            "définirez",
+            "définiront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "définirais",
+            "définirais",
+            "définirait"
+          ],
+          "plural": [
+            "définirions",
+            "définiriez",
+            "définiraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "définisse",
+            "définisses",
+            "définisse"
+          ],
+          "plural": [
+            "définissions",
+            "définissiez",
+            "définissent"
+          ]
+        }
+      },
+      {
+        "fr": "établir",
+        "en": "to establish",
+        "present": {
+          "singular": [
+            "établis",
+            "établis",
+            "établit"
+          ],
+          "plural": [
+            "établissons",
+            "établissez",
+            "établissent"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "établissais",
+            "établissais",
+            "établissait"
+          ],
+          "plural": [
+            "établissions",
+            "établissiez",
+            "établissaient"
+          ]
+        },
+        "future": {
+          "singular": [
+            "établirai",
+            "établiras",
+            "établira"
+          ],
+          "plural": [
+            "établirons",
+            "établirez",
+            "établiront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "établirais",
+            "établirais",
+            "établirait"
+          ],
+          "plural": [
+            "établirions",
+            "établiriez",
+            "établiraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "établisse",
+            "établisses",
+            "établisse"
+          ],
+          "plural": [
+            "établissions",
+            "établissiez",
+            "établissent"
+          ]
+        }
+      },
+      {
+        "fr": "finir",
+        "en": "to finish",
+        "present": {
+          "singular": [
+            "finis",
+            "finis",
+            "finit"
+          ],
+          "plural": [
+            "finissons",
+            "finissez",
+            "finissent"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "finissais",
+            "finissais",
+            "finissait"
+          ],
+          "plural": [
+            "finissions",
+            "finissiez",
+            "finissaient"
+          ]
+        },
+        "future": {
+          "singular": [
+            "finirai",
+            "finiras",
+            "finira"
+          ],
+          "plural": [
+            "finirons",
+            "finirez",
+            "finiront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "finirais",
+            "finirais",
+            "finirait"
+          ],
+          "plural": [
+            "finirions",
+            "finiriez",
+            "finiraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "finisse",
+            "finisses",
+            "finisse"
+          ],
+          "plural": [
+            "finissions",
+            "finissiez",
+            "finissent"
+          ]
+        }
+      },
+      {
+        "fr": "investir",
+        "en": "to invest",
+        "present": {
+          "singular": [
+            "investis",
+            "investis",
+            "investit"
+          ],
+          "plural": [
+            "investissons",
+            "investissez",
+            "investissent"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "investissais",
+            "investissais",
+            "investissait"
+          ],
+          "plural": [
+            "investissions",
+            "investissiez",
+            "investissaient"
+          ]
+        },
+        "future": {
+          "singular": [
+            "investirai",
+            "investiras",
+            "investira"
+          ],
+          "plural": [
+            "investirons",
+            "investirez",
+            "investiront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "investirais",
+            "investirais",
+            "investirait"
+          ],
+          "plural": [
+            "investirions",
+            "investiriez",
+            "investiraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "investisse",
+            "investisses",
+            "investisse"
+          ],
+          "plural": [
+            "investissions",
+            "investissiez",
+            "investissent"
+          ]
+        }
+      },
+      {
+        "fr": "punir",
+        "en": "to punish",
+        "present": {
+          "singular": [
+            "punis",
+            "punis",
+            "punit"
+          ],
+          "plural": [
+            "punissons",
+            "punissez",
+            "punissent"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "punissais",
+            "punissais",
+            "punissait"
+          ],
+          "plural": [
+            "punissions",
+            "punissiez",
+            "punissaient"
+          ]
+        },
+        "future": {
+          "singular": [
+            "punirai",
+            "puniras",
+            "punira"
+          ],
+          "plural": [
+            "punirons",
+            "punirez",
+            "puniront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "punirais",
+            "punirais",
+            "punirait"
+          ],
+          "plural": [
+            "punirions",
+            "puniriez",
+            "puniraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "punisse",
+            "punisses",
+            "punisse"
+          ],
+          "plural": [
+            "punissions",
+            "punissiez",
+            "punissent"
+          ]
+        }
+      },
+      {
+        "fr": "remplir",
+        "en": "to fill",
+        "present": {
+          "singular": [
+            "remplis",
+            "remplis",
+            "remplit"
+          ],
+          "plural": [
+            "remplissons",
+            "remplissez",
+            "remplissent"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "remplissais",
+            "remplissais",
+            "remplissait"
+          ],
+          "plural": [
+            "remplissions",
+            "remplissiez",
+            "remplissaient"
+          ]
+        },
+        "future": {
+          "singular": [
+            "remplirai",
+            "rempliras",
+            "remplira"
+          ],
+          "plural": [
+            "remplirons",
+            "remplirez",
+            "rempliront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "remplirais",
+            "remplirais",
+            "remplirait"
+          ],
+          "plural": [
+            "remplirions",
+            "rempliriez",
+            "rempliraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "remplisse",
+            "remplisses",
+            "remplisse"
+          ],
+          "plural": [
+            "remplissions",
+            "remplissiez",
+            "remplissent"
+          ]
+        }
+      },
+      {
+        "fr": "saisir",
+        "en": "to seize",
+        "present": {
+          "singular": [
+            "saisis",
+            "saisis",
+            "saisit"
+          ],
+          "plural": [
+            "saisissons",
+            "saisissez",
+            "saisissent"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "saisissais",
+            "saisissais",
+            "saisissait"
+          ],
+          "plural": [
+            "saisissions",
+            "saisissiez",
+            "saisissaient"
+          ]
+        },
+        "future": {
+          "singular": [
+            "saisirai",
+            "saisiras",
+            "saisira"
+          ],
+          "plural": [
+            "saisirons",
+            "saisirez",
+            "saisiront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "saisirais",
+            "saisirais",
+            "saisirait"
+          ],
+          "plural": [
+            "saisirions",
+            "saisiriez",
+            "saisiraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "saisisse",
+            "saisisses",
+            "saisisse"
+          ],
+          "plural": [
+            "saisissions",
+            "saisissiez",
+            "saisissent"
+          ]
+        }
+      },
+      {
+        "fr": "étourdir",
+        "en": "to stun, to shock",
+        "present": {
+          "singular": [
+            "étourdis",
+            "étourdis",
+            "étourdit"
+          ],
+          "plural": [
+            "étourdissons",
+            "étourdissez",
+            "étourdissent"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "étourdissais",
+            "étourdissais",
+            "étourdissait"
+          ],
+          "plural": [
+            "étourdissions",
+            "étourdissiez",
+            "étourdissaient"
+          ]
+        },
+        "future": {
+          "singular": [
+            "étourdirai",
+            "étourdiras",
+            "étourdira"
+          ],
+          "plural": [
+            "étourdirons",
+            "étourdirez",
+            "étourdiront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "étourdirais",
+            "étourdirais",
+            "étourdirait"
+          ],
+          "plural": [
+            "étourdirions",
+            "étourdiriez",
+            "étourdiraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "étourdisse",
+            "étourdisses",
+            "étourdisse"
+          ],
+          "plural": [
+            "étourdissions",
+            "étourdissiez",
+            "étourdissent"
+          ]
+        }
+      },
+      {
+        "fr": "réfléchir",
+        "en": "to reflect",
+        "present": {
+          "singular": [
+            "réfléchis",
+            "réfléchis",
+            "réfléchit"
+          ],
+          "plural": [
+            "réfléchissons",
+            "réfléchissez",
+            "réfléchissent"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "réfléchissais",
+            "réfléchissais",
+            "réfléchissait"
+          ],
+          "plural": [
+            "réfléchissions",
+            "réfléchissiez",
+            "réfléchissaient"
+          ]
+        },
+        "future": {
+          "singular": [
+            "réfléchirai",
+            "réfléchiras",
+            "réfléchira"
+          ],
+          "plural": [
+            "réfléchirons",
+            "réfléchirez",
+            "réfléchiront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "réfléchirais",
+            "réfléchirais",
+            "réfléchirait"
+          ],
+          "plural": [
+            "réfléchirions",
+            "réfléchiriez",
+            "réfléchiraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "réfléchisse",
+            "réfléchisses",
+            "réfléchisse"
+          ],
+          "plural": [
+            "réfléchissions",
+            "réfléchissiez",
+            "réfléchissent"
+          ]
+        }
+      },
+      {
+        "fr": "réussir",
+        "en": "to succeed",
+        "present": {
+          "singular": [
+            "réussis",
+            "réussis",
+            "réussit"
+          ],
+          "plural": [
+            "réussissons",
+            "réussissez",
+            "réussissent"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "réussissais",
+            "réussissais",
+            "réussissait"
+          ],
+          "plural": [
+            "réussissions",
+            "réussissiez",
+            "réussissaient"
+          ]
+        },
+        "future": {
+          "singular": [
+            "réussirai",
+            "réussiras",
+            "réussira"
+          ],
+          "plural": [
+            "réussirons",
+            "réussirez",
+            "réussiront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "réussirais",
+            "réussirais",
+            "réussirait"
+          ],
+          "plural": [
+            "réussirions",
+            "réussiriez",
+            "réussiraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "réussisse",
+            "réussisses",
+            "réussisse"
+          ],
+          "plural": [
+            "réussissions",
+            "réussissiez",
+            "réussissent"
+          ]
+        }
+      },
+      {
+        "fr": "maigrir",
+        "en": "to become thin",
+        "present": {
+          "singular": [
+            "maigris",
+            "maigris",
+            "maigrit"
+          ],
+          "plural": [
+            "maigrissons",
+            "maigrissez",
+            "maigrissent"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "maigrissais",
+            "maigrissais",
+            "maigrissait"
+          ],
+          "plural": [
+            "maigrissions",
+            "maigrissiez",
+            "maigrissaient"
+          ]
+        },
+        "future": {
+          "singular": [
+            "maigrirai",
+            "maigriras",
+            "maigrira"
+          ],
+          "plural": [
+            "maigrirons",
+            "maigrirez",
+            "maigriront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "maigrirais",
+            "maigrirais",
+            "maigrirait"
+          ],
+          "plural": [
+            "maigririons",
+            "maigririez",
+            "maigriraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "maigrisse",
+            "maigrisses",
+            "maigrisse"
+          ],
+          "plural": [
+            "maigrissions",
+            "maigrissiez",
+            "maigrissent"
+          ]
+        }
+      },
+      {
+        "fr": "franchir",
+        "en": "to clear an obstacle, to cross a threshold",
+        "present": {
+          "singular": [
+            "franchis",
+            "franchis",
+            "franchit"
+          ],
+          "plural": [
+            "franchissons",
+            "franchissez",
+            "franchissent"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "franchissais",
+            "franchissais",
+            "franchissait"
+          ],
+          "plural": [
+            "franchissions",
+            "franchissiez",
+            "franchissaient"
+          ]
+        },
+        "future": {
+          "singular": [
+            "franchirai",
+            "franchiras",
+            "franchira"
+          ],
+          "plural": [
+            "franchirons",
+            "franchirez",
+            "franchiront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "franchirais",
+            "franchirais",
+            "franchirait"
+          ],
+          "plural": [
+            "franchirions",
+            "franchiriez",
+            "franchiraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "franchisse",
+            "franchisses",
+            "franchisse"
+          ],
+          "plural": [
+            "franchissions",
+            "franchissiez",
+            "franchissent"
+          ]
+        }
+      },
+      {
+        "fr": "grossir",
+        "en": "to gain weight",
+        "present": {
+          "singular": [
+            "grossis",
+            "grossis",
+            "grossit"
+          ],
+          "plural": [
+            "grossissons",
+            "grossissez",
+            "grossissent"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "grossissais",
+            "grossissais",
+            "grossissait"
+          ],
+          "plural": [
+            "grossissions",
+            "grossissiez",
+            "grossissaient"
+          ]
+        },
+        "future": {
+          "singular": [
+            "grossirai",
+            "grossiras",
+            "grossira"
+          ],
+          "plural": [
+            "grossirons",
+            "grossirez",
+            "grossiront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "grossirais",
+            "grossirais",
+            "grossirait"
+          ],
+          "plural": [
+            "grossirions",
+            "grossiriez",
+            "grossiraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "grossisse",
+            "grossisses",
+            "grossisse"
+          ],
+          "plural": [
+            "grossissions",
+            "grossissiez",
+            "grossissent"
+          ]
+        }
+      },
+      {
+        "fr": "guérir",
+        "en": "to cure, to heal",
+        "present": {
+          "singular": [
+            "guéris",
+            "guéris",
+            "guérit"
+          ],
+          "plural": [
+            "guérissons",
+            "guérissez",
+            "guérissent"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "guérissais",
+            "guérissais",
+            "guérissait"
+          ],
+          "plural": [
+            "guérissions",
+            "guérissiez",
+            "guérissaient"
+          ]
+        },
+        "future": {
+          "singular": [
+            "guérirai",
+            "guériras",
+            "guérira"
+          ],
+          "plural": [
+            "guérirons",
+            "guérirez",
+            "guériront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "guérirais",
+            "guérirais",
+            "guérirait"
+          ],
+          "plural": [
+            "guéririons",
+            "guéririez",
+            "guériraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "guérisse",
+            "guérisses",
+            "guérisse"
+          ],
+          "plural": [
+            "guérissions",
+            "guérissiez",
+            "guérissent"
+          ]
+        }
+      },
+      {
+        "fr": "avertir",
+        "en": "to warn",
+        "present": {
+          "singular": [
+            "avertis",
+            "avertis",
+            "avertit"
+          ],
+          "plural": [
+            "avertissons",
+            "avertissez",
+            "avertissent"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "avertissais",
+            "avertissais",
+            "avertissait"
+          ],
+          "plural": [
+            "avertissions",
+            "avertissiez",
+            "avertissaient"
+          ]
+        },
+        "future": {
+          "singular": [
+            "avertirai",
+            "avertiras",
+            "avertira"
+          ],
+          "plural": [
+            "avertirons",
+            "avertirez",
+            "avertiront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "avertirais",
+            "avertirais",
+            "avertirait"
+          ],
+          "plural": [
+            "avertirions",
+            "avertiriez",
+            "avertiraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "avertisse",
+            "avertisses",
+            "avertisse"
+          ],
+          "plural": [
+            "avertissions",
+            "avertissiez",
+            "avertissent"
+          ]
+        }
+      },
+      {
+        "fr": "convertir",
+        "en": "to convert",
+        "present": {
+          "singular": [
+            "convertis",
+            "convertis",
+            "convertit"
+          ],
+          "plural": [
+            "convertissons",
+            "convertissez",
+            "convertissent"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "convertissais",
+            "convertissais",
+            "convertissait"
+          ],
+          "plural": [
+            "convertissions",
+            "convertissiez",
+            "convertissaient"
+          ]
+        },
+        "future": {
+          "singular": [
+            "convertirai",
+            "convertiras",
+            "convertira"
+          ],
+          "plural": [
+            "convertirons",
+            "convertirez",
+            "convertiront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "convertirais",
+            "convertirais",
+            "convertirait"
+          ],
+          "plural": [
+            "convertirions",
+            "convertiriez",
+            "convertiraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "convertisse",
+            "convertisses",
+            "convertisse"
+          ],
+          "plural": [
+            "convertissions",
+            "convertissiez",
+            "convertissent"
+          ]
+        }
+      },
+      {
+        "fr": "blanchir",
+        "en": "to whiten, to lighten",
+        "present": {
+          "singular": [
+            "blanchis",
+            "blanchis",
+            "blanchit"
+          ],
+          "plural": [
+            "blanchissons",
+            "blanchissez",
+            "blanchissent"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "blanchissais",
+            "blanchissais",
+            "blanchissait"
+          ],
+          "plural": [
+            "blanchissions",
+            "blanchissiez",
+            "blanchissaient"
+          ]
+        },
+        "future": {
+          "singular": [
+            "blanchirai",
+            "blanchiras",
+            "blanchira"
+          ],
+          "plural": [
+            "blanchirons",
+            "blanchirez",
+            "blanchiront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "blanchirais",
+            "blanchirais",
+            "blanchirait"
+          ],
+          "plural": [
+            "blanchirions",
+            "blanchiriez",
+            "blanchiraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "blanchisse",
+            "blanchisses",
+            "blanchisse"
+          ],
+          "plural": [
+            "blanchissions",
+            "blanchissiez",
+            "blanchissent"
+          ]
+        }
+      },
+      {
+        "fr": "bénir",
+        "en": "to bless",
+        "present": {
+          "singular": [
+            "bénis",
+            "bénis",
+            "bénit"
+          ],
+          "plural": [
+            "bénissons",
+            "bénissez",
+            "bénissent"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "bénissais",
+            "bénissais",
+            "bénissait"
+          ],
+          "plural": [
+            "bénissions",
+            "bénissiez",
+            "bénissaient"
+          ]
+        },
+        "future": {
+          "singular": [
+            "bénirai",
+            "béniras",
+            "bénira"
+          ],
+          "plural": [
+            "bénirons",
+            "bénirez",
+            "béniront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "bénirais",
+            "bénirais",
+            "bénirait"
+          ],
+          "plural": [
+            "bénirions",
+            "béniriez",
+            "béniraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "bénisse",
+            "bénisses",
+            "bénisse"
+          ],
+          "plural": [
+            "bénissions",
+            "bénissiez",
+            "bénissent"
+          ]
+        }
+      },
+      {
+        "fr": "rougir",
+        "en": "to blush, to turn red",
+        "present": {
+          "singular": [
+            "rougis",
+            "rougis",
+            "rougit"
+          ],
+          "plural": [
+            "rougissons",
+            "rougissez",
+            "rougissent"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "rougissais",
+            "rougissais",
+            "rougissait"
+          ],
+          "plural": [
+            "rougissions",
+            "rougissiez",
+            "rougissaient"
+          ]
+        },
+        "future": {
+          "singular": [
+            "rougirai",
+            "rougiras",
+            "rougira"
+          ],
+          "plural": [
+            "rougirons",
+            "rougirez",
+            "rougiront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "rougirais",
+            "rougirais",
+            "rougirait"
+          ],
+          "plural": [
+            "rougirions",
+            "rougiriez",
+            "rougiraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "rougisse",
+            "rougisses",
+            "rougisse"
+          ],
+          "plural": [
+            "rougissions",
+            "rougissiez",
+            "rougissent"
+          ]
+        }
+      },
+      {
+        "fr": "nourrir",
+        "en": "to nourish, to feed",
+        "present": {
+          "singular": [
+            "nourris",
+            "nourris",
+            "nourrit"
+          ],
+          "plural": [
+            "nourrissons",
+            "nourrissez",
+            "nourrissent"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "nourrissais",
+            "nourrissais",
+            "nourrissait"
+          ],
+          "plural": [
+            "nourrissions",
+            "nourrissiez",
+            "nourrissaient"
+          ]
+        },
+        "future": {
+          "singular": [
+            "nourrirai",
+            "nourriras",
+            "nourrira"
+          ],
+          "plural": [
+            "nourrirons",
+            "nourrirez",
+            "nourriront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "nourrirais",
+            "nourrirais",
+            "nourrirait"
+          ],
+          "plural": [
+            "nourririons",
+            "nourririez",
+            "nourriraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "nourrisse",
+            "nourrisses",
+            "nourrisse"
+          ],
+          "plural": [
+            "nourrissions",
+            "nourrissiez",
+            "nourrissent"
+          ]
+        }
+      },
+      {
+        "fr": "obéir",
+        "en": "to obey",
+        "present": {
+          "singular": [
+            "obéis",
+            "obéis",
+            "obéit"
+          ],
+          "plural": [
+            "obéissons",
+            "obéissez",
+            "obéissent"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "obéissais",
+            "obéissais",
+            "obéissait"
+          ],
+          "plural": [
+            "obéissions",
+            "obéissiez",
+            "obéissaient"
+          ]
+        },
+        "future": {
+          "singular": [
+            "obéirai",
+            "obéiras",
+            "obéira"
+          ],
+          "plural": [
+            "obéirons",
+            "obéirez",
+            "obéiront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "obéirais",
+            "obéirais",
+            "obéirait"
+          ],
+          "plural": [
+            "obéirions",
+            "obéiriez",
+            "obéiraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "obéisse",
+            "obéisses",
+            "obéisse"
+          ],
+          "plural": [
+            "obéissions",
+            "obéissiez",
+            "obéissent"
+          ]
+        }
+      },
+      {
+        "fr": "agrandir",
+        "en": "to enlarge, to increase",
+        "present": {
+          "singular": [
+            "agrandis",
+            "agrandis",
+            "agrandit"
+          ],
+          "plural": [
+            "agrandissons",
+            "agrandissez",
+            "agrandissent"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "agrandissais",
+            "agrandissais",
+            "agrandissait"
+          ],
+          "plural": [
+            "agrandissions",
+            "agrandissiez",
+            "agrandissaient"
+          ]
+        },
+        "future": {
+          "singular": [
+            "agrandirai",
+            "agrandiras",
+            "agrandira"
+          ],
+          "plural": [
+            "agrandirons",
+            "agrandirez",
+            "agrandiront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "agrandirais",
+            "agrandirais",
+            "agrandirait"
+          ],
+          "plural": [
+            "agrandirions",
+            "agrandiriez",
+            "agrandiraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "agrandisse",
+            "agrandisses",
+            "agrandisse"
+          ],
+          "plural": [
+            "agrandissions",
+            "agrandissiez",
+            "agrandissent"
+          ]
+        }
+      }
+    ]
+  }
+  {
+    "group": "re",
+    "verbs": [
+      {
+        "fr": "attendre",
+        "en": "to wait",
+        "present": {
+          "singular": [
+            "attends",
+            "attends",
+            "attend"
+          ],
+          "plural": [
+            "attendons",
+            "attendez",
+            "attendent"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "attendais",
+            "attendais",
+            "attendait"
+          ],
+          "plural": [
+            "attendions",
+            "attendiez",
+            "attendaient"
+          ]
+        },
+        "future": {
+          "singular": [
+            "attendrai",
+            "attendras",
+            "attendra"
+          ],
+          "plural": [
+            "attendrons",
+            "attendrez",
+            "attendront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "attendrais",
+            "attendrais",
+            "attendrait"
+          ],
+          "plural": [
+            "attendrions",
+            "attendriez",
+            "attendraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "attende",
+            "attendes",
+            "attende"
+          ],
+          "plural": [
+            "attendions",
+            "attendiez",
+            "attendent"
+          ]
+        }
+      },
+      {
+        "fr": "défendre",
+        "en": "to defend",
+        "present": {
+          "singular": [
+            "défends",
+            "défends",
+            "défend"
+          ],
+          "plural": [
+            "défendons",
+            "défendez",
+            "défendent"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "défendais",
+            "défendais",
+            "défendait"
+          ],
+          "plural": [
+            "défendions",
+            "défendiez",
+            "défendaient"
+          ]
+        },
+        "future": {
+          "singular": [
+            "défendrai",
+            "défendras",
+            "défendra"
+          ],
+          "plural": [
+            "défendrons",
+            "défendrez",
+            "défendront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "défendrais",
+            "défendrais",
+            "défendrait"
+          ],
+          "plural": [
+            "défendrions",
+            "défendriez",
+            "défendraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "défende",
+            "défendes",
+            "défende"
+          ],
+          "plural": [
+            "défendions",
+            "défendiez",
+            "défendent"
+          ]
+        }
+      },
+      {
+        "fr": "dépendre",
+        "en": "to depend",
+        "present": {
+          "singular": [
+            "dépends",
+            "dépends",
+            "dépend"
+          ],
+          "plural": [
+            "dépendons",
+            "dépendez",
+            "dépendent"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "dépendais",
+            "dépendais",
+            "dépendait"
+          ],
+          "plural": [
+            "dépendions",
+            "dépendiez",
+            "dépendaient"
+          ]
+        },
+        "future": {
+          "singular": [
+            "dépendrai",
+            "dépendras",
+            "dépendra"
+          ],
+          "plural": [
+            "dépendrons",
+            "dépendrez",
+            "dépendront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "dépendrais",
+            "dépendrais",
+            "dépendrait"
+          ],
+          "plural": [
+            "dépendrions",
+            "dépendriez",
+            "dépendraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "dépende",
+            "dépendes",
+            "dépende"
+          ],
+          "plural": [
+            "dépendions",
+            "dépendiez",
+            "dépendent"
+          ]
+        }
+      },
+      {
+        "fr": "descendre",
+        "en": "to descend, to lower",
+        "present": {
+          "singular": [
+            "descends",
+            "descends",
+            "descend"
+          ],
+          "plural": [
+            "descendons",
+            "descendez",
+            "descendent"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "descendais",
+            "descendais",
+            "descendait"
+          ],
+          "plural": [
+            "descendions",
+            "descendiez",
+            "descendaient"
+          ]
+        },
+        "future": {
+          "singular": [
+            "descendrai",
+            "descendras",
+            "descendra"
+          ],
+          "plural": [
+            "descendrons",
+            "descendrez",
+            "descendront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "descendrais",
+            "descendrais",
+            "descendrait"
+          ],
+          "plural": [
+            "descendrions",
+            "descendriez",
+            "descendraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "descende",
+            "descendes",
+            "descende"
+          ],
+          "plural": [
+            "descendions",
+            "descendiez",
+            "descendent"
+          ]
+        }
+      },
+      {
+        "fr": "détendre",
+        "en": "to relax",
+        "present": {
+          "singular": [
+            "détends",
+            "détends",
+            "détend"
+          ],
+          "plural": [
+            "détendons",
+            "détendez",
+            "détendent"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "détendais",
+            "détendais",
+            "détendait"
+          ],
+          "plural": [
+            "détendions",
+            "détendiez",
+            "détendaient"
+          ]
+        },
+        "future": {
+          "singular": [
+            "détendrai",
+            "détendras",
+            "détendra"
+          ],
+          "plural": [
+            "détendrons",
+            "détendrez",
+            "détendront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "détendrais",
+            "détendrais",
+            "détendrait"
+          ],
+          "plural": [
+            "détendrions",
+            "détendriez",
+            "détendraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "détende",
+            "détendes",
+            "détende"
+          ],
+          "plural": [
+            "détendions",
+            "détendiez",
+            "détendent"
+          ]
+        }
+      },
+      {
+        "fr": "entendre",
+        "en": "to relax",
+        "present": {
+          "singular": [
+            "entends",
+            "entends",
+            "entend"
+          ],
+          "plural": [
+            "entendons",
+            "entendez",
+            "entendent"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "entendais",
+            "entendais",
+            "entendait"
+          ],
+          "plural": [
+            "entendions",
+            "entendiez",
+            "entendaient"
+          ]
+        },
+        "future": {
+          "singular": [
+            "entendrai",
+            "entendras",
+            "entendra"
+          ],
+          "plural": [
+            "entendrons",
+            "entendrez",
+            "entendront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "entendrais",
+            "entendrais",
+            "entendrait"
+          ],
+          "plural": [
+            "entendrions",
+            "entendriez",
+            "entendraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "entende",
+            "entendes",
+            "entende"
+          ],
+          "plural": [
+            "entendions",
+            "entendiez",
+            "entendent"
+          ]
+        }
+      },
+      {
+        "fr": "étendre",
+        "en": "to stretch out, to spread",
+        "present": {
+          "singular": [
+            "étends",
+            "étends",
+            "étend"
+          ],
+          "plural": [
+            "étendons",
+            "étendez",
+            "étendent"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "étendais",
+            "étendais",
+            "étendait"
+          ],
+          "plural": [
+            "étendions",
+            "étendiez",
+            "étendaient"
+          ]
+        },
+        "future": {
+          "singular": [
+            "étendrai",
+            "étendras",
+            "étendra"
+          ],
+          "plural": [
+            "étendrons",
+            "étendrez",
+            "étendront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "étendrais",
+            "étendrais",
+            "étendrait"
+          ],
+          "plural": [
+            "étendrions",
+            "étendriez",
+            "étendraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "étende",
+            "étendes",
+            "étende"
+          ],
+          "plural": [
+            "étendions",
+            "étendiez",
+            "étendent"
+          ]
+        }
+      },
+      {
+        "fr": "fendre",
+        "en": "to split",
+        "present": {
+          "singular": [
+            "fends",
+            "fends",
+            "fend"
+          ],
+          "plural": [
+            "fendons",
+            "fendez",
+            "fendent"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "fendais",
+            "fendais",
+            "fendait"
+          ],
+          "plural": [
+            "fendions",
+            "fendiez",
+            "fendaient"
+          ]
+        },
+        "future": {
+          "singular": [
+            "fendrai",
+            "fendras",
+            "fendra"
+          ],
+          "plural": [
+            "fendrons",
+            "fendrez",
+            "fendront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "fendrais",
+            "fendrais",
+            "fendrait"
+          ],
+          "plural": [
+            "fendrions",
+            "fendriez",
+            "fendraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "fende",
+            "fendes",
+            "fende"
+          ],
+          "plural": [
+            "fendions",
+            "fendiez",
+            "fendent"
+          ]
+        }
+      },
+      {
+        "fr": "fondre",
+        "en": "to melt",
+        "present": {
+          "singular": [
+            "fonds",
+            "fonds",
+            "fond"
+          ],
+          "plural": [
+            "fondons",
+            "fondez",
+            "fondent"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "fondais",
+            "fondais",
+            "fondait"
+          ],
+          "plural": [
+            "fondions",
+            "fondiez",
+            "fondaient"
+          ]
+        },
+        "future": {
+          "singular": [
+            "fondrai",
+            "fondras",
+            "fondra"
+          ],
+          "plural": [
+            "fondrons",
+            "fondrez",
+            "fondront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "fondrais",
+            "fondrais",
+            "fondrait"
+          ],
+          "plural": [
+            "fondrions",
+            "fondriez",
+            "fondraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "fonde",
+            "fondes",
+            "fonde"
+          ],
+          "plural": [
+            "fondions",
+            "fondiez",
+            "fondent"
+          ]
+        }
+      },
+      {
+        "fr": "mordre",
+        "en": "to bite",
+        "present": {
+          "singular": [
+            "mords",
+            "mords",
+            "mord"
+          ],
+          "plural": [
+            "mordons",
+            "mordez",
+            "mordent"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "mordais",
+            "mordais",
+            "mordait"
+          ],
+          "plural": [
+            "mordions",
+            "mordiez",
+            "mordaient"
+          ]
+        },
+        "future": {
+          "singular": [
+            "mordrai",
+            "mordras",
+            "mordra"
+          ],
+          "plural": [
+            "mordrons",
+            "mordrez",
+            "mordront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "mordrais",
+            "mordrais",
+            "mordrait"
+          ],
+          "plural": [
+            "mordrions",
+            "mordriez",
+            "mordraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "morde",
+            "mordes",
+            "morde"
+          ],
+          "plural": [
+            "mordions",
+            "mordiez",
+            "mordent"
+          ]
+        }
+      },
+      {
+        "fr": "pendre",
+        "en": "to hang",
+        "present": {
+          "singular": [
+            "pends",
+            "pends",
+            "pend"
+          ],
+          "plural": [
+            "pendons",
+            "pendez",
+            "pendent"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "pendais",
+            "pendais",
+            "pendait"
+          ],
+          "plural": [
+            "pendions",
+            "pendiez",
+            "pendaient"
+          ]
+        },
+        "future": {
+          "singular": [
+            "pendrai",
+            "pendras",
+            "pendra"
+          ],
+          "plural": [
+            "pendrons",
+            "pendrez",
+            "pendront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "pendrais",
+            "pendrais",
+            "pendrait"
+          ],
+          "plural": [
+            "pendrions",
+            "pendriez",
+            "pendraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "pende",
+            "pendes",
+            "pende"
+          ],
+          "plural": [
+            "pendions",
+            "pendiez",
+            "pendent"
+          ]
+        }
+      },
+      {
+        "fr": "perdre",
+        "en": "to lose",
+        "present": {
+          "singular": [
+            "perds",
+            "perds",
+            "perd"
+          ],
+          "plural": [
+            "perdons",
+            "perdez",
+            "perdent"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "perdais",
+            "perdais",
+            "perdait"
+          ],
+          "plural": [
+            "perdions",
+            "perdiez",
+            "perdaient"
+          ]
+        },
+        "future": {
+          "singular": [
+            "perdrai",
+            "perdras",
+            "perdra"
+          ],
+          "plural": [
+            "perdrons",
+            "perdrez",
+            "perdront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "perdrais",
+            "perdrais",
+            "perdrait"
+          ],
+          "plural": [
+            "perdrions",
+            "perdriez",
+            "perdraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "perde",
+            "perdes",
+            "perde"
+          ],
+          "plural": [
+            "perdions",
+            "perdiez",
+            "perdent"
+          ]
+        }
+      },
+      {
+        "fr": "prétendre",
+        "en": "to claim",
+        "present": {
+          "singular": [
+            "prétends",
+            "prétends",
+            "prétend"
+          ],
+          "plural": [
+            "prétendons",
+            "prétendez",
+            "prétendent"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "prétendais",
+            "prétendais",
+            "prétendait"
+          ],
+          "plural": [
+            "prétendions",
+            "prétendiez",
+            "prétendaient"
+          ]
+        },
+        "future": {
+          "singular": [
+            "prétendrai",
+            "prétendras",
+            "prétendra"
+          ],
+          "plural": [
+            "prétendrons",
+            "prétendrez",
+            "prétendront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "prétendrais",
+            "prétendrais",
+            "prétendrait"
+          ],
+          "plural": [
+            "prétendrions",
+            "prétendriez",
+            "prétendraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "prétende",
+            "prétendes",
+            "prétende"
+          ],
+          "plural": [
+            "prétendions",
+            "prétendiez",
+            "prétendent"
+          ]
+        }
+      },
+      {
+        "fr": "rendre",
+        "en": "to render, to give back",
+        "present": {
+          "singular": [
+            "rends",
+            "rends",
+            "rend"
+          ],
+          "plural": [
+            "rendons",
+            "rendez",
+            "rendent"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "rendais",
+            "rendais",
+            "rendait"
+          ],
+          "plural": [
+            "rendions",
+            "rendiez",
+            "rendaient"
+          ]
+        },
+        "future": {
+          "singular": [
+            "rendrai",
+            "rendras",
+            "rendra"
+          ],
+          "plural": [
+            "rendrons",
+            "rendrez",
+            "rendront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "rendrais",
+            "rendrais",
+            "rendrait"
+          ],
+          "plural": [
+            "rendrions",
+            "rendriez",
+            "rendraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "rende",
+            "rendes",
+            "rende"
+          ],
+          "plural": [
+            "rendions",
+            "rendiez",
+            "rendent"
+          ]
+        }
+      },
+      {
+        "fr": "répandre",
+        "en": "to spread, to scatter",
+        "present": {
+          "singular": [
+            "répands",
+            "répands",
+            "répand"
+          ],
+          "plural": [
+            "répandons",
+            "répandez",
+            "répandent"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "répandais",
+            "répandais",
+            "répandait"
+          ],
+          "plural": [
+            "répandions",
+            "répandiez",
+            "répandaient"
+          ]
+        },
+        "future": {
+          "singular": [
+            "répandrai",
+            "répandras",
+            "répandra"
+          ],
+          "plural": [
+            "répandrons",
+            "répandrez",
+            "répandront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "répandrais",
+            "répandrais",
+            "répandrait"
+          ],
+          "plural": [
+            "répandrions",
+            "répandriez",
+            "répandraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "répande",
+            "répandes",
+            "répande"
+          ],
+          "plural": [
+            "répandions",
+            "répandiez",
+            "répandent"
+          ]
+        }
+      },
+      {
+        "fr": "répondre",
+        "en": "to respond",
+        "present": {
+          "singular": [
+            "réponds",
+            "réponds",
+            "répond"
+          ],
+          "plural": [
+            "répondons",
+            "répondez",
+            "répondent"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "répondais",
+            "répondais",
+            "répondait"
+          ],
+          "plural": [
+            "répondions",
+            "répondiez",
+            "répondaient"
+          ]
+        },
+        "future": {
+          "singular": [
+            "répondrai",
+            "répondras",
+            "répondra"
+          ],
+          "plural": [
+            "répondrons",
+            "répondrez",
+            "répondront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "répondrais",
+            "répondrais",
+            "répondrait"
+          ],
+          "plural": [
+            "répondrions",
+            "répondriez",
+            "répondraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "réponde",
+            "répondes",
+            "réponde"
+          ],
+          "plural": [
+            "répondions",
+            "répondiez",
+            "répondent"
+          ]
+        }
+      },
+      {
+        "fr": "tendre",
+        "en": "to tighten",
+        "present": {
+          "singular": [
+            "tends",
+            "tends",
+            "tend"
+          ],
+          "plural": [
+            "tendons",
+            "tendez",
+            "tendent"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "tendais",
+            "tendais",
+            "tendait"
+          ],
+          "plural": [
+            "tendions",
+            "tendiez",
+            "tendaient"
+          ]
+        },
+        "future": {
+          "singular": [
+            "tendrai",
+            "tendras",
+            "tendra"
+          ],
+          "plural": [
+            "tendrons",
+            "tendrez",
+            "tendront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "tendrais",
+            "tendrais",
+            "tendrait"
+          ],
+          "plural": [
+            "tendrions",
+            "tendriez",
+            "tendraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "tende",
+            "tendes",
+            "tende"
+          ],
+          "plural": [
+            "tendions",
+            "tendiez",
+            "tendent"
+          ]
+        }
+      },
+      {
+        "fr": "vendre",
+        "en": "to sell",
+        "present": {
+          "singular": [
+            "vends",
+            "vends",
+            "vend"
+          ],
+          "plural": [
+            "vendons",
+            "vendez",
+            "vendent"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "vendais",
+            "vendais",
+            "vendait"
+          ],
+          "plural": [
+            "vendions",
+            "vendiez",
+            "vendaient"
+          ]
+        },
+        "future": {
+          "singular": [
+            "vendrai",
+            "vendras",
+            "vendra"
+          ],
+          "plural": [
+            "vendrons",
+            "vendrez",
+            "vendront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "vendrais",
+            "vendrais",
+            "vendrait"
+          ],
+          "plural": [
+            "vendrions",
+            "vendriez",
+            "vendraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "vende",
+            "vendes",
+            "vende"
+          ],
+          "plural": [
+            "vendions",
+            "vendiez",
+            "vendent"
+          ]
+        }
+      },
+      {
+        "fr": "tordre",
+        "en": "to twist",
+        "present": {
+          "singular": [
+            "tords",
+            "tords",
+            "tord"
+          ],
+          "plural": [
+            "tordons",
+            "tordez",
+            "tordent"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "tordais",
+            "tordais",
+            "tordait"
+          ],
+          "plural": [
+            "tordions",
+            "tordiez",
+            "tordaient"
+          ]
+        },
+        "future": {
+          "singular": [
+            "tordrai",
+            "tordras",
+            "tordra"
+          ],
+          "plural": [
+            "tordrons",
+            "tordrez",
+            "tordront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "tordrais",
+            "tordrais",
+            "tordrait"
+          ],
+          "plural": [
+            "tordrions",
+            "tordriez",
+            "tordraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "torde",
+            "tordes",
+            "torde"
+          ],
+          "plural": [
+            "tordions",
+            "tordiez",
+            "tordent"
+          ]
+        }
+      },
+      {
+        "fr": "pondre",
+        "en": "to lay an egg",
+        "present": {
+          "singular": [
+            "ponds",
+            "ponds",
+            "pond"
+          ],
+          "plural": [
+            "pondons",
+            "pondez",
+            "pondent"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "pondais",
+            "pondais",
+            "pondait"
+          ],
+          "plural": [
+            "pondions",
+            "pondiez",
+            "pondaient"
+          ]
+        },
+        "future": {
+          "singular": [
+            "pondrai",
+            "pondras",
+            "pondra"
+          ],
+          "plural": [
+            "pondrons",
+            "pondrez",
+            "pondront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "pondrais",
+            "pondrais",
+            "pondrait"
+          ],
+          "plural": [
+            "pondrions",
+            "pondriez",
+            "pondraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "ponde",
+            "pondes",
+            "ponde"
+          ],
+          "plural": [
+            "pondions",
+            "pondiez",
+            "pondent"
+          ]
+        }
+      }
+    ]
+  }
+  {
+    "group": "irregular",
+    "verbs": [
+      {
+        "fr": "aller",
+        "en": "to go",
+        "present": {
+          "singular": [
+            "vais",
+            "vas",
+            "va"
+          ],
+          "plural": [
+            "allons",
+            "allez",
+            "vont"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "allais",
+            "allais",
+            "allait"
+          ],
+          "plural": [
+            "allions",
+            "alliez",
+            "allaient"
+          ]
+        },
+        "future": {
+          "singular": [
+            "irai",
+            "iras",
+            "ira"
+          ],
+          "plural": [
+            "ira",
+            "irez",
+            "iront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "irais",
+            "irais",
+            "irait"
+          ],
+          "plural": [
+            "irions",
+            "iriez",
+            "iraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "aille",
+            "ailles",
+            "aille"
+          ],
+          "plural": [
+            "allions",
+            "alliez",
+            "aillent"
+          ]
+        }
+      },
+      {
+        "fr": "faire",
+        "en": "to do",
+        "present": {
+          "singular": [
+            "fais",
+            "fais",
+            "fait"
+          ],
+          "plural": [
+            "faisons",
+            "faites",
+            "font"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "faisais",
+            "faisais",
+            "faisait"
+          ],
+          "plural": [
+            "faisions",
+            "faisiez",
+            "faisaient"
+          ]
+        },
+        "future": {
+          "singular": [
+            "ferai",
+            "feras",
+            "fera"
+          ],
+          "plural": [
+            "ferons",
+            "ferez",
+            "feront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "ferais",
+            "ferais",
+            "ferait"
+          ],
+          "plural": [
+            "ferions",
+            "feriez",
+            "feraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "fasse",
+            "fasses",
+            "fasse"
+          ],
+          "plural": [
+            "fassions",
+            "fassiez",
+            "fassent"
+          ]
+        }
+      },
+      {
+        "fr": "avoir",
+        "en": "to have",
+        "present": {
+          "singular": [
+            "ai",
+            "as",
+            "a"
+          ],
+          "plural": [
+            "avons",
+            "avez",
+            "ont"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "avais",
+            "avais",
+            "avait"
+          ],
+          "plural": [
+            "avions",
+            "aviez",
+            "avaient"
+          ]
+        },
+        "future": {
+          "singular": [
+            "aurai",
+            "auras",
+            "aura"
+          ],
+          "plural": [
+            "aurons",
+            "aurez",
+            "auront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "aurais",
+            "aurais",
+            "aurait"
+          ],
+          "plural": [
+            "aurions",
+            "auriez",
+            "auraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "aie",
+            "aies",
+            "ait"
+          ],
+          "plural": [
+            "ayons",
+            "ayez",
+            "aient"
+          ]
+        }
+      },
+      {
+        "fr": "dire",
+        "en": "to say to tell",
+        "present": {
+          "singular": [
+            "dis",
+            "dis",
+            "dit"
+          ],
+          "plural": [
+            "disons",
+            "disez",
+            "disent"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "disais",
+            "disais",
+            "disait"
+          ],
+          "plural": [
+            "disions",
+            "disiez",
+            "disaient"
+          ]
+        },
+        "future": {
+          "singular": [
+            "dirai",
+            "diras",
+            "dira"
+          ],
+          "plural": [
+            "dirons",
+            "direz",
+            "diront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "dirais",
+            "dirais",
+            "dirait"
+          ],
+          "plural": [
+            "dirions",
+            "diriez",
+            "diraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "dise",
+            "dises",
+            "dise"
+          ],
+          "plural": [
+            "disions",
+            "disiez",
+            "disent"
+          ]
+        }
+      },
+      {
+        "fr": "être",
+        "en": "to be",
+        "present": {
+          "singular": [
+            "suis",
+            "es",
+            "est"
+          ],
+          "plural": [
+            "somems",
+            "êtes",
+            "sont"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "étais",
+            "étais",
+            "était"
+          ],
+          "plural": [
+            "étions",
+            "étiez",
+            "étaient"
+          ]
+        },
+        "future": {
+          "singular": [
+            "serai",
+            "seras",
+            "sera"
+          ],
+          "plural": [
+            "serons",
+            "serez",
+            "seront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "serais",
+            "serais",
+            "serait"
+          ],
+          "plural": [
+            "serions",
+            "seriez",
+            "seraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "sois",
+            "sois",
+            "soit"
+          ],
+          "plural": [
+            "soyons",
+            "soyez",
+            "soient"
+          ]
+        }
+      },
+      {
+        "fr": "pouvoir",
+        "en": "to be able to",
+        "present": {
+          "singular": [
+            "peux",
+            "peux",
+            "peut"
+          ],
+          "plural": [
+            "pouvons",
+            "pouvez",
+            "peuvent"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "pouvais",
+            "pouvais",
+            "pouvait"
+          ],
+          "plural": [
+            "pouvions",
+            "pouviez",
+            "pouvaient"
+          ]
+        },
+        "future": {
+          "singular": [
+            "pourrai",
+            "pourras",
+            "pourra"
+          ],
+          "plural": [
+            "pourrons",
+            "pourrez",
+            "pourront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "pourrais",
+            "pourrais",
+            "pourrait"
+          ],
+          "plural": [
+            "pourrions",
+            "pourriez",
+            "pourraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "puisse",
+            "puisses",
+            "puisse"
+          ],
+          "plural": [
+            "puissions",
+            "puissiez",
+            "puissent"
+          ]
+        }
+      },
+      {
+        "fr": "savoir",
+        "en": "to know, to know how to",
+        "present": {
+          "singular": [
+            "sais",
+            "sais",
+            "sait"
+          ],
+          "plural": [
+            "savons",
+            "savez",
+            "savent"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "savais",
+            "savais",
+            "savait"
+          ],
+          "plural": [
+            "savions",
+            "saviez",
+            "savaient"
+          ]
+        },
+        "future": {
+          "singular": [
+            "saurai",
+            "sauras",
+            "saura"
+          ],
+          "plural": [
+            "saurons",
+            "saurez",
+            "sauront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "saurais",
+            "saurais",
+            "saurait"
+          ],
+          "plural": [
+            "saurions",
+            "sauriez",
+            "sauraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "sache",
+            "saches",
+            "sache"
+          ],
+          "plural": [
+            "sachions",
+            "sachiez",
+            "sachent"
+          ]
+        }
+      },
+      {
+        "fr": "voir",
+        "en": "to see",
+        "present": {
+          "singular": [
+            "vois",
+            "vois",
+            "voit"
+          ],
+          "plural": [
+            "voyons",
+            "voyez",
+            "voient"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "voyais",
+            "voyais",
+            "voyait"
+          ],
+          "plural": [
+            "voyions",
+            "voyiez",
+            "voyaient"
+          ]
+        },
+        "future": {
+          "singular": [
+            "verrai",
+            "verras",
+            "verra"
+          ],
+          "plural": [
+            "verrons",
+            "verrez",
+            "verront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "verrais",
+            "verrais",
+            "verrait"
+          ],
+          "plural": [
+            "verrions",
+            "verriez",
+            "verraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "voie",
+            "voies",
+            "voie"
+          ],
+          "plural": [
+            "voyions",
+            "voyiez",
+            "voient"
+          ]
+        }
+      },
+      {
+        "fr": "vouloir",
+        "en": "to want to",
+        "present": {
+          "singular": [
+            "veux",
+            "veux",
+            "veut"
+          ],
+          "plural": [
+            "voulons",
+            "voulez",
+            "veulent"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "voulais",
+            "voulais",
+            "voulait"
+          ],
+          "plural": [
+            "voulions",
+            "vouliez",
+            "voulaient"
+          ]
+        },
+        "future": {
+          "singular": [
+            "voudrai",
+            "voudras",
+            "voudra"
+          ],
+          "plural": [
+            "voudrons",
+            "voudrez",
+            "voudront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "voudrais",
+            "voudrais",
+            "voudrait"
+          ],
+          "plural": [
+            "voudrions",
+            "voudriez",
+            "voudraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "veuille",
+            "veuilles",
+            "veuille"
+          ],
+          "plural": [
+            "voulions",
+            "vouliez",
+            "veuillent"
+          ]
+        }
+      },
+      {
+        "fr": "mettre",
+        "en": "to put, to place",
+        "present": {
+          "singular": [
+            "mets",
+            "mets",
+            "met"
+          ],
+          "plural": [
+            "mettons",
+            "mettez",
+            "mettent"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "mettais",
+            "mettais",
+            "mettait"
+          ],
+          "plural": [
+            "mettions",
+            "mettiez",
+            "mettaient"
+          ]
+        },
+        "future": {
+          "singular": [
+            "mettrai",
+            "mettras",
+            "mettra"
+          ],
+          "plural": [
+            "mettrons",
+            "mettrez",
+            "mettront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "mettrais",
+            "mettrais",
+            "mettrait"
+          ],
+          "plural": [
+            "mettrions",
+            "mettriez",
+            "mettraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "mette",
+            "mettes",
+            "mette"
+          ],
+          "plural": [
+            "mettions",
+            "mettiez",
+            "mettent"
+          ]
+        }
+      },
+      {
+        "fr": "devoir",
+        "en": "to have to, must, to owe",
+        "present": {
+          "singular": [
+            "dois",
+            "dois",
+            "doit"
+          ],
+          "plural": [
+            "devons",
+            "devez",
+            "doivent"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "devais",
+            "devais",
+            "devait"
+          ],
+          "plural": [
+            "devions",
+            "deviez",
+            "devaient"
+          ]
+        },
+        "future": {
+          "singular": [
+            "devrai",
+            "devras",
+            "devra"
+          ],
+          "plural": [
+            "devrons",
+            "devrez",
+            "devront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "devrais",
+            "devrais",
+            "devrait"
+          ],
+          "plural": [
+            "devrions",
+            "devriez",
+            "devraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "doive",
+            "doives",
+            "doive"
+          ],
+          "plural": [
+            "devions",
+            "deviez",
+            "doivent"
+          ]
+        }
+      },
+      {
+        "fr": "prendre",
+        "en": "to take, to catch, to capture",
+        "present": {
+          "singular": [
+            "prends",
+            "prends",
+            "prend"
+          ],
+          "plural": [
+            "prenons",
+            "prenez",
+            "prennent"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "prenais",
+            "prenais",
+            "prenait"
+          ],
+          "plural": [
+            "prenions",
+            "preniez",
+            "prenaient"
+          ]
+        },
+        "future": {
+          "singular": [
+            "prendrai",
+            "prendras",
+            "prendra"
+          ],
+          "plural": [
+            "prendrons",
+            "prendrez",
+            "prendront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "prendrais",
+            "prendrais",
+            "prendrais"
+          ],
+          "plural": [
+            "prendrions",
+            "prendriez",
+            "prendraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "prenne",
+            "prennes",
+            "prenne"
+          ],
+          "plural": [
+            "prenions",
+            "preniez",
+            "prennent"
+          ]
+        }
+      },
+      {
+        "fr": "venir",
+        "en": "to come",
+        "present": {
+          "singular": [
+            "viens",
+            "viens",
+            "vient"
+          ],
+          "plural": [
+            "venons",
+            "venez",
+            "viennent"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "venais",
+            "venais",
+            "venait"
+          ],
+          "plural": [
+            "venions",
+            "veniez",
+            "venaient"
+          ]
+        },
+        "future": {
+          "singular": [
+            "viendrai",
+            "viendras",
+            "viendra"
+          ],
+          "plural": [
+            "viendrons",
+            "viendrez",
+            "viendront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "viendrais",
+            "viendrais",
+            "viendrait"
+          ],
+          "plural": [
+            "viendrions",
+            "viendriez",
+            "viendraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "vienne",
+            "viennes",
+            "vienne"
+          ],
+          "plural": [
+            "venions",
+            "veniez",
+            "viennent"
+          ]
+        }
+      },
+      {
+        "fr": "comprendre",
+        "en": "to take, to catch, to capture",
+        "present": {
+          "singular": [
+            "comprends",
+            "comprends",
+            "comprend"
+          ],
+          "plural": [
+            "comprenons",
+            "comprenez",
+            "comprennent"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "comprenais",
+            "comprenais",
+            "comprenait"
+          ],
+          "plural": [
+            "comprenions",
+            "compreniez",
+            "comprenaient"
+          ]
+        },
+        "future": {
+          "singular": [
+            "comprendrai",
+            "comprendras",
+            "comprendra"
+          ],
+          "plural": [
+            "comprendrons",
+            "comprendrez",
+            "comprendront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "comprendrais",
+            "comprendrais",
+            "comprendrais"
+          ],
+          "plural": [
+            "comprendrions",
+            "comprendriez",
+            "comprendraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "comprenne",
+            "comprennes",
+            "comprenne"
+          ],
+          "plural": [
+            "comprenions",
+            "compreniez",
+            "comprennent"
+          ]
+        }
+      },
+      {
+        "fr": "admettre",
+        "en": "to admit",
+        "present": {
+          "singular": [
+            "admets",
+            "admets",
+            "admet"
+          ],
+          "plural": [
+            "admettons",
+            "admettez",
+            "admettent"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "admettais",
+            "admettais",
+            "admettait"
+          ],
+          "plural": [
+            "admettions",
+            "admettiez",
+            "admettaient"
+          ]
+        },
+        "future": {
+          "singular": [
+            "admettrai",
+            "admettras",
+            "admettra"
+          ],
+          "plural": [
+            "admettrons",
+            "admettrez",
+            "admettront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "admettrais",
+            "admettrais",
+            "admettrait"
+          ],
+          "plural": [
+            "admettrions",
+            "admettriez",
+            "admettraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "admette",
+            "admettes",
+            "admette"
+          ],
+          "plural": [
+            "admettions",
+            "admettiez",
+            "admettent"
+          ]
+        }
+      },
+      {
+        "fr": "croire",
+        "en": "to believe, to believe in",
+        "present": {
+          "singular": [
+            "crois",
+            "crois",
+            "croit"
+          ],
+          "plural": [
+            "croyons",
+            "croyez",
+            "croient"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "croyais",
+            "croyais",
+            "croyait"
+          ],
+          "plural": [
+            "croyions",
+            "croyiez",
+            "croyaient"
+          ]
+        },
+        "future": {
+          "singular": [
+            "croirai",
+            "croiras",
+            "croira"
+          ],
+          "plural": [
+            "croirons",
+            "croirez",
+            "croiront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "croirais",
+            "croirais",
+            "croirait"
+          ],
+          "plural": [
+            "croirions",
+            "croiriez",
+            "croiraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "croie",
+            "croies",
+            "croie"
+          ],
+          "plural": [
+            "croyions",
+            "croyiez",
+            "croient"
+          ]
+        }
+      },
+      {
+        "fr": "appeler",
+        "en": "to call, to contact",
+        "present": {
+          "singular": [
+            "appelle",
+            "appelles",
+            "appelle"
+          ],
+          "plural": [
+            "appelons",
+            "appelez",
+            "appellent"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "appelais",
+            "appelais",
+            "appelait"
+          ],
+          "plural": [
+            "appelions",
+            "appeliez",
+            "appelaient"
+          ]
+        },
+        "future": {
+          "singular": [
+            "appelerai",
+            "appeleras",
+            "appelera"
+          ],
+          "plural": [
+            "appelerons",
+            "appelerez",
+            "appeleront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "appelerais",
+            "appelerais",
+            "appelerait"
+          ],
+          "plural": [
+            "appelerions",
+            "appeleriez",
+            "appeleraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "appelle",
+            "appelles",
+            "appelle"
+          ],
+          "plural": [
+            "appelions",
+            "appeliez",
+            "appellent"
+          ]
+        }
+      },
+      {
+        "fr": "remettre",
+        "en": "to put back on, to replace, to deliver",
+        "present": {
+          "singular": [
+            "remets",
+            "remets",
+            "remet"
+          ],
+          "plural": [
+            "remettons",
+            "remettez",
+            "remettent"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "remettais",
+            "remettais",
+            "remettait"
+          ],
+          "plural": [
+            "remettions",
+            "remettiez",
+            "remettaient"
+          ]
+        },
+        "future": {
+          "singular": [
+            "remettrai",
+            "remettras",
+            "remettra"
+          ],
+          "plural": [
+            "remettrons",
+            "remettrez",
+            "remettront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "remettrais",
+            "remettrais",
+            "remettrait"
+          ],
+          "plural": [
+            "remettrions",
+            "remettriez",
+            "remettraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "remette",
+            "remettes",
+            "remette"
+          ],
+          "plural": [
+            "remettions",
+            "remettiez",
+            "remettent"
+          ]
+        }
+      },
+      {
+        "fr": "permettre",
+        "en": "to permit, to allow",
+        "present": {
+          "singular": [
+            "permets",
+            "permets",
+            "permet"
+          ],
+          "plural": [
+            "permettons",
+            "permettez",
+            "permettent"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "permettais",
+            "permettais",
+            "permettait"
+          ],
+          "plural": [
+            "permettions",
+            "permettiez",
+            "permettaient"
+          ]
+        },
+        "future": {
+          "singular": [
+            "permettrai",
+            "permettras",
+            "permettra"
+          ],
+          "plural": [
+            "permettrons",
+            "permettrez",
+            "permettront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "permettrais",
+            "permettrais",
+            "permettrait"
+          ],
+          "plural": [
+            "permettrions",
+            "permettriez",
+            "permettraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "permette",
+            "permettes",
+            "permette"
+          ],
+          "plural": [
+            "permettions",
+            "permettiez",
+            "permettent"
+          ]
+        }
+      },
+      {
+        "fr": "revenir",
+        "en": "to comeback, to return",
+        "present": {
+          "singular": [
+            "reviens",
+            "reviens",
+            "revient"
+          ],
+          "plural": [
+            "revenons",
+            "revenez",
+            "reviennent"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "revenais",
+            "revenais",
+            "revenait"
+          ],
+          "plural": [
+            "revenions",
+            "reveniez",
+            "revenaient"
+          ]
+        },
+        "future": {
+          "singular": [
+            "reviendrai",
+            "reviendras",
+            "reviendra"
+          ],
+          "plural": [
+            "reviendrons",
+            "reviendrez",
+            "reviendront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "reviendrais",
+            "reviendrais",
+            "reviendrait"
+          ],
+          "plural": [
+            "reviendrions",
+            "reviendriez",
+            "reviendraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "revienne",
+            "reviennes",
+            "revienne"
+          ],
+          "plural": [
+            "revenions",
+            "reveniez",
+            "reviennent"
+          ]
+        }
+      },
+      {
+        "fr": "devenir",
+        "en": "to become",
+        "present": {
+          "singular": [
+            "deviens",
+            "deviens",
+            "devient"
+          ],
+          "plural": [
+            "devenons",
+            "devenez",
+            "deviennent"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "devenais",
+            "devenais",
+            "devenait"
+          ],
+          "plural": [
+            "devenions",
+            "deveniez",
+            "devenaient"
+          ]
+        },
+        "future": {
+          "singular": [
+            "deviendrai",
+            "deviendras",
+            "deviendra"
+          ],
+          "plural": [
+            "deviendrons",
+            "deviendrez",
+            "deviendront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "deviendrais",
+            "deviendrais",
+            "deviendrait"
+          ],
+          "plural": [
+            "deviendrions",
+            "deviendriez",
+            "deviendraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "devienne",
+            "deviennes",
+            "devienne"
+          ],
+          "plural": [
+            "devenions",
+            "deveniez",
+            "deviennent"
+          ]
+        }
+      },
+      {
+        "fr": "partir",
+        "en": "to leave, to depart",
+        "present": {
+          "singular": [
+            "pars",
+            "pars",
+            "part"
+          ],
+          "plural": [
+            "partons",
+            "partez",
+            "partent"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "partais",
+            "partais",
+            "partait"
+          ],
+          "plural": [
+            "partions",
+            "partiez",
+            "partaient"
+          ]
+        },
+        "future": {
+          "singular": [
+            "partirai",
+            "partiras",
+            "partira"
+          ],
+          "plural": [
+            "partirons",
+            "partirez",
+            "partiront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "partirais",
+            "partirais",
+            "partirait"
+          ],
+          "plural": [
+            "partirions",
+            "partiriez",
+            "partiraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "parte",
+            "partes",
+            "parte"
+          ],
+          "plural": [
+            "partions",
+            "partiez",
+            "partent"
+          ]
+        }
+      },
+      {
+        "fr": "ouvrir",
+        "en": "to open",
+        "present": {
+          "singular": [
+            "ouvre",
+            "ouvres",
+            "ouvre"
+          ],
+          "plural": [
+            "ouvrons",
+            "ouvrez",
+            "ouvrent"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "ouvrais",
+            "ouvrais",
+            "ouvrait"
+          ],
+          "plural": [
+            "ouvrions",
+            "ouvriez",
+            "ouvraient"
+          ]
+        },
+        "future": {
+          "singular": [
+            "ouvrirai",
+            "ouvriras",
+            "ouvrira"
+          ],
+          "plural": [
+            "ouvrirons",
+            "ouvrirez",
+            "ouvriront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "ouvrirais",
+            "ouvrirais",
+            "ouvrirait"
+          ],
+          "plural": [
+            "ouvririons",
+            "ouvririez",
+            "ouvriraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "ouvre",
+            "ouvres",
+            "ouvre"
+          ],
+          "plural": [
+            "ouvrions",
+            "ouvriez",
+            "ouvrent"
+          ]
+        }
+      },
+      {
+        "fr": "lire",
+        "en": "to read",
+        "present": {
+          "singular": [
+            "lis",
+            "lis",
+            "lit"
+          ],
+          "plural": [
+            "lisons",
+            "lisez",
+            "lisent"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "lisais",
+            "lisais",
+            "lisait"
+          ],
+          "plural": [
+            "lisions",
+            "lisiez",
+            "lisaient"
+          ]
+        },
+        "future": {
+          "singular": [
+            "lirai",
+            "liras",
+            "lira"
+          ],
+          "plural": [
+            "lirons",
+            "lirez",
+            "liront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "lirais",
+            "lirais",
+            "lirait"
+          ],
+          "plural": [
+            "lirions",
+            "liriez",
+            "liraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "lise",
+            "lises",
+            "lise"
+          ],
+          "plural": [
+            "lisions",
+            "lisiez",
+            "lisent"
+          ]
+        }
+      },
+      {
+        "fr": "écrire",
+        "en": "to write",
+        "present": {
+          "singular": [
+            "écris",
+            "écris",
+            "écrit"
+          ],
+          "plural": [
+            "écrivons",
+            "écrivez",
+            "écrivent"
+          ]
+        },
+        "imperfect": {
+          "singular": [
+            "écrivais",
+            "écrivais",
+            "écrivait"
+          ],
+          "plural": [
+            "écrivions",
+            "écriviez",
+            "écrivaient"
+          ]
+        },
+        "future": {
+          "singular": [
+            "écrirai",
+            "écriras",
+            "écrira"
+          ],
+          "plural": [
+            "écrirons",
+            "écrirez",
+            "écriront"
+          ]
+        },
+        "conditional": {
+          "singular": [
+            "écrirais",
+            "écrirais",
+            "écrirait"
+          ],
+          "plural": [
+            "écririons",
+            "écririez",
+            "écriraient"
+          ]
+        },
+        "subjunctive": {
+          "singular": [
+            "écrive",
+            "écrives",
+            "écrive"
+          ],
+          "plural": [
+            "écrivions",
+            "écriviez",
+            "écrivent"
+          ]
+        }
+      }
+    ]
+  }
