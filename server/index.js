@@ -4,7 +4,6 @@ const passport = require('passport');
 const mongoose = require('mongoose');
 const GoogleStrategy = require('passport-google-oauth20').Strategy;
 const BearerStrategy = require('passport-http-bearer').Strategy;
-const mongoose = require('mongoose');
 
 // Mongoose internally uses a promise-like object,
 // but its better to make Mongoose use built in es6 promises
