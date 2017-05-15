@@ -46,6 +46,7 @@ passport.use(
                     console.log(user)
                     return User.findByIdAndUpdate(user._id, {$set: {accessToken}}, {new: true})
                 }
+                console.log(user)
                 return User.create({
                     googleId: profile.id,
                     accessToken
