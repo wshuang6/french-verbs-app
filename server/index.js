@@ -38,6 +38,7 @@ passport.use(
         callbackURL: `/api/auth/google/callback`
     },
     (accessToken, refreshToken, profile, cb) => {
+        console.log(profile)
         return User
             .findOne({googleId: profile.id})
             .exec()

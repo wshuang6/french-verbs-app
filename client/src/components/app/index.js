@@ -4,16 +4,10 @@ import * as Cookies from 'js-cookie';
 import {setUser} from './actions';
 import QuestionPage from '../question-page';
 import LoginPage from '../login-page';
+import Header from '../header'
 import {connect} from 'react-redux';
 
 class App extends React.Component {
-    // constructor(props) {
-    //     super(props);
-    //     this.state = {
-    //         currentUser: null
-    //     };
-    // }
-
     componentDidMount() {
         // Job 4: Redux-ify all of the state and fetch calls to async actions.
         const accessToken = Cookies.get('accessToken');
@@ -41,10 +35,10 @@ class App extends React.Component {
 
     render() {
         if (!this.props.currentUser) {
-            return <LoginPage />;
+            return (<div><Header /><LoginPage /></div>);
         }
 
-        return <QuestionPage />;
+        return (<div><Header /><QuestionPage /></div>);
     }
 }
 
