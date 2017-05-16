@@ -35,6 +35,7 @@ class App extends React.Component {
 
     render() {
         let mainComponent;
+        console.log(this.props.quizCategory + this.props.verbCategory)
         if (!this.props.currentUser) {
             mainComponent = (<LoginPage />);
         }
@@ -42,7 +43,7 @@ class App extends React.Component {
             mainComponent = (<QuizSelect />);
         }
         else {
-            mainComponent = (<QuestionPage />)
+            mainComponent = (<Quiz />);
         }
 
         const sidebar = (this.props.currentUser) ? (<Sidebar />) : null;
@@ -58,7 +59,6 @@ class App extends React.Component {
                 </div>
             </div>
         );
-        return <Quiz />;
     }
 }
 
