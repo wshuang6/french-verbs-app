@@ -1,0 +1,28 @@
+.quiz-wrapper {
+  max-width: 500px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.quiz-wrapper .choices-bin {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.quiz-wrapper .choices-bin .choice {
+  border: 1px solid black;
+  width: 47%;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.quiz-wrapper .choices-bin .correct {
+  background-color: #5cc47a;
+  font: #fff;
+}
+
+.quiz-wrapper .choices-bin .wrong {
+  background-color: #ef4438;
+  font: #fff;
+}

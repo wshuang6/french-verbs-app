@@ -2,7 +2,7 @@ import React from 'react';
 import * as Cookies from 'js-cookie';
 
 import {setUser} from './actions';
-import QuestionPage from '../question-page';
+import Quiz from '../quiz';
 import LoginPage from '../login-page';
 import Sidebar from '../sidebar';
 import QuizSelect from '../quiz-select';
@@ -58,6 +58,7 @@ class App extends React.Component {
                 </div>
             </div>
         );
+        return <Quiz />;
     }
 }
 
