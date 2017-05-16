@@ -2,7 +2,7 @@ import React from 'react';
 import * as Cookies from 'js-cookie';
 
 import {setUser} from './actions';
-import QuestionPage from '../question-page';
+import Quiz from '../quiz';
 import LoginPage from '../login-page';
 import {connect} from 'react-redux';
 
@@ -16,6 +16,8 @@ class App extends React.Component {
 
     componentDidMount() {
         // Job 4: Redux-ify all of the state and fetch calls to async actions.
+        // cookies are usually used when we wnat to store things on the client and give 
+        // the server access to it. 
         const accessToken = Cookies.get('accessToken');
         if (accessToken) {
             fetch('/api/me', {
@@ -44,7 +46,7 @@ class App extends React.Component {
             return <LoginPage />;
         }
 
-        return <QuestionPage />;
+        return <Quiz />;
     }
 }
 
