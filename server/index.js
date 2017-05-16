@@ -38,19 +38,21 @@ passport.use(
         callbackURL: `/api/auth/google/callback`
     },
     (accessToken, refreshToken, profile, cb) => {
+        let _user = {
+            googleId: profile.id,
+            displayName: profile.displayName,
+            accessToken
+        }
         return User
-            .findOne({googleId: profile.id})
+            .findOne({googleId: _user.googleId})
             .exec()
             .then(user => {
                 if (user) {
                     return User.findByIdAndUpdate(user._id, {$set: {accessToken}}, {new: true})
                 }
-                return User.create({
-                    googleId: profile.id,
-                    accessToken
-                })
+                return User.create(_user)
             })
-            .then(user => cb(null, {googleId: user.googleId, accessToken: user.accessToken}))
+            .then(user => cb(null, _user))
             .catch(err => console.error(err))
     }
 ));
@@ -64,7 +66,11 @@ passport.use(
                     if (!user) {
                         return done(null, false);
                     }
-                    return done(null, {googleId: user.googleId, accessToken: user.accessToken});
+                    return done(null, {
+                        googleId: user.googleId, 
+                        displayName: user.displayName, 
+                        accessToken: user.accessToken
+                    });
                 })
                 .catch(err => console.error(err))
         }
@@ -94,9 +100,11 @@ app.get('/api/auth/logout', (req, res) => {
 
 app.get('/api/me',
     passport.authenticate('bearer', {session: false}),
-    (req, res) => res.json({
-        googleId: req.user.googleId
-    })
+    (req, res) => {
+        return res.json({
+        googleId: req.user.googleId,
+        displayName: req.user.displayName
+    })}
 );
 
 // API endpoints

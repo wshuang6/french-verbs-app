@@ -1,0 +1,42 @@
+.header {
+  padding-top: 2%;
+  padding-bottom: 1%;
+  padding-left: 10%;
+  padding-right: 10%;
+  vertical-align: top;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #D1D1D1;
+}
+
+.user {
+  display: flex;
+}
+
+.user p {
+  margin: 0;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.goog-logo, .sign-out-div {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.sign-out-div {
+  padding-top: 5px;
+}
+
+.sign-out-button {
+  background: none;
+  border-radius: 5px;
+  border: 1px solid #D1D1D1;
+  font-size: 15px;
+  width: 100px;
+  height: 30px;
+}
+
+a {
+  text-decoration: none;
+}

@@ -33,7 +33,7 @@ export default class QuestionPage extends React.Component {
         );
 
         return (
-            <ul className="question-list">
+            <ul className="question-list main-component">
                 {questions}
             </ul>
         );
