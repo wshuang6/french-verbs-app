@@ -39,7 +39,7 @@ passport.use(
     },
     (accessToken, refreshToken, profile, cb) => {
         return User
-            .findOne({googleId: profile.Id})
+            .findOne({googleId: profile.id})
             .exec()
             .then(user => {
                 if (user) {
