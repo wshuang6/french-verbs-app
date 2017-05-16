@@ -43,10 +43,8 @@ passport.use(
             .exec()
             .then(user => {
                 if (user) {
-                    console.log(user)
                     return User.findByIdAndUpdate(user._id, {$set: {accessToken}}, {new: true})
                 }
-                console.log(user)
                 return User.create({
                     googleId: profile.id,
                     accessToken
@@ -63,7 +61,6 @@ passport.use(
             return User.findOne({accessToken: token})
                 .exec()
                 .then((user) => {
-                    console.log(user)
                     if (!user) {
                         return done(null, false);
                     }
