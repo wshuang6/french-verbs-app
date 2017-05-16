@@ -1,0 +1,14 @@
+.quiz-select-menu {
+  width: 300px;
+}
+
+li {
+  list-style: none;
+}
+.quiz-select {
+  border: gray solid 1px;
+}
+
+.quiz-select:nth-child(even) {
+  background-color: lightgray;
+}

@@ -1,0 +1,14 @@
+.under-header {
+  height: 100%;
+  display: flex;
+}
+
+.main-component-container {
+  width: 69%;
+  padding-right: 15%;
+}
+
+.main-component {
+  max-width: 500px;
+  margin: 0 auto;
+}

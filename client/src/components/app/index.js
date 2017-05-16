@@ -4,12 +4,14 @@ import * as Cookies from 'js-cookie';
 import {setUser} from './actions';
 import QuestionPage from '../question-page';
 import LoginPage from '../login-page';
-import Header from '../header'
+import Sidebar from '../sidebar';
+import QuizSelect from '../quiz-select';
+import Header from '../header';
 import {connect} from 'react-redux';
+import './index.css';
 
 class App extends React.Component {
     componentDidMount() {
-        // Job 4: Redux-ify all of the state and fetch calls to async actions.
         const accessToken = Cookies.get('accessToken');
         if (accessToken) {
             fetch('/api/me', {
@@ -19,8 +21,6 @@ class App extends React.Component {
             }).then(res => {
                 if (!res.ok) {
                     if (res.status === 401) {
-                        // Unauthorized, clear the cookie and go to
-                        // the login page
                         Cookies.remove('accessToken');
                         return;
                     }
@@ -34,16 +34,37 @@ class App extends React.Component {
     }
 
     render() {
+        let mainComponent;
         if (!this.props.currentUser) {
-            return (<div><Header /><LoginPage /></div>);
+            mainComponent = (<LoginPage />);
+        }
+        else if (!this.props.quizCategory || !this.props.verbCategory) {
+            mainComponent = (<QuizSelect />);
+        }
+        else {
+            mainComponent = (<QuestionPage />)
         }
 
-        return (<div><Header /><QuestionPage /></div>);
+        const sidebar = (this.props.currentUser) ? (<Sidebar />) : null;
+
+        return (
+            <div>
+                <Header />
+                <div className="under-header">
+                    {sidebar}
+                    <div className="main-component-container">
+                        {mainComponent}
+                    </div>
+                </div>
+            </div>
+        );
     }
 }
 
 const mapStateToProps = (state) => ({
-    currentUser: state.app.currentUser
+    currentUser: state.app.currentUser,
+    quizCategory: state.quizSelect.quizCategory,
+    verbCategory: state.quizSelect.verbCategory,
 })
 
 export default connect(mapStateToProps)(App);
