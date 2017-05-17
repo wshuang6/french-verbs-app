@@ -83,21 +83,21 @@ export class Quiz extends React.Component {
 
 	getUserInfo() {
 		// Display the state of the quiz to the user
-		if (this.props.quizVerbs.length === 1 && this.props.currentQuestion.choice) {
+		if (this.props.quizVerbs.length === 0 && this.props.currentQuestion.choice) {
 			// the quiz is over, so display the final message to the user
 			// with their final score
 			return (
 				<div className='user-info'>
-					<h4>You completed the quiz!</h4>
-					<p>Your final score is {this.props.score} /10</p>
+					<h4>You completed the {this.props.quizCategory} quiz!</h4>
+					<p>You correctly answered {this.props.score} questions with {this.props.wrong} incorrect</p>
 				</div>
 			);
 		}
-		else if (this.props.quizVerbs.length >= 1) {
+		else if (this.props.quizVerbs.length >= 0) {
 			// the quiz continues
 			return (
 				<div className='user-info-flex'>
-					<p>Question: {`${10 - this.props.quizVerbs.length + 1} /10`}</p>
+					<p>Question: {`${this.props.score + this.props.wrong}`}</p>
 					<p>Score: {this.props.score}</p>
 				</div>
 			);
@@ -105,12 +105,12 @@ export class Quiz extends React.Component {
 	}
 
 	getBtn() {
-		if (this.props.quizVerbs.length === 1 && this.props.currentQuestion.choice) {
+		if (this.props.quizVerbs.length === 0 && this.props.currentQuestion.choice) {
 			// the quiz is over if this condition is met
 			// this needs to link you back to the quiz menu with react router
 			return (<button onClick={e => this.handleEndQuiz(e)}>Back to quiz menu</button>);
 		}
-		else if (this.props.quizVerbs.length >= 1) {
+		else if (this.props.quizVerbs.length >= 0) {
 			return (<button onClick={e => this.handleNextQuestion(e)}>Next</button>);
 		}
 	}
@@ -128,7 +128,7 @@ export class Quiz extends React.Component {
 			.then(result => console.log(result))
 			.catch(err => console.error(err));
 			// Register the user's answer with the store to update state
-			this.props.dispatch(registerAnswer(choice, isCorrect));	
+			this.props.dispatch(registerAnswer(choice, isCorrect, this.props.currentVerb));	
 		}
 	}
 
@@ -152,11 +152,9 @@ export class Quiz extends React.Component {
 			// slice off the current question from the total array
 			// re-update the total verbs array
 			// this will pass us to the next question and update state accordingly
-			if (this.props.quizVerbs.length > 1) {
+			if (this.props.quizVerbs.length > 0) {
 				// if there is only one verb left in the quizVerbs array, the quiz is done
-				let newQuizVerbs = this.props.quizVerbs.slice(1);
-				console.log(newQuizVerbs);
-				this.props.dispatch(updateVerbs(newQuizVerbs)); 
+				this.props.dispatch(updateVerbs(this.props.quizVerbs)); 
 			}
 		}
 	}
@@ -199,6 +197,7 @@ const mapStateToProps = (state) => ({
     verbCategory: state.quizSelect.verbCategory,
     quizVerbs: state.quiz.quizVerbs,
 		score: state.quiz.score,
+		wrong: state.quiz.wrong,
 		currentQuestion: state.quiz.currentQuestion,
 		currentVerb: state.quiz.currentQuestion.currentVerb,
 })

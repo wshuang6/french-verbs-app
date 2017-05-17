@@ -32,10 +32,11 @@ export const fetchVerbGroup = (group) => dispatch => {
 }
 
 export const REGISTER_ANSWER = 'REGISTER_ANSWER';
-export const registerAnswer = (choice, isCorrect) => ({
+export const registerAnswer = (choice, isCorrect, currentVerb) => ({
   type: REGISTER_ANSWER,
   choice,
-  isCorrect
+  isCorrect,
+  currentVerb
 });
 
 export const CLEAR_CURRENT = 'CLEAR_CURRENT';
