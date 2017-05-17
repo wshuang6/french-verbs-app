@@ -42,7 +42,7 @@ function getPositions(correct, incorrectArr) {
 
 const initialState = {
   originalTen: false,
-  quizVerbs: false,
+  quizVerbs: false, // convert to linked-list queue
   score: 0,
   currentQuestion: false,
   loading: false
