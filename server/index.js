@@ -76,7 +76,6 @@ passport.use(
         }
     )
 );
-
 // Authentication endpoints
 app.get('/api/auth/google',
     passport.authenticate('google', {scope: ['profile']}));
@@ -99,7 +98,7 @@ app.get('/api/auth/logout', (req, res) => {
 });
 
 app.get('/api/me',
-    passport.authenticate('bearer', {session: false}),
+    passport.authenticate('bearer', {session: false, failureRedirect: '/'}),
     (req, res) => {
         return res.json({
         googleId: req.user.googleId,
@@ -108,12 +107,8 @@ app.get('/api/me',
 );
 
 // API endpoints
-app.get('/api/questions',
-    passport.authenticate('bearer', {session: false}),
-    (req, res) => res.json(['Question 1', 'Question 2'])
-);
 
-app.use('/api/verbs', verbsRouter);
+app.use('/api/verbs', passport.authenticate('bearer', {session: false, failureRedirect: '/'}),  verbsRouter);
 
 // Serve the built client
 app.use(express.static(path.resolve(__dirname, '../client/build')));
