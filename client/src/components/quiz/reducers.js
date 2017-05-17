@@ -1,4 +1,5 @@
-import { FETCH_VERBS_REQ, UPDATE_VERBS, REGISTER_ANSWER } from './actions';
+import { FETCH_VERBS_REQ, UPDATE_VERBS, REGISTER_ANSWER, CLEAR_CURRENT } from './actions';
+import { SET_CATEGORY } from '../quiz-select/actions';
 
 function getIncorrectChoices(verbs, current, incorrect=[]) {
   // This function will get random incorrect answers by looping over the entire 
@@ -40,8 +41,6 @@ function getPositions(correct, incorrectArr) {
 }
 
 const initialState = {
-  quizType: 'translation',
-  verbGroup: false,
   originalTen: false,
   quizVerbs: false,
   score: 0,
@@ -51,8 +50,9 @@ const initialState = {
 
 const quiz = (state=initialState, action) => {
   if (action.type === FETCH_VERBS_REQ) {
-    return Object.assign({}, state, { 
-      verbGroup: action.group,
+    return Object.assign({}, state, {
+      originalTen: false,
+      score: 0,
       loading: action.loading 
     });
   }
@@ -99,6 +99,10 @@ const quiz = (state=initialState, action) => {
        })
     });
   } 
+  else if (action.type === CLEAR_CURRENT || SET_CATEGORY) {
+    // Just revert back to the initial state to receive new verb data
+    return Object.assign({}, state, initialState);
+  }
   return state;
 }
 

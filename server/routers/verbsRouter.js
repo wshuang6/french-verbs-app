@@ -37,7 +37,13 @@ router.get('/:group', (req, res) => {
     });
 });
 
+// First we consult the user model for the given user to see if they 
+// have any verbs they are stuggling with 
+// We pull those verbs from our verbs data and insert them at the beginning of a queue
+// We get the rest of the verbs randomly from the verbs data in the database.
+
 router.put('/', (req, res) => {
+  // Update the user model here based on the verb received and the result
   console.log(req.body);
   return res.status(200).json({message: 'received verb data. Will update user model'});
 });
