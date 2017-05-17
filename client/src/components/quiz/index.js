@@ -15,7 +15,7 @@ export class Quiz extends React.Component {
 	// Lifecycle methods
 	componentDidMount() {
 		if (this.props.verbCategory && this.props.quizCategory) {
-			this.fetchVerbGroup(this.props.verbCategory);
+			this.fetchVerbGroup(this.props.verbCategory, this.props.quizCategory);
 		}
 	}
 
@@ -23,10 +23,10 @@ export class Quiz extends React.Component {
 		console.log('unmounting');
 	}
 
-	fetchVerbGroup(group) {
+	fetchVerbGroup(group, quizType) {
 		// For authentication later, implement cookies
 		//const accessToken = Cookies.get('accessToken');
-		this.props.dispatch(fetchVerbGroup(group));
+		this.props.dispatch(fetchVerbGroup(group, quizType));
 	}
 
 	getQuizTitle() {
@@ -34,7 +34,7 @@ export class Quiz extends React.Component {
 		return title[0].toUpperCase()+title.substr(1)+' Quiz: '+this.props.verbCategory+' Verbs';
 	}
 
-	makeChoiceJsx(cq) {
+	makeChoiceJsx(cq) { // -> update for tense quizzes
 		// Based on the randomly organized positions of the correct and incorrect
 		// responsees for the current question, build out the jsx for each of the 
 		// responses. The attributes vary based on whether or not a response has been
@@ -154,7 +154,7 @@ export class Quiz extends React.Component {
 			// this will pass us to the next question and update state accordingly
 			if (this.props.quizVerbs.length > 0) {
 				// if there is only one verb left in the quizVerbs array, the quiz is done
-				this.props.dispatch(updateVerbs(this.props.quizVerbs)); 
+				this.props.dispatch(updateVerbs(this.props.quizVerbs, this.props.quizCategory)); 
 			}
 		}
 	}

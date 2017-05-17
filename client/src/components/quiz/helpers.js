@@ -63,26 +63,27 @@ function getTensePerson(tense, currentVerb) {
   else {
     return { 
             person: plural[randomIdx - 3], 
-            answer: currentVerb[tense].plural[randomIdx]
+            answer: currentVerb[tense].plural[randomIdx - 3]
            };
   }
 }
 
-export function getTenseQuizChoices(tense, currentVerb, choices=[], res) {
-  if (!res) {
+export function getTenseQuizChoices(tense, currentVerb, positions=[], res) {
+  if (typeof res === 'undefined') {
     // res is an object with the 'person' to quiz and the correct conjugation (answer)
     // for that person given the current verb
     res = getTensePerson(tense, currentVerb);
     res.correctIdx = Math.floor(Math.random() * 4);
+    return getTenseQuizChoices(tense, currentVerb, positions, res);
   }
-  else if (choices.length === 4) {
+  else if (positions.length === 4) {
     // Base case: choices are sorted and all other quiz data is stored on res object
-    return { choices, res };
+    return { positions, res };
   }
-  else if (choices.length === res.correctIdx) {
+  else if (positions.length === res.correctIdx) {
     // Then you can push the correct answer stored on 'res'
-    choices.push(res.answer);
-    return getTenseQuizChoices(tense, currentVerb, choices, res);
+    positions.push(res.answer);
+    return getTenseQuizChoices(tense, currentVerb, positions, res);
   }
   else {
     // Then we can get a random incorrect choice to add to our choices array
@@ -94,12 +95,39 @@ export function getTenseQuizChoices(tense, currentVerb, choices=[], res) {
     }
     else {
       // then get from the plural choices of the current verb and tense
-      item = currentVerb[tense].plural[randomIdx];
+      item = currentVerb[tense].plural[randomIdx - 3];
     }
-    if (item !== res.answer && choices.indexOf(item) === -1) {
+    if (item !== res.answer && positions.indexOf(item) === -1) {
       // This random item cannot be the answer nor can it already be in the choices array
-      choices.push(item);
+      positions.push(item);
     }
-    return getTenseQuizChoices(tense, currentVerb, choices, res);
+    return getTenseQuizChoices(tense, currentVerb, positions, res);
   }
 }
+
+const exampleVerb = {
+  fr: 'regarder', 
+  en: 'to look, to see, to watch', 
+  present: {
+    singular: ['regarde', 'regardes', 'regarde'],
+    plural: ['regardons', 'regardez', 'regardent']
+  },
+  imperfect: {
+    singular: ['regardais', 'regardais', 'regardait'],
+    plural: ['regardions', 'regardiez', 'regardaient']
+  },
+  future: {
+    singular: ['regarderai', 'regarderas', 'regardera'],
+    plural: ['regarderons', 'regarderez', 'regarderont']
+  }, 
+  conditional: {
+    singular: ['regarderais', 'regarderais', 'regarderait'],
+    plural: ['regarderions', 'regarderiez', 'regarderaient']
+  },
+  subjunctive: {
+    singular: ['regarde', 'regardes', 'regarde'],
+    plural: ['regardions', 'regardiez', 'regardent']
+  } 
+};
+
+console.log(getTenseQuizChoices('present', exampleVerb));

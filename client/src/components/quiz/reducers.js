@@ -1,10 +1,11 @@
 import { FETCH_VERBS_REQ, UPDATE_VERBS, REGISTER_ANSWER, CLEAR_CURRENT } from './actions';
 import { SET_CATEGORY } from '../quiz-select/actions';
-import {getIncorrectChoices, getPositions, makeQueue} from './helpers'
+import {getIncorrectChoices, getPositions, makeQueue, getTenseQuizChoices} from './helpers'
 
 const initialState = {
   originalTen: false,
   quizVerbs: false, 
+  person: false,
   score: 0,
   wrong: 0,
   currentQuestion: false,
@@ -28,22 +29,27 @@ const quiz = (state=initialState, action) => {
     // Create your queue and get the first item in the queue
     let verbsQueue = state.quizVerbs ? state.quizVerbs : makeQueue(action.verbs); 
     let currentVerb = verbsQueue.dequeue();
-    // Get a random length 3 array of incorrect choices
-    let incorrectArr = getIncorrectChoices(verbsArr, currentVerb.en);
-    // Sort incorrect and correct choices in defined positions
-    // that will translate into how they are rendered in the quiz
-    let results = getPositions(currentVerb.en, incorrectArr);
+    let results;
+    if (action.quizType === 'translation') {
+      // Get a random length 3 array of incorrect choices
+      // Sort incorrect and correct choices in defined positions
+      // that will translate into how they are rendered in the quiz
+      let incorrectArr = getIncorrectChoices(verbsArr, currentVerb.en);
+      results = getPositions(currentVerb.en, incorrectArr);
+    }
+    else {
+      // It is a tense quiz
+      results = getTenseQuizChoices(action.quizType, currentVerb);
+    }
     return Object.assign({}, state, {
-      // Current available verbs for questions
       quizVerbs: verbsQueue,
-      // reference of the original 10 verbs received from api
       originalTen: verbsArr,
-      // All relevant data on the state of the current question. 
       currentQuestion: {
         currentVerb,
-        incorrect: incorrectArr,
+        person: results.person ? results.person : false,
+        //incorrect: incorrectArr,
         positions: results.positions,
-        correctIdx: results.correctIdx,
+        correctIdx: results.correctIdx ? results.correctIdx : results.res.correctIdx,
         choice: false,
 			  isCorrect: false
       },
