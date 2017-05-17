@@ -1,7 +1,7 @@
 import React from 'react';
 import * as Cookies from 'js-cookie';
 
-import {setUser} from './actions';
+import { setUser, userCheck } from './actions';
 import Quiz from '../quiz';
 import LoginPage from '../login-page';
 import Sidebar from '../sidebar';
@@ -11,6 +11,7 @@ import {connect} from 'react-redux';
 import './index.css';
 
 class App extends React.Component {
+
     componentDidMount() {
         const accessToken = Cookies.get('accessToken');
         if (accessToken) {
@@ -22,6 +23,7 @@ class App extends React.Component {
                 if (!res.ok) {
                     if (res.status === 401) {
                         Cookies.remove('accessToken');
+                        this.props.dispatch(userCheck());
                         return;
                     }
                     throw new Error(res.statusText);
@@ -31,11 +33,18 @@ class App extends React.Component {
                 this.props.dispatch(setUser(currentUser))
             );
         }
+        else {
+            // There is no access token
+            return this.props.dispatch(userCheck());
+        }
     }
 
     render() {
         let mainComponent;
-        if (!this.props.currentUser) {
+        if (!this.props.userCheck) {
+            mainComponent = (<p>Loading...</p>);
+        }
+        if (this.props.userCheck && !this.props.currentUser) {
             mainComponent = (<LoginPage />);
         }
         else if (!this.props.quizCategory || !this.props.verbCategory) {
@@ -62,6 +71,7 @@ class App extends React.Component {
 }
 
 const mapStateToProps = (state) => ({
+    userCheck: state.app.userCheck,
     currentUser: state.app.currentUser,
     quizCategory: state.quizSelect.quizCategory,
     verbCategory: state.quizSelect.verbCategory,

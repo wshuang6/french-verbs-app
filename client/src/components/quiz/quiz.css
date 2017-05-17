@@ -26,3 +26,14 @@
   background-color: #ef4438;
   font: #fff;
 }
+
+.quiz-wrapper .user-info-flex {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.quiz-wrapper .user-info {
+  text-align: center;
+}

@@ -1,7 +1,6 @@
 export const FETCH_VERBS_REQ = 'FETCH_VERBS_REQ';
-export const fetchVerbsReq = (group) => ({
+export const fetchVerbsReq = () => ({
   type: FETCH_VERBS_REQ,
-  group,
   loading: true,
 });
 
@@ -18,8 +17,8 @@ export const updateVerbs = (verbs) => ({
 // 	'Authorization': `Bearer ${accessToken}`
 // }
 
-export const fetchVerbGroup = group => dispatch => {
-  dispatch(fetchVerbsReq(group));
+export const fetchVerbGroup = (group) => dispatch => {
+  dispatch(fetchVerbsReq());
   fetch(`/api/verbs/${group}`)  
     .then(res => {
       if (!res.ok) {
@@ -37,4 +36,9 @@ export const registerAnswer = (choice, isCorrect) => ({
   type: REGISTER_ANSWER,
   choice,
   isCorrect
+});
+
+export const CLEAR_CURRENT = 'CLEAR_CURRENT';
+export const clearCurrent = () => ({
+  type: CLEAR_CURRENT
 });

@@ -1,15 +1,26 @@
 import React from 'react';
 import * as Cookies from 'js-cookie';
 import {connect} from 'react-redux';
-import { fetchVerbGroup, setChoicesPositions, registerAnswer, updateVerbs } from './actions';
+import { fetchVerbGroup, 
+				 setChoicesPositions, 
+				 registerAnswer, 
+				 updateVerbs, 
+				 clearCurrent } from './actions';
 import './quiz.css';
+
+import { setCategory, setVerb } from '../quiz-select/actions'
 
 export class Quiz extends React.Component {
 
+	// Lifecycle methods
 	componentDidMount() {
-		if (!this.props.quizVerbs && this.props.verbCategory) {
+		if (this.props.verbCategory && this.props.quizCategory) {
 			this.fetchVerbGroup(this.props.verbCategory);
 		}
+	}
+
+	componentWillUnmount() {
+		console.log('unmounting');
 	}
 
 	fetchVerbGroup(group) {
@@ -19,8 +30,8 @@ export class Quiz extends React.Component {
 	}
 
 	getQuizTitle() {
-		const title = this.props.quizType;
-		return title[0].toUpperCase()+title.substr(1)+' Quiz: '+this.props.verbGroup+' Verbs';
+		const title = this.props.quizCategory;
+		return title[0].toUpperCase()+title.substr(1)+' Quiz: '+this.props.verbCategory+' Verbs';
 	}
 
 	makeChoiceJsx(cq) {
@@ -70,51 +81,93 @@ export class Quiz extends React.Component {
 		);
 	}
 
-	recordIncorrect(verb) {
+	getUserInfo() {
+		// Display the state of the quiz to the user
+		if (this.props.quizVerbs.length === 1 && this.props.currentQuestion.choice) {
+			// the quiz is over, so display the final message to the user
+			// with their final score
+			return (
+				<div className='user-info'>
+					<h4>You completed the quiz!</h4>
+					<p>Your final score is {this.props.score} /10</p>
+				</div>
+			);
+		}
+		else if (this.props.quizVerbs.length >= 1) {
+			// the quiz continues
+			return (
+				<div className='user-info-flex'>
+					<p>Question: {`${10 - this.props.quizVerbs.length + 1} /10`}</p>
+					<p>Score: {this.props.score}</p>
+				</div>
+			);
+		}
+	}
+
+	getBtn() {
+		if (this.props.quizVerbs.length === 1 && this.props.currentQuestion.choice) {
+			// the quiz is over if this condition is met
+			// this needs to link you back to the quiz menu with react router
+			return (<button onClick={e => this.handleEndQuiz(e)}>Back to quiz menu</button>);
+		}
+		else if (this.props.quizVerbs.length >= 1) {
+			return (<button onClick={e => this.handleNextQuestion(e)}>Next</button>);
+		}
+	}
+
+	// Event handler methods 
+	handleChoice(event, choice) {
+		// invoked when the user chooses among the multiple choice possibilities
+		event.preventDefault();
+		if (!this.props.currentQuestion.choice) {
+			const cq = this.props.currentQuestion;
+			const isCorrect = this.props.currentVerb.en === choice;
+			// tell the api, the user answered incorrectly 
+			// for the given tested verb
+			this.recordAnswer(this.props.currentVerb, isCorrect)
+			.then(result => console.log(result))
+			.catch(err => console.error(err));
+			// Register the user's answer with the store to update state
+			this.props.dispatch(registerAnswer(choice, isCorrect));	
+		}
+	}
+
+	recordAnswer(verb, isCorrect) {
 		return fetch('/api/verbs', {
 			headers: {
 				'Accept': 'application/json',
 				'Content-Type': 'application/json'
 			},
 			method: "PUT",
-			body: JSON.stringify(verb)
+			body: JSON.stringify({verb, isCorrect})
 		})
 		.then(res => res.json());
 	}
-
-	handleChoice(event, choice) {
-		event.preventDefault();
-		if (!this.props.currentQuestion.choice) {
-			const cq = this.props.currentQuestion;
-			const isCorrect = this.props.currentVerb.en === choice;
-			if (!isCorrect) {
-				// tell the api, the user answered incorrectly 
-				// for the given tested verb
-				this.recordIncorrect(this.props.currentVerb)
-				.then(result => console.log(result))
-				.catch(err => console.error(err));
-			}
-			// Register the user's answer with the store to update state
-			this.props.dispatch(registerAnswer(choice, isCorrect));	
-		}
-	}
-
+	
 	handleNextQuestion(event) {
 		// If the current question has been answered, user can go to the next question
 		// the following will evaluate to true, if answer has been submitted
 		if (this.props.currentQuestion.choice) {
-		event.preventDefault();
-		// slice off the current question from the total array
-		// re-update the total verbs array
-		// this will pass us to the next question and update state accordingly
-		const newQuizVerbs = this.props.quizVerbs.slice(1)
-		console.log(newQuizVerbs);
-		this.props.dispatch(updateVerbs(newQuizVerbs)); 
+			event.preventDefault();
+			// slice off the current question from the total array
+			// re-update the total verbs array
+			// this will pass us to the next question and update state accordingly
+			if (this.props.quizVerbs.length > 1) {
+				// if there is only one verb left in the quizVerbs array, the quiz is done
+				let newQuizVerbs = this.props.quizVerbs.slice(1);
+				console.log(newQuizVerbs);
+				this.props.dispatch(updateVerbs(newQuizVerbs)); 
+			}
 		}
 	}
 
-	questionTracker() {
-		return `${10 - this.props.quizVerbs.length + 1} /10`;
+	handleEndQuiz(event) {
+		// dispatch new action to clear out state for the current
+		// quiz in preparation for receiving new quiz data
+		event.preventDefault();
+		//this.props.dispatch(clearCurrent());
+		this.props.dispatch(setCategory(null));
+		this.props.dispatch(setVerb(null));
 	}
 
 	render() {
@@ -124,13 +177,12 @@ export class Quiz extends React.Component {
 					<div className='title-container'>
 						<h3>{this.getQuizTitle()}</h3>
 						<div>
-							<p>Question: {this.questionTracker()}</p>
-							<p>Score: {this.props.score}</p>
+							{this.getUserInfo()}
 						</div>
 						<h4>{this.props.currentVerb.fr}</h4>
 					</div>
 					{this.getchoices()}
-					<button onClick={e => this.handleNextQuestion(e)}>Next</button>
+					{this.getBtn()}
 				</div>
 			);
 		}
@@ -145,9 +197,7 @@ export class Quiz extends React.Component {
 const mapStateToProps = (state) => ({
 	  quizCategory: state.quizSelect.quizCategory,
     verbCategory: state.quizSelect.verbCategory,
-		verbGroup: state.quiz.verbGroup,
     quizVerbs: state.quiz.quizVerbs,
-		quizType: state.quiz.quizType,
 		score: state.quiz.score,
 		currentQuestion: state.quiz.currentQuestion,
 		currentVerb: state.quiz.currentQuestion.currentVerb,
