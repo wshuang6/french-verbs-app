@@ -29,11 +29,11 @@ class QuizSelect extends React.Component {
             <div className="quiz-select-menu main-component">
                 <ul>
                     <li><h3>{header}</h3></li>
-                    <li className="quiz-select" onClick={e => this.setVerb('-er Verbs')}>-er Verbs</li>
-                    <li className="quiz-select" onClick={e => this.setVerb('-ir Verbs')}>-ir Verbs</li>
-                    <li className="quiz-select" onClick={e => this.setVerb('-re Verbs')}>-re Verbs</li>
-                    <li className="quiz-select" onClick={e => this.setVerb('Irregular Verbs')}>Irregular Verbs</li>
-                    <li className="quiz-select" onClick={e => this.setVerb('All Verbs')}>All Verbs</li>
+                    <li className="quiz-select" onClick={e => this.setVerb('er')}>-er Verbs</li>
+                    <li className="quiz-select" onClick={e => this.setVerb('ir')}>-ir Verbs</li>
+                    <li className="quiz-select" onClick={e => this.setVerb('re')}>-re Verbs</li>
+                    <li className="quiz-select" onClick={e => this.setVerb('irregular')}>Irregular Verbs</li>
+                    {/*<li className="quiz-select" onClick={e => this.setVerb('all')}>All Verbs</li>*/}
                 </ul>
             </div>
         )

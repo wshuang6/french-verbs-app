@@ -7,8 +7,8 @@ import './quiz.css';
 export class Quiz extends React.Component {
 
 	componentDidMount() {
-		if (!this.props.quizVerbs) {
-			this.fetchVerbGroup('er');
+		if (!this.props.quizVerbs && this.props.verbCategory) {
+			this.fetchVerbGroup(this.props.verbCategory);
 		}
 	}
 
@@ -144,6 +144,8 @@ export class Quiz extends React.Component {
 }
 
 const mapStateToProps = (state) => ({
+	  quizCategory: state.quizSelect.quizCategory,
+    verbCategory: state.quizSelect.verbCategory,
 		verbGroup: state.quiz.verbGroup,
     quizVerbs: state.quiz.quizVerbs,
 		quizType: state.quiz.quizType,

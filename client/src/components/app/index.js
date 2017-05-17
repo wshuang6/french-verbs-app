@@ -35,7 +35,6 @@ class App extends React.Component {
 
     render() {
         let mainComponent;
-        console.log(this.props.quizCategory + this.props.verbCategory)
         if (!this.props.currentUser) {
             mainComponent = (<LoginPage />);
         }
