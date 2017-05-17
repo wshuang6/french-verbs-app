@@ -83,8 +83,6 @@ export class Quiz extends React.Component {
 	}
 
 	handleChoice(event, choice) {
-		// send correct, incorrect info to backend
-		// for spaced repitition algorithm
 		event.preventDefault();
 		if (!this.props.currentQuestion.choice) {
 			const cq = this.props.currentQuestion;
@@ -96,12 +94,13 @@ export class Quiz extends React.Component {
 				.then(result => console.log(result))
 				.catch(err => console.error(err));
 			}
+			// Register the user's answer with the store to update state
 			this.props.dispatch(registerAnswer(choice, isCorrect));	
 		}
 	}
 
 	handleNextQuestion(event) {
-		// If the question has been answered, user can go to the next question
+		// If the current question has been answered, user can go to the next question
 		// the following will evaluate to true, if answer has been submitted
 		if (this.props.currentQuestion.choice) {
 		event.preventDefault();
