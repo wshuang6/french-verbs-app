@@ -40,7 +40,3 @@ export const registerAnswer = (choice, isCorrect, currentVerb) => ({
   currentVerb
 });
 
-export const CLEAR_CURRENT = 'CLEAR_CURRENT';
-export const clearCurrent = () => ({
-  type: CLEAR_CURRENT
-});

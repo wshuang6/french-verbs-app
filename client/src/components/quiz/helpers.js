@@ -78,7 +78,7 @@ export function getTenseQuizChoices(tense, currentVerb, positions=[], res) {
   }
   else if (positions.length === 4) {
     // Base case: choices are sorted and all other quiz data is stored on res object
-    return { positions, res };
+    return { positions, correctIdx: res.correctIdx, person: res.person, answer: res.answer };
   }
   else if (positions.length === res.correctIdx) {
     // Then you can push the correct answer stored on 'res'
