@@ -1,3 +1,4 @@
+import * as Cookies from 'js-cookie';
 export const FETCH_VERBS_REQ = 'FETCH_VERBS_REQ';
 export const fetchVerbsReq = () => ({
   type: FETCH_VERBS_REQ,
@@ -18,10 +19,16 @@ export const updateVerbs = (verbs) => ({
 // }
 
 export const fetchVerbGroup = (group) => dispatch => {
+  const accessToken = Cookies.get('accessToken');
   dispatch(fetchVerbsReq());
-  fetch(`/api/verbs/${group}`)  
+  fetch(`/api/verbs/${group}`, {headers: {'Authorization': `Bearer ${accessToken}`}})  
     .then(res => {
       if (!res.ok) {
+        if (res.status === 401) {
+          Cookies.remove('accessToken');
+          // this.props.dispatch(userCheck());
+          return;
+        }
         throw new Error(res.statusText);
       }
       return res.json();

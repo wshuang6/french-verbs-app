@@ -11,7 +11,6 @@ import {connect} from 'react-redux';
 import './index.css';
 
 class App extends React.Component {
-
     componentDidMount() {
         const accessToken = Cookies.get('accessToken');
         if (accessToken) {

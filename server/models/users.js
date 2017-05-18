@@ -1,12 +1,24 @@
 const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
 
-const userSchema = mongoose.Schema({
+const userSchema = Schema({
   googleId: {type: String, unique: true, required: true},
   accessToken: {type: String, required: true},
-  displayName: {type: String}
-  // Verbs they struggle with
-  // Verbs they struggled with in the past but have answered correctly recently
-})
+  displayName: {type: String},
+  bigStruggle: {
+    er: {type: Schema.Types.Mixed, default: {}}, 
+    ir: {type: Schema.Types.Mixed, default: {}},
+    re: {type: Schema.Types.Mixed, default: {}},
+    irregular: {type: Schema.Types.Mixed, default: {}},
+  },
+  littleStruggle: {
+    er: {type: Schema.Types.Mixed, default: {}}, 
+    ir: {type: Schema.Types.Mixed, default: {}},
+    re: {type: Schema.Types.Mixed, default: {}},
+    irregular: {type: Schema.Types.Mixed, default: {}},
+  },
+  quizScores: [{date: Date, right: Number, wrong: Number, quizType: String, verbGroup: String}]
+}, {minimize: false})
 
 const User = mongoose.model('User', userSchema);
 
