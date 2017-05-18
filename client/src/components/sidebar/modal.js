@@ -14,7 +14,8 @@ export function Modal (props) {
     let items = [];
     for (let i = props.pastScores.length - 1; i > props.pastScores.length - 6 && i >= 0; i--) {
       let item = props.pastScores[i];
-      let formattedItem = <tr key={i}><td>{item.date}</td><td>{item.quizType}</td><td>{item.verbGroup}</td><td>{item.score}</td><td>{item.wrong}</td></tr>;
+      let date = Date(item.date).toLocaleString('en-US', {timeZoneName: 'short'});
+      let formattedItem = <tr key={i}><td>{date}</td><td>{item.quizType}</td><td>{item.verbGroup}</td><td>{item.score}</td><td>{item.wrong}</td></tr>;
       if (i === props.pastScores.length - 1) {
         items.push(formattedItem);
       } 
