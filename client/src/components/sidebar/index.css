@@ -1,5 +1,16 @@
 .sidebar {
-  width: 15%;
+  width: 20%;
   height: 100%;
   border-right: 1px solid #D1D1D1;
+}
+
+.sidebar ul {
+  padding-top: 20px;
+}
+
+.sidebar li {
+  list-style: none;
+  font-size: 18px;
+  margin-top: 25px;
+  cursor: pointer;
 }

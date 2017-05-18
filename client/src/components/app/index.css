@@ -4,11 +4,11 @@
 }
 
 .main-component-container {
-  width: 69%;
+  width: 80%;
   padding-right: 15%;
 }
 
 .main-component {
   max-width: 500px;
-  margin: 0 auto;
+  margin: 60px auto 30px;
 }
