@@ -17,7 +17,7 @@ const userSchema = Schema({
     re: {type: Schema.Types.Mixed, default: {}},
     irregular: {type: Schema.Types.Mixed, default: {}},
   },
-  quizScores: [{date: Date, right: Number, wrong: Number, quizType: String, verbGroup: String}]
+  quizScores: [{date: {type: Date, default: Date.now}, score: Number, wrong: Number, quizType: String, verbGroup: String}]
 }, {minimize: false})
 
 const User = mongoose.model('User', userSchema);

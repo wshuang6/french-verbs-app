@@ -36,6 +36,25 @@ function shuffleFirstFour (array) {
   }
 }
 
+router.get('/score', (req, res) => {
+  return User
+    .findOne({googleId: req.user.googleId})
+    .exec()
+    .then(user => res.json(user.quizScores))
+});
+
+router.put('/score', (req, res) => {
+  return User
+    .findOne({googleId: req.user.googleId})
+    .exec()
+    .then(user => {
+      let quizScores = user.quizScores;
+      quizScores.push(req.body);
+      return User.findByIdAndUpdate(user._id, {$set: {quizScores}}, {new: true});
+    })
+    .then(() => res.status(200).json());
+});
+
 router.get('/:group', (req, res) => {
   let quizVerbs = [];
   const { group } = req.params;
@@ -146,28 +165,10 @@ router.put('/', (req, res) => {
           littleStruggle[verbCategory][verb] = 1;
         };
       }
+
       return User.findByIdAndUpdate(user._id, {$set: {littleStruggle, bigStruggle}}, {new: true})
     })
-    .then(stuff => res.status(202))
-});
-
-router.get('/score', (req, res) => {
-  return User
-    .findOne({googleId: req.user.googleId})
-    .exec()
-    .then(user => res.json(user.quizScores))
-});
-
-router.put('/score', (req, res) => {
-  return User
-    .findOne({googleId: req.user.googleId})
-    .exec()
-    .then(user => {
-      let quizScores = user.quizScores;
-      quizScores.push(req.body);
-      return User.findByIdAndUpdate(user._id, {$set: {quizScores}}, {new: true});
-    })
-    .then(stuff => res.status(200));
+    .then(() => res.status(202).json())
 });
 
 module.exports = {verbsRouter: router};

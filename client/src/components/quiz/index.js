@@ -156,6 +156,7 @@ export class Quiz extends React.Component {
 			body: JSON.stringify({verb, isCorrect, verbCategory})
 		})
 		.then(res => {
+			console.log(res)
       if (!res.ok) {
         if (res.status === 401) {
           Cookies.remove('accessToken');
@@ -180,9 +181,35 @@ export class Quiz extends React.Component {
 	}
 
 	handleEndQuiz(event) {
-		// Clear out state for the current quiz
-		this.props.dispatch(setCategory(null));
-		this.props.dispatch(setVerb(null));
+		console.log('i am attempting to end the quiz')
+		const accessToken = Cookies.get('accessToken');
+		return fetch('/api/verbs/score', {
+			headers: {
+				'Accept': 'application/json',
+				'Content-Type': 'application/json',
+				'Authorization': `Bearer ${accessToken}`
+			},
+			method: "PUT",
+			body: JSON.stringify({score: this.props.score, wrong: this.props.wrong, quizType: this.props.quizCategory, verbGroup: this.props.verbCategory})
+		})
+			.then(res => {
+				if (!res.ok) {
+					if (res.status === 401) {
+						Cookies.remove('accessToken');
+						return;
+					}
+					throw new Error(res.statusText);
+				}
+				return;
+			})
+			.then(() => {
+				this.props.dispatch(setCategory(null));
+				this.props.dispatch(setVerb(null));
+				return;
+			});
+
+			// Clear out state for the current quiz
+
 	}
 
 	render() {
