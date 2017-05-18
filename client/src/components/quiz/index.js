@@ -136,7 +136,7 @@ export class Quiz extends React.Component {
 			const cq = this.props.currentQuestion;
 			const isCorrect = cq.positions[cq.correctIdx] === choice;
 			// sends question and user data to /api
-			this.recordAnswer(this.props.currentVerb, isCorrect)
+			this.recordAnswer(this.props.currentVerb, isCorrect, this.props.verbCategory)
 			.then(result => console.log(result))
 			.catch(err => console.error(err));
 			// Register the user's answer with the store to update state
@@ -144,18 +144,30 @@ export class Quiz extends React.Component {
 		}
 	}
 
-	recordAnswer(verb, isCorrect) {
+	recordAnswer(verb, isCorrect, verbCategory) {
+		const accessToken = Cookies.get('accessToken');
 		return fetch('/api/verbs', {
 			headers: {
 				'Accept': 'application/json',
-				'Content-Type': 'application/json'
+				'Content-Type': 'application/json',
+				'Authorization': `Bearer ${accessToken}`
 			},
 			method: "PUT",
-			body: JSON.stringify({verb, isCorrect})
+			body: JSON.stringify({verb, isCorrect, verbCategory})
 		})
-		.then(res => res.json());
+		.then(res => {
+      if (!res.ok) {
+        if (res.status === 401) {
+          Cookies.remove('accessToken');
+          // this.props.dispatch(userCheck());
+          return;
+        }
+        throw new Error(res.statusText);
+      }
+      return res.json();
+		})
 	}
-	
+
 	handleNextQuestion(event) {
 		// If the current question has been answered, user can go to the next question
 		// if there are no verbs left in the quizVerbs queue, the quiz is done
