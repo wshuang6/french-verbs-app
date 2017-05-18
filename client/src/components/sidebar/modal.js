@@ -1,58 +1,50 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import './modal.css';
+import {closeModal} from './actions';
 
 // import {toggleAddBookmark, createBookmarks, editBookmark, updateBookmarks} from './actions';
 
 export function Modal (props) {
-  return ();
-    hide(event) {
-        event.preventDefault();
-        this.props.dispatch(editBookmark(false));
-        if (this.props.toggleAdd) {
-            this.props.dispatch(toggleAddBookmark());
-        }
+  let modalInfo; 
+  if (props.displayModal === 'help') {
+    modalInfo = (<p>Some help text goes here</p>)
+  }
+  else if (props.displayModal === 'scores') {
+    let items = [];
+    for (let i = props.pastScores.length - 1; i > props.pastScores.length - 6 && i >= 0; i--) {
+      let item = props.pastScores[i];
+      let formattedItem = <tr key={i}><td>{item.date}</td><td>{item.quizType}</td><td>{item.verbGroup}</td><td>{item.score}</td><td>{item.wrong}</td></tr>;
+      if (i === props.pastScores.length - 1) {
+        items.push(formattedItem);
+      } 
+      else {
+        items.push(formattedItem);
+      }
     }
-    postBookmark(e) {
-        e.preventDefault();
-
-    }
-    
-    render() {
-        let editValues = this.props.editing ? this.props.editing : "";
-        const folderSelect = this.props.folders.map((folder) => {
-            return (<option key={folder.folderid} value={folder.folderid}>{folder.foldername}</option>)
-        })
-        return (
-            <div className="overlay" id="modal">
-              <form onSubmit={(e) => this.postBookmark(e)}>
-                <label htmlFor="url">Bookmark URL<br /></label> 
-                <input type="text" name="url" id="url"
-                    className="text" autoComplete="off"
-                    placeholder="Bookmark URL" required defaultValue={editValues.url} /><br />
-                <label htmlFor="title">Bookmark name<br /></label>
-                <input type="text" name="title" id="title"
-                    className="text" autoComplete="off"
-                    placeholder="Bookmark name" required defaultValue={editValues.title} /><br />
-                <label htmlFor="notes">Notes<br /></label> 
-                <input type="text" name="notes" id="notes"
-                    className="text" autoComplete="off"
-                    placeholder="Notes" defaultValue={editValues.notes} /><br />
-                <label htmlFor="image">Image URL<br /></label> 
-                <input type="text" name="image" id="image"
-                    className="text" autoComplete="off"
-                    placeholder="Image URL" defaultValue={editValues.image} /><br />
-                <label htmlFor="folderid">Place in folder<br /></label>
-                <select name="folderid">
-                    <option value="default">Unorganized PageMarks</option>
-                    {folderSelect}
-                </select><br />
-                <input type="submit" id="submitEditsButton" name="submit" value="Submit" />
-              </form>
-              <a className="close" href="#" onClick={e => this.hide(e)}>Never mind</a>
-            </div>
-        );
-    }
+    modalInfo = (
+      <table>
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Quiz Type</th>
+            <th>Verb Group</th>
+            <th>Score</th>
+            <th>Incorrect Answers</th>
+          </tr>
+        </thead>
+        <tbody>
+          {items}
+        </tbody>
+      </table>
+    )
+  }
+  return (
+    <div className='overlay'>
+      {modalInfo}
+      <button onClick={e => props.dispatch(closeModal())}>Close me</button>
+    </div>
+  );
 }
 
 const mapStateToProps = (state) => ({

@@ -27,7 +27,7 @@ export const displayHelp = () => ({
 })
 
 export const getQuizScores = () => dispatch => {
-  this.props.dispatch(fetchScoresReq());
+  dispatch(fetchScoresReq());
   const accessToken = Cookies.get('accessToken');
   fetch(`/api/verbs/score`, {headers: {'Authorization': `Bearer ${accessToken}`}})  
     .then(res => {
@@ -40,6 +40,6 @@ export const getQuizScores = () => dispatch => {
       }
       return res.json();
 		}).then(scores => {
-      this.props.dispatch(updateScores(scores))
+      dispatch(updateScores(scores))
 		});
 }

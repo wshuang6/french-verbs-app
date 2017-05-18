@@ -2,12 +2,15 @@ import React from 'react';
 import {connect} from 'react-redux';
 import {setCategory, setVerb} from '../quiz-select/actions';
 import {getQuizScores, displayHelp} from './actions'
+import Modal from './modal';
 import './index.css';
 
 class Sidebar extends React.Component {
     render() {
+        const modal = (this.props.displayModal) ? <Modal /> : null;
       return (
         <div className="sidebar">
+            {modal}
             <ul>
                 <li onClick={e => {
                     this.props.dispatch(setCategory(null));
@@ -22,7 +25,8 @@ class Sidebar extends React.Component {
 }
 
 const mapStateToProps = (state) => ({
-    // currentUser: state.app.currentUser
+    displayModal: state.sidebar.displayModal,
+    pastScores: state.sidebar.pastScores,
 })
 
 export default connect(mapStateToProps)(Sidebar);
