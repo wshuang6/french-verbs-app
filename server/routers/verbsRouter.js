@@ -4,7 +4,6 @@ const jsonParser = bodyParser.json();
 const { VerbGroup } = require('../models/verbGroup');
 const {User} = require('../models/users');
 const router = express.Router();
-const passport= require('passport');
 
 router.use(jsonParser);
 
@@ -37,7 +36,6 @@ function shuffleFirstFour (array) {
     array[i] = temp;
   }
 }
-// asdf
 
 router.get('/:group', (req, res) => {
   let quizVerbs = [];
@@ -155,6 +153,25 @@ router.put('/', (req, res) => {
       return User.findByIdAndUpdate(user._id, {$set: {dreadful, troll}}, {new: true})
     })
     .then(stuff => res.status(202))
+});
+
+router.get('/score', (req, res) => {
+  return User
+    .findOne({googleId: req.user.googleId})
+    .exec()
+    .then(user => res.json(user.quizScores))
+});
+
+router.put('/score', (req, res) => {
+  return User
+    .findOne({googleId: req.user.googleId})
+    .exec()
+    .then(user => {
+      let quizScores = user.quizScores;
+      quizScores.push(req.body);
+      return User.findByIdAndUpdate(user._id, {$set: {quizScores}}, {new: true});
+    })
+    .then(stuff => res.status(200));
 });
 
 module.exports = {verbsRouter: router};
