@@ -1,7 +1,10 @@
 import { SET_USER, USER_CHECK} from './actions';
+import { TOGGLE_SIGN_OUT } from '../header/actions'
+
 const initialState = {
   userCheck: false,  
-  currentUser: null
+  currentUser: null,
+  displaySignOut: false
 }
 
 export default (state=initialState, action) => {
@@ -17,6 +20,12 @@ export default (state=initialState, action) => {
             ...state,
             userCheck: true
         }
+    }
+    if (action.type === TOGGLE_SIGN_OUT) {
+        return {
+            ...state,
+            displaySignOut: !state.displaySignOut
+        };
     }
     return state;
 }

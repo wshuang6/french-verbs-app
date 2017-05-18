@@ -60,9 +60,7 @@ class App extends React.Component {
                 <Header />
                 <div className="under-header">
                     {sidebar}
-                    <div className="main-component-container">
-                        {mainComponent}
-                    </div>
+                    {mainComponent}
                 </div>
             </div>
         );

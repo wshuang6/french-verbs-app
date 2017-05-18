@@ -1,14 +1,24 @@
 .quiz-select-menu {
-  width: 300px;
+  max-width: 350px;
+  text-align: center;
 }
 
-li {
+.quiz-select-menu ul {
+  padding-left: 0;
+}
+
+.quiz-select-menu ul li {
   list-style: none;
-}
-.quiz-select {
-  border: gray solid 1px;
+  margin-top: 15px;
 }
 
-.quiz-select:nth-child(even) {
-  background-color: lightgray;
+.quiz-select-menu ul li span {
+  padding: 3px 40px 3px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.quiz-select-menu ul li span:hover {
+  background-color: #3796e1;
+  color: #fff;
 }
