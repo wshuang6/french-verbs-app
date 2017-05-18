@@ -205,6 +205,7 @@ export class Quiz extends React.Component {
 			.then(() => {
 				this.props.dispatch(setCategory(null));
 				this.props.dispatch(setVerb(null));
+				return;
 			});
 
 			// Clear out state for the current quiz

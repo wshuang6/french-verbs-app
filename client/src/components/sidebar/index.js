@@ -1,6 +1,7 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import {setCategory, setVerb} from '../quiz-select/actions';
+import {getQuizResult} from './actions'
 import './index.css';
 
 class Sidebar extends React.Component {
@@ -12,7 +13,7 @@ class Sidebar extends React.Component {
                     this.props.dispatch(setCategory(null));
                     this.props.dispatch(setVerb(null))
                 }}>Quizzes</li>
-                <li>My scores</li>
+                <li onClick={e => this.props.dispatch(getQuizResult())}>My scores</li>
                 <li>Help</li>
             </ul>
         </div>
