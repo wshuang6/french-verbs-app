@@ -4,7 +4,8 @@ import './modal.css';
 
 // import {toggleAddBookmark, createBookmarks, editBookmark, updateBookmarks} from './actions';
 
-export class Modal extends React.Component {
+export function Modal (props) {
+  return ();
     hide(event) {
         event.preventDefault();
         this.props.dispatch(editBookmark(false));
@@ -55,6 +56,8 @@ export class Modal extends React.Component {
 }
 
 const mapStateToProps = (state) => ({
-
+  displayModal: state.sidebar.displayModal,
+  pastScores: state.sidebar.pastScores,
+  loading: state.sidebar.loading
 })
 export default connect(mapStateToProps)(Modal);
