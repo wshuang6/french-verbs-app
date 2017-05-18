@@ -6,10 +6,11 @@ export const fetchVerbsReq = () => ({
 });
 
 export const UPDATE_VERBS = 'UPDATE_VERBS';
-export const updateVerbs = (verbs) => ({
+export const updateVerbs = (verbs, quizType) => ({
   type: UPDATE_VERBS,
   loading: false,
-  verbs
+  verbs,
+  quizType
 });
 
 // For authorization later
@@ -18,7 +19,8 @@ export const updateVerbs = (verbs) => ({
 // 	'Authorization': `Bearer ${accessToken}`
 // }
 
-export const fetchVerbGroup = (group) => dispatch => {
+
+export const fetchVerbGroup = (group, quizType) => dispatch => {
   const accessToken = Cookies.get('accessToken');
   dispatch(fetchVerbsReq());
   fetch(`/api/verbs/${group}`, {headers: {'Authorization': `Bearer ${accessToken}`}})  
@@ -34,18 +36,15 @@ export const fetchVerbGroup = (group) => dispatch => {
       return res.json();
 		}).then(verbs => {
 			// dispatch to store
-			dispatch(updateVerbs(verbs));
+			dispatch(updateVerbs(verbs, quizType));
 		});
 }
 
 export const REGISTER_ANSWER = 'REGISTER_ANSWER';
-export const registerAnswer = (choice, isCorrect) => ({
+export const registerAnswer = (choice, isCorrect, currentVerb) => ({
   type: REGISTER_ANSWER,
   choice,
-  isCorrect
+  isCorrect,
+  currentVerb
 });
 
-export const CLEAR_CURRENT = 'CLEAR_CURRENT';
-export const clearCurrent = () => ({
-  type: CLEAR_CURRENT
-});

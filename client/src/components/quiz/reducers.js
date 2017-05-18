@@ -1,83 +1,50 @@
-import { FETCH_VERBS_REQ, UPDATE_VERBS, REGISTER_ANSWER, CLEAR_CURRENT } from './actions';
+import { FETCH_VERBS_REQ, UPDATE_VERBS, REGISTER_ANSWER } from './actions';
 import { SET_CATEGORY } from '../quiz-select/actions';
-
-function getIncorrectChoices(verbs, current, incorrect=[]) {
-  // This function will get random incorrect answers by looping over the entire 
-  // array of verbs, grabbing random english translations from other verb objects
-  if (incorrect.length === 3) {
-    return incorrect;
-  }
-  let randomIdx = Math.floor(Math.random() * verbs.length);
-  let item = verbs[randomIdx];
-  if (incorrect.indexOf(item.en) > -1 || item.en === current) {
-    return getIncorrectChoices(verbs, current, incorrect);
-  }
-  incorrect.push(item.en);
-  return getIncorrectChoices(verbs, current, incorrect);
-}
-
-function getPositions(correct, incorrectArr) {
-  // This function randomly shuffles the incorrect answers and the correct answer 
-  // with an array and returns the new array
-  let positions = [];
-  let correctIdx;
-  let correctRandom = Math.floor(Math.random() * 4);
-  let random = Math.floor(Math.random() * 4);
-  let i = 0;
-  let isPushed = false;
-  while (positions.length < 4) {
-    if (random === correctRandom && !isPushed) {
-      positions.push(correct);
-      correctIdx = positions.length - 1;
-      isPushed = true;
-    }
-    else if (i < incorrectArr.length) {
-      positions.push(incorrectArr[i]);
-      i++;
-    }
-    random = Math.floor(Math.random() * 4);
-  }
-	return {positions, correctIdx};
-}
+import { getIncorrectChoices, getPositions, makeQueue, getTenseQuizChoices } from './helpers'
 
 const initialState = {
   originalTen: false,
-  quizVerbs: false,
+  quizVerbs: false, 
   score: 0,
+  wrong: 0,
   currentQuestion: false,
   loading: false
 };
 
 const quiz = (state=initialState, action) => {
   if (action.type === FETCH_VERBS_REQ) {
-    return Object.assign({}, state, {
-      originalTen: false,
-      score: 0,
+    return Object.assign({}, initialState, {
       loading: action.loading 
     });
   }
   else if (action.type === UPDATE_VERBS) {
     // If the array of 10 verbs was just now received, set originalTen to
-    // action.verbs, as it will otherwise be false.
+    // action.verbs, as it will otherwise be false. Also create your queue
     // You need to save a copy of the original ten verbs in order for the 
-    // getIncorrectChoices function to work proerly 
+    // getIncorrectChoices function to work proerly for the translation quiz
+    let verbsQueue;
+    if (!state.quizVerbs) {
+      verbsQueue = makeQueue(action.verbs);
+    } else {
+      verbsQueue = state.quizVerbs;
+    }
     let verbsArr = state.originalTen ? state.originalTen : action.verbs; 
-    // Get a random length 3 array of incorrect choices
-    let incorrectArr = getIncorrectChoices(verbsArr, action.verbs[0].en);
-    // Sort incorrect and correct choices in defined positions
-    // that will translate into how they are rendered in the quiz
-    let results = getPositions(action.verbs[0].en, incorrectArr);
+    let currentVerb = verbsQueue.dequeue();
+    let results;
+    if (action.quizType === 'translation') {
+      let incorrectArr = getIncorrectChoices(verbsArr, currentVerb.en);
+      results = getPositions(currentVerb.en, incorrectArr);
+    }
+    else {
+      // It is a tense quiz
+      results = getTenseQuizChoices(action.quizType, currentVerb);
+    }
     return Object.assign({}, state, {
-      // Current available verbs for questions
-      quizVerbs: action.verbs,
-      // reference of the original 10 verbs received from api
+      quizVerbs: verbsQueue,
       originalTen: verbsArr,
-      // All relevant data on the state of the current question. 
-      // The current verb being tested is always the first verb in the 
-      // quizVerbs array. 
       currentQuestion: {
-        currentVerb: action.verbs[0],
-        incorrect: incorrectArr,
+        currentVerb,
+        person: results.person,
         positions: results.positions,
         correctIdx: results.correctIdx,
         choice: false,
@@ -87,19 +54,23 @@ const quiz = (state=initialState, action) => {
     });
   }
   else if (action.type === REGISTER_ANSWER) {
+    // If user answered incorrectly, enqueue the current verb so they 
+    // are tested on it again during this session -> Needs to be pure
+    // update the fields in currentQuestion field to reflect that user entered an answer
+    if (!action.isCorrect) {
+      state.quizVerbs.enqueue(action.currentVerb); 
+    }
     return Object.assign({}, state, {
-      // If the user answered correctly, increment score by one
-       score: action.isCorrect ? state.score += 1 : state.score,
-       // update the fields in currentQuestion field to reflect that user
-       // has submitted an answer. User will be informed if they are correct 
-       // or not thanks to color highlighting.  
-       currentQuestion: Object.assign({}, state.currentQuestion, {
+      quizVerbs: state.quizVerbs,
+      score: action.isCorrect ? state.score += 1 : state.score,
+      wrong: action.isCorrect ? state.wrong : state.wrong += 1,  
+      currentQuestion: Object.assign({}, state.currentQuestion, {
         choice: action.choice,
 			  isCorrect: action.isCorrect
        })
     });
   } 
-  else if (action.type === CLEAR_CURRENT || SET_CATEGORY) {
+  else if (action.type === SET_CATEGORY) {
     // Just revert back to the initial state to receive new verb data
     return Object.assign({}, state, initialState);
   }
