@@ -164,7 +164,7 @@ export class Quiz extends React.Component {
         }
         throw new Error(res.statusText);
       }
-      return res.json();
+      return;
 		})
 	}
 

@@ -63,7 +63,6 @@ passport.use(
             return User.findOne({accessToken: token})
                 .exec()
                 .then((user) => {
-                    console.log(user)
                     if (!user) {
                         return done(null, false);
                     }

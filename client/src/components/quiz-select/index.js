@@ -19,7 +19,7 @@ class QuizSelect extends React.Component {
                         <li><h3>Quizzes by Category</h3></li>
                         <li className="quiz-select" onClick={e => this.setCategory('Translation')}>Translation</li>
                         <li className="quiz-select" onClick={e => this.setCategory('Present Tense')}>Present Tense</li>
-                        <li className="quiz-select" onClick={e => this.setCategory('Imperfect Tense')}>ImperfectTense</li>
+                        <li className="quiz-select" onClick={e => this.setCategory('Imperfect Tense')}>Imperfect Tense</li>
                         <li className="quiz-select" onClick={e => this.setCategory('Future Tense')}>Future Tense</li>
                         <li className="quiz-select" onClick={e => this.setCategory('Conditional Tense')}>Conditional Tense</li>
                         <li className="quiz-select" onClick={e => this.setCategory('Subjunctive Tense')}>Subjunctive Tense</li>
