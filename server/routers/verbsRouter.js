@@ -146,8 +146,6 @@ router.put('/', (req, res) => {
           littleStruggle[verbCategory][verb] = 1;
         };
       }
-      console.log('littlestruggle' + littleStruggle);
-      console.log('biggstruggle' + bigStruggle);
       return User.findByIdAndUpdate(user._id, {$set: {littleStruggle, bigStruggle}}, {new: true})
     })
     .then(stuff => res.status(202))

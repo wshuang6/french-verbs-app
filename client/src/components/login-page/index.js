@@ -1,12 +1,18 @@
 import React from 'react';
 import './index.css';
-import googSignIn from './images/g-sign-in.png';
 
 export default function LoginPage() {
     return (
-        <a href={'/api/auth/google'}>
-            <img className='google-sign-in' src={googSignIn} alt="Sign in with Google" />
-        </a>
+        <div className='log-in'>
+            <div className='global-container'>
+                <h1>Verb Flashcards for Students of French</h1>
+                <div className='prompt-bin'>
+                    <div className='btn-container'>
+                        <button>How's it work?</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     );
 }
 
