@@ -16,7 +16,6 @@ function getRandomItem(getArr, total, compareObject) {
   }
   else {
     compareObject[item.fr] = true;
-    console.log(compareObject[item.fr])
     return item;
   }
 }
@@ -39,7 +38,6 @@ function shuffleFirstFour (array) {
 
 router.get('/:group', (req, res) => {
   let quizVerbs = [];
-  let groupVerbs;
   const { group } = req.params;
   VerbGroup
     .find({group})
@@ -47,36 +45,34 @@ router.get('/:group', (req, res) => {
     .then(group => {
       // For now, only send back 10 random verbs from the queried group
       // This will be updated with the spaced repitition algorithm
-      groupVerbs = group[0].verbs;
-      return;
+      // groupVerbs = group[0].verbs;
+      return group[0].verbs;
     })
-    .then(stuff => {
+    .then(groupVerbs => {
       return User
         .findOne({googleId: req.user.googleId})
         .exec()
         .then(user => {
-          let troll = user.troll[group];
-          let trollArray = Object.keys(troll);
-          // console.log('trollarr' +  trollArray)
-          let dreadful = user.dreadful[group];
-          let dreadfulArray = Object.keys(dreadful);
-          // console.log('dreadarr' + dreadfulArray)
-          if (trollArray.length > 0) {
-            if (trollArray.length <= 3) {
-              quizVerbs = trollArray;
+          // let bigStruggle = user.bigStruggle[group];
+          let bigStruggleArray = Object.keys(user.bigStruggle[group]);
+          // let littleStruggle = user.littleStruggle[group];
+          let littleStruggleArray = Object.keys(user.littleStruggle[group]);
+          if (bigStruggleArray.length > 0) {
+            if (bigStruggleArray.length <= 3) {
+              quizVerbs = bigStruggleArray;
             }
             else {
               for (i = 0; i < 3; i++) {
-                shuffleLast(trollArray);
-                quizVerbs.push(trollArray.pop())
+                shuffleLast(bigStruggleArray);
+                quizVerbs.push(bigStruggleArray.pop());
               }
             }
           }
-          let dreadfulCounter = 0;
-          while (quizVerbs.length < 4 && dreadfulCounter < 3 && dreadfulArray.length > 0) {
-            shuffleLast(dreadfulArray);
-            quizVerbs.push(dreadfulArray.pop());
-            dreadfulCounter++;
+          let littleStruggleCounter = 0;
+          while (quizVerbs.length < 4 && littleStruggleCounter < 3 && littleStruggleArray.length > 0) {
+            shuffleLast(littleStruggleArray);
+            quizVerbs.push(littleStruggleArray.pop());
+            littleStruggleCounter++;
           }
           let usedWords = {};
           // console.log('quizverbs' + quizVerbs)
@@ -114,43 +110,43 @@ router.put('/', (req, res) => {
     .findOne({googleId: req.user.googleId})
     .exec()
     .then(user => {
-      let dreadful = user.dreadful;
-      let troll = user.troll;
-      let dreadfulNum = dreadful[verbCategory][verb];
-      let trollNum = troll[verbCategory][verb];
+      let littleStruggle = user.littleStruggle;
+      let bigStruggle = user.bigStruggle;
+      let littleStruggleNum = littleStruggle[verbCategory][verb];
+      let bigStruggleNum = bigStruggle[verbCategory][verb];
       if (req.body.isCorrect) {
-        if (dreadfulNum) {
-          if (dreadfulNum > 1) {
-            delete dreadful[verbCategory][verb];
+        if (littleStruggleNum) {
+          if (littleStruggleNum > 1) {
+            delete littleStruggle[verbCategory][verb];
           }
           else {
-            dreadful[verbCategory][verb]++;
+            littleStruggle[verbCategory][verb]++;
           }
         }
-        else if (trollNum) {
-          if (trollNum > 1) {
-            delete troll[verbCategory][verb];
-            dreadful[verbCategory][verb] = 1;
+        else if (bigStruggleNum) {
+          if (bigStruggleNum > 1) {
+            delete bigStruggle[verbCategory][verb];
+            littleStruggle[verbCategory][verb] = 1;
           }
           else {
-            troll[verbCategory][verb]++;
+            bigStruggle[verbCategory][verb]++;
           }
         }
         else return;
       }
       else {
-        if (dreadfulNum) {
-          delete dreadful[verbCategory][verb];
-          troll[verbCategory][verb] = 1;
+        if (littleStruggleNum) {
+          delete littleStruggle[verbCategory][verb];
+          bigStruggle[verbCategory][verb] = 1;
         }
-        else if (trollNum) {
-          troll[verbCategory][verb] = 1;
+        else if (bigStruggleNum) {
+          bigStruggle[verbCategory][verb] = 1;
         }
         else {
-          dreadful[verbCategory][verb] = 1;
+          littleStruggle[verbCategory][verb] = 1;
         };
       }
-      return User.findByIdAndUpdate(user._id, {$set: {dreadful, troll}}, {new: true})
+      return User.findByIdAndUpdate(user._id, {$set: {littleStruggle, bigStruggle}}, {new: true})
     })
     .then(stuff => res.status(202))
 });

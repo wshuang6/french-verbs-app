@@ -63,6 +63,7 @@ passport.use(
             return User.findOne({accessToken: token})
                 .exec()
                 .then((user) => {
+                    console.log(user)
                     if (!user) {
                         return done(null, false);
                     }
@@ -98,7 +99,9 @@ app.get('/api/auth/logout', (req, res) => {
 });
 
 app.get('/api/me',
-    passport.authenticate('bearer', {session: false, failureRedirect: '/'}),
+    passport.authenticate('bearer', {session: false
+        // , failureRedirect: '/'
+    }),
     (req, res) => {
         return res.json({
         googleId: req.user.googleId,
@@ -108,7 +111,9 @@ app.get('/api/me',
 
 // API endpoints
 
-app.use('/api/verbs', passport.authenticate('bearer', {session: false, failureRedirect: '/'}),  verbsRouter);
+app.use('/api/verbs', passport.authenticate('bearer', {session: false
+    // , failureRedirect: '/'
+}),  verbsRouter);
 
 // Serve the built client
 app.use(express.static(path.resolve(__dirname, '../client/build')));
