@@ -20,6 +20,7 @@ function getRandomItem(getArr, total, compareObject) {
   }
 }
 
+//Function to find random item, move it to end of array
 function shuffleLast (array) {
   let randomIndex = Math.floor(Math.random()*array.length)
   let temp = array[array.length - 1];
@@ -27,6 +28,7 @@ function shuffleLast (array) {
   array[randomIndex] = temp;
 }
 
+//Randomizes first four items as they may be struggle verbs
 function shuffleFirstFour (array) {
   for (let i = 0; i < 4; i++) {
     let randomIndex = Math.floor(Math.random()*array.length)
@@ -36,6 +38,7 @@ function shuffleFirstFour (array) {
   }
 }
 
+//Getting past quiz scores
 router.get('/score', (req, res) => {
   return User
     .findOne({googleId: req.user.googleId})
@@ -43,6 +46,7 @@ router.get('/score', (req, res) => {
     .then(user => res.json(user.quizScores))
 });
 
+//Sending performance on current quiz
 router.put('/score', (req, res) => {
   return User
     .findOne({googleId: req.user.googleId})
@@ -55,6 +59,7 @@ router.put('/score', (req, res) => {
     .then(() => res.status(200).json());
 });
 
+//Endpoint for getting 10 verbs, including verbs the user struggles with
 router.get('/:group', (req, res) => {
   let quizVerbs = [];
   const { group } = req.params;
@@ -62,9 +67,6 @@ router.get('/:group', (req, res) => {
     .find({group})
     .exec()
     .then(group => {
-      // For now, only send back 10 random verbs from the queried group
-      // This will be updated with the spaced repitition algorithm
-      // groupVerbs = group[0].verbs;
       return group[0].verbs;
     })
     .then(groupVerbs => {
@@ -72,9 +74,9 @@ router.get('/:group', (req, res) => {
         .findOne({googleId: req.user.googleId})
         .exec()
         .then(user => {
-          // let bigStruggle = user.bigStruggle[group];
+          //Returns max 3 verbs from bigStruggle
+          //Then returns max 3 verbs from littleStruggle, with max 4 verbs total from both sets
           let bigStruggleArray = Object.keys(user.bigStruggle[group]);
-          // let littleStruggle = user.littleStruggle[group];
           let littleStruggleArray = Object.keys(user.littleStruggle[group]);
           if (bigStruggleArray.length > 0) {
             if (bigStruggleArray.length <= 3) {
@@ -93,8 +95,9 @@ router.get('/:group', (req, res) => {
             quizVerbs.push(littleStruggleArray.pop());
             littleStruggleCounter++;
           }
+          //Tracks if word has already been inserted into quizVerbs
           let usedWords = {};
-          // console.log('quizverbs' + quizVerbs)
+          //Replaces words with all necessary info for frontend
           quizVerbs = quizVerbs.map(word => {
             let item;
             for (i = 0; i < groupVerbs.length && (item === undefined); i++) {
@@ -110,25 +113,26 @@ router.get('/:group', (req, res) => {
             quizVerbs.push(item);
           }
           shuffleFirstFour(quizVerbs);
-          // console.log(quizVerbs)
           return res.status(200).json(quizVerbs);
         })
       })     
 });
 
-// First we consult the user model for the given user to see if they 
-// have any verbs they are stuggling with 
-// We pull those verbs from our verbs data and insert them at the beginning of a queue
-// We get the rest of the verbs randomly from the verbs data in the database.
-
+// Update the user model here based on the verb received and the result
 router.put('/', (req, res) => {
-  // Update the user model here based on the verb received and the result
   let verb = req.body.verb.fr;
   let verbCategory = req.body.verbCategory;
   return User
     .findOne({googleId: req.user.googleId})
     .exec()
     .then(user => {
+      //If verb not in either struggle, insert into littleStruggle with value 1
+      //If verb in littleStruggle, and user got it wrong, demote to bigStruggle with value 1
+      //If verb in littleStruggle, and user got it right, increment value 1
+      //If verb in littleStruggle and num will reach 3, remove it from littleStruggle
+      //If verb in bigStruggle, and user got it wrong, change value to 1
+      //If verb in bigStruggle, and user got it right, increment value 1
+      //If verb in bigStruggle, and num will reach 3, promote it to bigStruggle
       let littleStruggle = user.littleStruggle;
       let bigStruggle = user.bigStruggle;
       let littleStruggleNum = littleStruggle[verbCategory][verb];
@@ -165,7 +169,6 @@ router.put('/', (req, res) => {
           littleStruggle[verbCategory][verb] = 1;
         };
       }
-
       return User.findByIdAndUpdate(user._id, {$set: {littleStruggle, bigStruggle}}, {new: true})
     })
     .then(() => res.status(202).json())

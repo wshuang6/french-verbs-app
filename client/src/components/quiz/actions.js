@@ -13,13 +13,6 @@ export const updateVerbs = (verbs, quizType) => ({
   quizType
 });
 
-// For authorization later
-// This request will need the following
-// headers: {
-// 	'Authorization': `Bearer ${accessToken}`
-// }
-
-
 export const fetchVerbGroup = (group, quizType) => dispatch => {
   const accessToken = Cookies.get('accessToken');
   dispatch(fetchVerbsReq());
@@ -28,14 +21,12 @@ export const fetchVerbGroup = (group, quizType) => dispatch => {
       if (!res.ok) {
         if (res.status === 401) {
           Cookies.remove('accessToken');
-          // this.props.dispatch(userCheck());
           return;
         }
         throw new Error(res.statusText);
       }
       return res.json();
 		}).then(verbs => {
-			// dispatch to store
 			dispatch(updateVerbs(verbs, quizType));
 		});
 }

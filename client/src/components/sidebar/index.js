@@ -7,20 +7,20 @@ import './index.css';
 
 class Sidebar extends React.Component {
     render() {
-        const modal = (this.props.displayModal) ? <Modal /> : null;
-      return (
-        <div className="sidebar">
-            {modal}
-            <ul>
-                <li onClick={e => {
-                    this.props.dispatch(setCategory(null));
-                    this.props.dispatch(setVerb(null))
-                }}>Quizzes</li>
-                <li onClick={e => this.props.dispatch(getQuizScores())}>My scores</li>
-                <li onClick={e => this.props.dispatch(displayHelp())}>Help</li>
-            </ul>
-        </div>
-      );
+    const modal = (this.props.displayModal) ? <Modal /> : null;
+        return (
+            <div className="sidebar">
+                {modal}
+                <ul>
+                    <li onClick={e => {
+                        this.props.dispatch(setCategory(null));
+                        this.props.dispatch(setVerb(null))
+                    }}>Quizzes</li>
+                    <li onClick={e => this.props.dispatch(getQuizScores())}>My scores</li>
+                    <li onClick={e => this.props.dispatch(displayHelp())}>Help</li>
+                </ul>
+            </div>
+        );
     }
 }
 

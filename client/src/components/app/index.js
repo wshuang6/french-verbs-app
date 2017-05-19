@@ -1,7 +1,7 @@
 import React from 'react';
 import * as Cookies from 'js-cookie';
 
-import { setUser, fetchUser } from './actions';
+import { fetchUser } from './actions';
 import Dashboard from '../dashboard';
 import LoginPage from '../login-page';
 
