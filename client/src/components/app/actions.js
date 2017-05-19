@@ -1,10 +1,41 @@
-export const SET_USER = 'SET_USER';
-export const setUser = (currentUser) => ({
-    type: SET_USER,
-    currentUser,
+export const USER_REQUEST = 'USER_REQUEST';
+export const userRequest = () => ({
+    type: USER_REQUEST,
+    loading: true
 });
 
-export const USER_CHECK = 'USER_CHECK';
-export const userCheck = () => ({
-    type: USER_CHECK
+export const SET_USER = 'SET_USER';
+export const setUser = (currentUser, statusCode) => ({
+    type: SET_USER,
+    currentUser,
+    loading: false,
+    statusCode
 });
+
+export const fetchUser = accessToken => dispatch => {
+    dispatch(userRequest());
+    return fetch('/api/me', {
+        headers: {
+            'Authorization': `Bearer ${accessToken}`
+        }
+    })
+    .then(res => {
+        if (!res.ok) {
+            if (res.status === 401) {
+                dispatch(setUser(null, res.status));
+                return;
+            } else {
+                dispatch(setUser(null, 500));
+            }
+            throw new Error(res.statusText);
+        }
+        return res.json();
+    })
+    .then(currentUser => { 
+        dispatch(setUser(currentUser, 200));
+        return;
+    })
+    .catch(err => { 
+        throw new Error(err); 
+    });
+}

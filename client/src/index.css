@@ -18,7 +18,7 @@ body, #root {
   min-height: 100%;
 }
 
-#root, #root > div {
+#root, #root > div, .dashboard-container {
   position:absolute; 
   top:0; 
   bottom:0; 

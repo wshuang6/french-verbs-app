@@ -1,68 +1,46 @@
 import React from 'react';
 import * as Cookies from 'js-cookie';
 
-import { setUser, userCheck } from './actions';
-import Quiz from '../quiz';
+import { setUser, fetchUser } from './actions';
+import Dashboard from '../dashboard';
 import LoginPage from '../login-page';
-import Sidebar from '../sidebar';
-import QuizSelect from '../quiz-select';
-import Header from '../header';
-import {connect} from 'react-redux';
-import './index.css';
+// import Header from '../header';
+
+import {BrowserRouter as Router, Route, Redirect} from 'react-router-dom';
+import { connect } from 'react-redux';
 
 class App extends React.Component {
     componentDidMount() {
         const accessToken = Cookies.get('accessToken');
         if (accessToken) {
-            fetch('/api/me', {
-                headers: {
-                    'Authorization': `Bearer ${accessToken}`
-                }
-            }).then(res => {
-                if (!res.ok) {
-                    if (res.status === 401) {
-                        Cookies.remove('accessToken');
-                        this.props.dispatch(userCheck());
-                        return;
-                    }
-                    throw new Error(res.statusText);
-                }
-                return res.json();
-            }).then(currentUser =>
-                this.props.dispatch(setUser(currentUser))
-            );
+           this.props.dispatch(fetchUser(accessToken));
+        }
+    }
+
+    handleRouting() {
+        if (this.props.loading) {
+            return (<p>Loading...</p>);
+        }
+        else if (!this.props.loading && this.props.statusCode >= 400) {
+            Cookies.remove('accessToken');
+            return (<LoginPage />);
+        }
+        else if (!this.props.loading && this.props.currentUser) {
+            return (<Redirect to={'/dashboard'} />);
         }
         else {
-            // There is no access token
-            return this.props.dispatch(userCheck());
+            return (<LoginPage />);
         }
     }
 
     render() {
-        let mainComponent;
-        if (!this.props.userCheck) {
-            mainComponent = (<p>Loading...</p>);
-        }
-        if (this.props.userCheck && !this.props.currentUser) {
-            mainComponent = (<LoginPage />);
-        }
-        else if (!this.props.quizCategory || !this.props.verbCategory) {
-            mainComponent = (<QuizSelect />);
-        }
-        else {
-            mainComponent = (<Quiz />);
-        }
-
-        const sidebar = (this.props.currentUser) ? (<Sidebar />) : null;
-
         return (
-            <div>
-                <Header />
-                <div className="under-header">
-                    {sidebar}
-                    {mainComponent}
+            <Router>     
+                <div>
+                    <Route exact path="/" component={() => this.handleRouting()} />
+                    <Route exact path="/dashboard" component={Dashboard} />
                 </div>
-            </div>
+            </Router> 
         );
     }
 }
@@ -70,8 +48,8 @@ class App extends React.Component {
 const mapStateToProps = (state) => ({
     userCheck: state.app.userCheck,
     currentUser: state.app.currentUser,
-    quizCategory: state.quizSelect.quizCategory,
-    verbCategory: state.quizSelect.verbCategory,
-})
+    loading: state.app.loading,
+    statusCode: state.app.statusCode
+});
 
 export default connect(mapStateToProps)(App);

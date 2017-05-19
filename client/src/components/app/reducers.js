@@ -1,24 +1,26 @@
-import { SET_USER, USER_CHECK} from './actions';
+import { SET_USER, USER_REQUEST } from './actions';
 import { TOGGLE_SIGN_OUT } from '../header/actions'
 
-const initialState = {
-  userCheck: false,  
+const initialState = { 
   currentUser: null,
-  displaySignOut: false
+  loading: false,
+  statusCode: null,
+  displaySignOut: false,
 }
 
 export default (state=initialState, action) => {
-    if(action.type === SET_USER) {
+    if(action.type === USER_REQUEST) {
         return {
             ...state,
-            userCheck: true,
-            currentUser: action.currentUser
+            loading: action.loading
         }
     }
-    if (action.type === USER_CHECK) {
+    if (action.type === SET_USER) {
         return {
             ...state,
-            userCheck: true
+            currentUser: action.currentUser,
+            statusCode: action.statusCode,
+            loading: action.loading,
         }
     }
     if (action.type === TOGGLE_SIGN_OUT) {
