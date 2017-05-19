@@ -7,10 +7,7 @@ import { toggleSignOut } from './actions';
 
 export function Header (props) {
 
-  console.log(props);
-
   function doSignOut(event) {
-    console.log('hi');
     return props.dispatch(toggleSignOut());
   }
 
@@ -26,28 +23,35 @@ export function Header (props) {
     }
   }
 
-  let userPrompt = (props.currentUser) ? (
-    <div className='logout' onClick={e => doSignOut(e)}>
-      <div className='user'>
-        <div className="goog-logo">
-          <img src={googLogo} alt='google' />
+  function getUserPrompt() {
+    if (props.currentUser) {
+      return (
+        <div className='logout' onClick={e => doSignOut(e)}>
+          <div className='user'>
+            <div className="goog-logo">
+              <img src={googLogo} alt='google' />
+            </div>
+            <p>{props.currentUser.displayName}</p>
+          </div>
+          {getSignOutDisplay()}
         </div>
-        <p>{props.currentUser.displayName}</p>
-      </div>
-      {getSignOutDisplay()}
-    </div>
-  ) : (
-    <div className='google-container'>
-      <a href={'/api/auth/google'}>
-        <img className='google-sign-in' src={googSignIn} alt="Sign in with Google" />
-      </a>
-    </div>
-  );
+      );
+    }
+    else {
+      return (
+        <div className='google-container'>
+          <a href={'/api/auth/google'}>
+            <img className='google-sign-in' src={googSignIn} alt="Sign in with Google" />
+          </a>
+        </div>
+      );
+    }
+  }
 
   return (
     <div className='header'>
       <h2 className='logo'>FrenchX</h2>
-      {userPrompt}
+      {getUserPrompt()}
     </div>
   );
 }

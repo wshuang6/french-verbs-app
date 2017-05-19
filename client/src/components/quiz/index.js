@@ -215,18 +215,16 @@ export class Quiz extends React.Component {
 	render() {
 		if (this.props.quizVerbs) {
 			return (
-				<div className="main-component-container">
-					<div className='quiz-wrapper'>
-						<div className='title-container'>
-							<h3>{this.getQuizTitle()}</h3>
-							<div>
-								{this.getUserInfo()}
-							</div>
-							<h3>{this.getQuestionPrompt()}</h3>
+				<div className='quiz-wrapper'>
+					<div className='title-container'>
+						<h3>{this.getQuizTitle()}</h3>
+						<div>
+							{this.getUserInfo()}
 						</div>
-						{this.getchoices()}
-						{this.getBtn()}
+						<h3>{this.getQuestionPrompt()}</h3>
 					</div>
+					{this.getchoices()}
+					{this.getBtn()}
 				</div>
 			);
 		}
