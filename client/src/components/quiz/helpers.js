@@ -105,29 +105,27 @@ export function getTenseQuizChoices(tense, currentVerb, positions=[], res) {
   }
 }
 
-const exampleVerb = {
-  fr: 'regarder', 
-  en: 'to look, to see, to watch', 
-  present: {
-    singular: ['regarde', 'regardes', 'regarde'],
-    plural: ['regardons', 'regardez', 'regardent']
-  },
-  imperfect: {
-    singular: ['regardais', 'regardais', 'regardait'],
-    plural: ['regardions', 'regardiez', 'regardaient']
-  },
-  future: {
-    singular: ['regarderai', 'regarderas', 'regardera'],
-    plural: ['regarderons', 'regarderez', 'regarderont']
-  }, 
-  conditional: {
-    singular: ['regarderais', 'regarderais', 'regarderait'],
-    plural: ['regarderions', 'regarderiez', 'regarderaient']
-  },
-  subjunctive: {
-    singular: ['regarde', 'regardes', 'regarde'],
-    plural: ['regardions', 'regardiez', 'regardent']
-  } 
-};
-
-console.log(getTenseQuizChoices('present', exampleVerb));
+// const exampleVerb = {
+//   fr: 'regarder', 
+//   en: 'to look, to see, to watch', 
+//   present: {
+//     singular: ['regarde', 'regardes', 'regarde'],
+//     plural: ['regardons', 'regardez', 'regardent']
+//   },
+//   imperfect: {
+//     singular: ['regardais', 'regardais', 'regardait'],
+//     plural: ['regardions', 'regardiez', 'regardaient']
+//   },
+//   future: {
+//     singular: ['regarderai', 'regarderas', 'regardera'],
+//     plural: ['regarderons', 'regarderez', 'regarderont']
+//   }, 
+//   conditional: {
+//     singular: ['regarderais', 'regarderais', 'regarderait'],
+//     plural: ['regarderions', 'regarderiez', 'regarderaient']
+//   },
+//   subjunctive: {
+//     singular: ['regarde', 'regardes', 'regarde'],
+//     plural: ['regardions', 'regardiez', 'regardent']
+//   } 
+// };

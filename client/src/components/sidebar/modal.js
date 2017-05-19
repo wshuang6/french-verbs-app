@@ -3,16 +3,18 @@ import {connect} from 'react-redux';
 import './modal.css';
 import {closeModal} from './actions';
 
-// import {toggleAddBookmark, createBookmarks, editBookmark, updateBookmarks} from './actions';
-
 export function Modal (props) {
   let modalInfo; 
-  if (props.displayModal === 'help') {
-    modalInfo = (<p>This is a quiz that lets you practice translating or conjugating French verbs. Pick a quiz category and a verb group and keep going until you've gotten all ten of the verbs correct.  Bonne chance!</p>)
+  if (props.loading) {
+    return (<p>Loading...</p>);
+  }
+  else if (props.displayModal === 'help') {
+    modalInfo = (<p>This is a quiz that lets you practice translating or conjugating French verbs. Pick a quiz category and a verb group and keep going until you've gotten all ten of the verbs correct. Bonne chance!</p>)
   }
   else if (props.displayModal === 'scores') {
     let items = [];
     for (let i = props.pastScores.length - 1; i > props.pastScores.length - 6 && i >= 0; i--) {
+      //Renders most recent five results into table
       let item = props.pastScores[i];
       let date = new Date(item.date).toLocaleString('en-US', {timeZoneName: 'short'});
       let percent = `${Math.round(item.score/(item.score+item.wrong)*100)}%`;
