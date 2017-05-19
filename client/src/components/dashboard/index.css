@@ -1,3 +1,7 @@
+.dashboard-container {
+  color: #4a4a4a;
+}
+
 .under-header {
   height: 100%;
   display: flex;
@@ -6,6 +10,7 @@
 .main-component-container {
   width: 80%;
   padding-right: 15%;
+  background-color: #f7fafd; 
 }
 
 .main-component {

@@ -50,7 +50,13 @@
   padding: 3px 40px;
   background: none;
   border-radius: 5px;
-  border: 1px solid #D1D1D1;
+  border: 1px solid #0066cc;
+  color: #0066cc;
   font-size: 15px;
   cursor: pointer;
 }
+
+.quiz-wrapper button:hover {
+  background-color: #0066cc;
+  color: #fff;
+} 

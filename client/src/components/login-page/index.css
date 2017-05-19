@@ -1,6 +1,8 @@
-/*.log-in {
-  width: 100%;
-}*/
+.log-in {
+ background-color: #0066cc;
+ color: #fff;
+ min-height: 575px;
+}
 
 .log-in .global-container {
   max-width: 700px;
@@ -14,13 +16,12 @@
 
 .prompt-bin .btn-container button {
   display: inline-block;
-  font-size: 20px;
+  font-size: 18px;
   padding-top: 5px;
   padding-bottom: 5px;
-  padding-left: 60px;
-  padding-right: 60px;
-  background-color: transparent;
-  border: 2px solid #306ace;
-  color: #306ace;
-  border-radius: 5px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #3284d6;
+  color: #fff;
+  border-radius: 10px;
 }

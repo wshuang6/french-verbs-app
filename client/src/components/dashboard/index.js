@@ -7,6 +7,10 @@ import Quiz from '../quiz';
 import './index.css';
 import {connect} from 'react-redux';
 
+const logoColor = {
+  color: '#0066cc'
+};
+
 export class Dashboard extends React.Component {
 
   handleView() {
@@ -21,7 +25,7 @@ export class Dashboard extends React.Component {
   render() {
     return (
       <div className='dashboard-container'>
-        <Header />
+        <Header logoStyle={logoColor}/>
         <div className="under-header">
           <Sidebar />
           <div className="main-component-container">
