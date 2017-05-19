@@ -8,14 +8,15 @@ import {closeModal} from './actions';
 export function Modal (props) {
   let modalInfo; 
   if (props.displayModal === 'help') {
-    modalInfo = (<p>Some help text goes here</p>)
+    modalInfo = (<p>This is a quiz that lets you practice translating or conjugating French verbs. Pick a quiz category and a verb group and keep going until you've gotten all ten of the verbs correct.  Bonne chance!</p>)
   }
   else if (props.displayModal === 'scores') {
     let items = [];
     for (let i = props.pastScores.length - 1; i > props.pastScores.length - 6 && i >= 0; i--) {
       let item = props.pastScores[i];
-      let date = Date(item.date).toLocaleString('en-US', {timeZoneName: 'short'});
-      let formattedItem = <tr key={i}><td>{date}</td><td>{item.quizType}</td><td>{item.verbGroup}</td><td>{item.score}</td><td>{item.wrong}</td></tr>;
+      let date = new Date(item.date).toLocaleString('en-US', {timeZoneName: 'short'});
+      let percent = `${Math.round(item.score/(item.score+item.wrong)*100)}%`;
+      let formattedItem = <tr key={i}><td>{date}</td><td>{item.quizType}</td><td>{item.verbGroup}</td><td>{item.score}</td><td>{item.wrong}</td><td>{percent}</td></tr>;
       if (i === props.pastScores.length - 1) {
         items.push(formattedItem);
       } 
@@ -30,8 +31,9 @@ export function Modal (props) {
             <th>Date</th>
             <th>Quiz Type</th>
             <th>Verb Group</th>
-            <th>Score</th>
+            <th>Right Answers</th>
             <th>Incorrect Answers</th>
+            <th>Percent</th>
           </tr>
         </thead>
         <tbody>
