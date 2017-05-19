@@ -3,7 +3,7 @@ import {connect} from 'react-redux';
 import './index.css';
 import googLogo from './images/GGL_logo_googleg_18.png';
 import googSignIn from './images/g-sign-in.png';
-import { toggleSignOut } from './actions';
+import { toggleSignOut } from '../app/actions';
 
 export function Header (props) {
 

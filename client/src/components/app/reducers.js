@@ -1,5 +1,4 @@
-import { SET_USER, USER_REQUEST } from './actions';
-import { TOGGLE_SIGN_OUT } from '../header/actions'
+import { SET_USER, USER_REQUEST,  TOGGLE_SIGN_OUT  } from './actions';
 
 const initialState = { 
   currentUser: null,
