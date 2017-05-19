@@ -4,6 +4,9 @@ import {setCategory, setVerb} from '../quiz-select/actions';
 import {getQuizScores, displayHelp} from './actions'
 import Modal from './modal';
 import './index.css';
+import FaPencil from 'react-icons/lib/fa/pencil';
+import FaQuestion from 'react-icons/lib/fa/question';
+import FaThList from 'react-icons/lib/fa/th-list';
 
 class Sidebar extends React.Component {
     render() {
@@ -15,9 +18,13 @@ class Sidebar extends React.Component {
                 <li onClick={e => {
                     this.props.dispatch(setCategory(null));
                     this.props.dispatch(setVerb(null))
-                }}>Quizzes</li>
-                <li onClick={e => this.props.dispatch(getQuizScores())}>My scores</li>
-                <li onClick={e => this.props.dispatch(displayHelp())}>Help</li>
+                }}><span className='icon-wrapper'><FaPencil /></span>QUIZZES</li>
+                <li onClick={e => this.props.dispatch(getQuizScores())}>
+                    <span className='icon-wrapper'><FaThList /></span>MY SCORES
+                </li>
+                <li onClick={e => this.props.dispatch(displayHelp())}>
+                    <span className='icon-wrapper'><FaQuestion /></span><span className='txt-wrapper'>HELP</span>
+                </li>
             </ul>
         </div>
       );

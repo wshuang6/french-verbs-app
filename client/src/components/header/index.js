@@ -50,7 +50,7 @@ export function Header (props) {
 
   return (
     <div className='header'>
-      <h2 className='logo'>FrenchX</h2>
+      <h2 className='logo' style={props.logoStyle}>FrenchX</h2>
       {getUserPrompt()}
     </div>
   );

@@ -2,6 +2,8 @@
   width: 20%;
   height: 100%;
   border-right: 1px solid #D1D1D1;
+  color: #fff;
+  background-color: #0066cc;
 }
 
 .sidebar ul {
@@ -11,6 +13,15 @@
 .sidebar li {
   list-style: none;
   font-size: 18px;
-  margin-top: 25px;
+  margin-top: 40px;
   cursor: pointer;
 }
+
+.sidebar li .icon-wrapper {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+/*.sidebar:hover {
+  width: 20%;
+}*/
