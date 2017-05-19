@@ -49,8 +49,8 @@ export function Header (props) {
   }
 
   return (
-    <div className='header'>
-      <h2 className='logo' style={props.logoStyle}>FrenchX</h2>
+    <div className='header' style={props.backStyle}>
+      <h2 className='logo' style={props.logoStyle}>Oui Verb</h2>
       {getUserPrompt()}
     </div>
   );
