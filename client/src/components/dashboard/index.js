@@ -11,6 +11,10 @@ const logoColor = {
   color: '#0066cc'
 };
 
+const headerBackground = {
+  backgroundColor: '#fff'
+};
+
 export class Dashboard extends React.Component {
 
   handleView() {
@@ -25,7 +29,7 @@ export class Dashboard extends React.Component {
   render() {
     return (
       <div className='dashboard-container'>
-        <Header logoStyle={logoColor}/>
+        <Header logoStyle={logoColor} backStyle={headerBackground}/>
         <div className="under-header">
           <Sidebar />
           <div className="main-component-container">
