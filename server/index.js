@@ -98,9 +98,7 @@ app.get('/api/auth/logout', (req, res) => {
 });
 
 app.get('/api/me',
-    passport.authenticate('bearer', {session: false
-        // , failureRedirect: '/'
-    }),
+    passport.authenticate('bearer', {session: false}),
     (req, res) => {
         return res.json({
         googleId: req.user.googleId,
@@ -110,9 +108,7 @@ app.get('/api/me',
 
 // API endpoints
 
-app.use('/api/verbs', passport.authenticate('bearer', {session: false
-    // , failureRedirect: '/'
-}),  verbsRouter);
+app.use('/api/verbs', passport.authenticate('bearer', {session: false}),  verbsRouter);
 
 // Serve the built client
 app.use(express.static(path.resolve(__dirname, '../client/build')));

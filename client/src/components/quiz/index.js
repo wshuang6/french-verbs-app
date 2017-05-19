@@ -15,10 +15,6 @@ export class Quiz extends React.Component {
 		}
 	}
 
-	componentWillUnmount() {
-		console.log('unmounting');
-	}
-
 	modifyStr(quizType) {
 		quizType = quizType.toLowerCase().trim();
 		const idx = quizType.indexOf(" ");
@@ -137,7 +133,6 @@ export class Quiz extends React.Component {
 			const isCorrect = cq.positions[cq.correctIdx] === choice;
 			// sends question and user data to /api
 			this.recordAnswer(this.props.currentVerb, isCorrect, this.props.verbCategory)
-			.then(result => console.log(result))
 			.catch(err => console.error(err));
 			// Register the user's answer with the store to update state
 			this.props.dispatch(registerAnswer(choice, isCorrect, this.props.currentVerb));	
@@ -156,11 +151,9 @@ export class Quiz extends React.Component {
 			body: JSON.stringify({verb, isCorrect, verbCategory})
 		})
 		.then(res => {
-			console.log(res)
       if (!res.ok) {
         if (res.status === 401) {
           Cookies.remove('accessToken');
-          // this.props.dispatch(userCheck());
           return;
         }
         throw new Error(res.statusText);
@@ -181,7 +174,6 @@ export class Quiz extends React.Component {
 	}
 
 	handleEndQuiz(event) {
-		console.log('i am attempting to end the quiz')
 		const accessToken = Cookies.get('accessToken');
 		return fetch('/api/verbs/score', {
 			headers: {
@@ -203,13 +195,11 @@ export class Quiz extends React.Component {
 				return;
 			})
 			.then(() => {
+				// Clear out state for the current quiz
 				this.props.dispatch(setCategory(null));
 				this.props.dispatch(setVerb(null));
 				return;
 			});
-
-			// Clear out state for the current quiz
-
 	}
 
 	render() {

@@ -5,7 +5,6 @@ import QuizSelect from '../quiz-select';
 import Quiz from '../quiz';
 
 import './index.css';
-import {Route, Redirect} from 'react-router-dom';
 import {connect} from 'react-redux';
 
 const logoColor = {

@@ -36,7 +36,6 @@ class QuizSelect extends React.Component {
                     <li className="quiz-select" onClick={e => this.setVerb('ir')}><span>-ir Verbs</span></li>
                     <li className="quiz-select" onClick={e => this.setVerb('re')}><span>-re Verbs</span></li>
                     <li className="quiz-select" onClick={e => this.setVerb('irregular')}><span>Irregular Verbs</span></li>
-                    {/*<li className="quiz-select" onClick={e => this.setVerb('all')}>All Verbs</li>*/}
                 </ul>
             </div>
         )

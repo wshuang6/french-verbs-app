@@ -12,6 +12,11 @@ export const setUser = (currentUser, statusCode) => ({
     statusCode
 });
 
+export const TOGGLE_SIGN_OUT = 'TOGGLE_SIGN_OUT';
+export const toggleSignOut = () => ({
+    type: TOGGLE_SIGN_OUT
+});
+
 export const fetchUser = accessToken => dispatch => {
     dispatch(userRequest());
     return fetch('/api/me', {

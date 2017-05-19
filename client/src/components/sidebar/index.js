@@ -10,7 +10,7 @@ import FaThList from 'react-icons/lib/fa/th-list';
 
 class Sidebar extends React.Component {
     render() {
-        const modal = (this.props.displayModal) ? <Modal /> : null;
+      const modal = (this.props.displayModal) ? <Modal /> : null;
       return (
         <div className="sidebar">
             {modal}
