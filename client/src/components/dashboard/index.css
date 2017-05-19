@@ -5,6 +5,7 @@
 .under-header {
   height: 100%;
   display: flex;
+  background-color: #E5EFF9;
 }
 
 @media only screen and (max-width: 490px) {
