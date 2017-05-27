@@ -7,6 +7,7 @@
 body {
   margin: 0;
   padding: 0;
+  min-height: 100%;
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 }
 
@@ -19,14 +20,17 @@ html {
   background-size: cover;
 }
 
-body, #root {
+#root, #root > div, .dashboard-container  {
   min-height: 100%;
-}
-
-#root, #root > div, .dashboard-container {
   position:absolute; 
   top:0; 
   bottom:0; 
   right:0; 
   left:0; 
+}
+
+.loading-prompt-login {
+  padding-top: 20px;
+  padding-left: 50px;
+  font-size: 20px;
 }

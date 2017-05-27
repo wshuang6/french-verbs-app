@@ -25,13 +25,13 @@
   }
 }
 .logout {
-  padding-top: 15px;
+  padding-top: 11px;
   cursor: pointer;
 }
 
 .header .logo {
   font-size: 32px;
-  margin-top: 7px;
+  margin-top: 0;
 }
 
 .user {
@@ -57,13 +57,22 @@ a {
   text-decoration: none;
 }
 
-.google-container {
-  width: 220px;
+.google-container a {
+  display: block;
+  padding: 7px 35px;
+  border-radius: 5px;
+  border: 1px solid #2D2F31;
+  margin-top: 2px;
 }
 
 .google-container img {
-  width: 100%;
-  vertical-align: top;
+  vertical-align: middle;
+}
+
+.google-container span {
+  color: #2D2F31;
+  vertical-align: middle;
+  padding-left: 20px;
 }
 
 .sign-out-anchor {
