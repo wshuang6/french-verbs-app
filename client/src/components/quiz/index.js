@@ -98,8 +98,8 @@ export class Quiz extends React.Component {
 			// the quiz continues
 			return (
 				<div className='user-info-flex'>
-					<p>Question: {`${this.props.score + this.props.wrong}`}</p>
-					<p>Score: {this.props.score}</p>
+					<h3>Question: {`${this.props.score + this.props.wrong}`}</h3>
+					<h3>Score: {this.props.score}</h3>
 				</div>
 			);
 		}
@@ -205,22 +205,24 @@ export class Quiz extends React.Component {
 	render() {
 		if (this.props.quizVerbs) {
 			return (
-				<div className='quiz-wrapper'>
-					<div className='title-container'>
-						<h3>{this.getQuizTitle()}</h3>
-						<div>
-							{this.getUserInfo()}
+				<div className='main-component'>
+					<div className='quiz-wrapper'>
+						<div className='title-container'>
+							<h2>{this.getQuizTitle()}</h2>
+							<div>
+								{this.getUserInfo()}
+							</div>
+							<h1>{this.getQuestionPrompt()}</h1>
 						</div>
-						<h3>{this.getQuestionPrompt()}</h3>
+						{this.getchoices()}
+						{this.getBtn()}
 					</div>
-					{this.getchoices()}
-					{this.getBtn()}
 				</div>
 			);
 		}
 		else {
 			return (
-				<div className='quiz-wrapper'>Loading</div>
+				<div className='main-component'><div className='quiz-wrapper'>Loading</div></div>
 			);
 		}
 	}

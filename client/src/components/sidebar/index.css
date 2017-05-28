@@ -1,5 +1,5 @@
 .sidebar {
-  width: 20%;
+  width: 25%;
   height: 100%;
   border-right: 1px solid #D1D1D1;
   color: #fff;
@@ -12,7 +12,7 @@
 
 .sidebar li {
   list-style: none;
-  font-size: 18px;
+  font-size: 20px;
   margin-top: 40px;
   cursor: pointer;
 }
@@ -48,7 +48,7 @@
 }
 
 .sidebar li .icon-wrapper {
-  font-size: 24px;
+  font-size: 26px;
   margin-right: 10px;
 }
 
