@@ -1,6 +1,6 @@
 # Oui Verb 
 
-![Homepage image](https://github.com/wshuang6/french-verbs-app/tree/master/client/images/dash.png)
+![App Dashboard](https://github.com/wshuang6/french-verbs-app/blob/master/client/images/dash.png)
 
 ## Description
 
