@@ -14,7 +14,7 @@ export function LoginPage(props) {
   const modal = (props.displayModal) ? <Modal /> : null;
     return (
         <div className='log-in'>
-            <img src={tower} className="bg" />
+            <img src={tower} alt="Eiffel Tower" className="bg" />
             <Header backStyle={headerStyle} />
             {modal}
             <div className='global-container'>
