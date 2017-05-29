@@ -8,13 +8,15 @@
 	margin: 0.75em;
   padding: 1.35em 1.1em;
 	width: 15em;
-	background: #fffce1;
+  background: #fffce1;
+  /*background: #f9efe5;*/
   text-transform: uppercase;
 	letter-spacing: 1px;
 	font-weight: 800;
 	border-radius: 20px/50px;
   text-align: center;
   cursor: pointer;
+  border: 1px solid #D1D1D1;
 }
 
 .main-component .select-title {

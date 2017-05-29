@@ -1,7 +1,18 @@
 .log-in {
- background-color: rgba(229, 239, 249, 0.92);
+ background-color: rgba(229, 239, 249, 0.88);
  color: #2D2F31;
  min-height: 100%;
+}
+
+.bg {
+  min-width: 100%;
+  min-height: 100%;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 .log-in .global-container {
