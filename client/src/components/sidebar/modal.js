@@ -52,9 +52,10 @@ export function Modal (props) {
   }
   else if (props.displayModal === 'scores') {
     let items = [];
-    for (let i = props.pastScores.length - 1; i > props.pastScores.length - 6 && i >= 0; i--) {
+    // for (let i = props.pastScores.length - 1; i > props.pastScores.length - 6 && i >= 0; i--) 
+    props.pastScores.forEach((item, i) => {
       //Renders most recent five results into table
-      let item = props.pastScores[i];
+      // let item = props.pastScores[i];
       let date = new Date(item.date).toLocaleString('en-US', {timeZoneName: 'short'});
       let percent = `${Math.round(item.score/(item.score+item.wrong)*100)}%`;
       let formattedItem = <tr key={i}><td>{date}</td><td>{item.quizType}</td><td>{item.verbGroup}</td><td>{item.score}</td><td>{item.wrong}</td><td>{percent}</td></tr>;
@@ -64,7 +65,7 @@ export function Modal (props) {
       else {
         items.push(formattedItem);
       }
-    }
+    })
     modalInfo = (
       <div className='modalInfo'>
         <table>
@@ -87,8 +88,10 @@ export function Modal (props) {
   }
   return (
     <div className='overlay'>
+      <div className='modal-button-wrapper'>
+      <button className='modal-button' onClick={e => props.dispatch(closeModal())}>X</button>
+      </div>
       {modalInfo}
-      <button onClick={e => props.dispatch(closeModal())}>Close me</button>
     </div>
   );
 }
