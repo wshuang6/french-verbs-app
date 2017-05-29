@@ -1,99 +1,43 @@
-# Space Repetition Starter Kit
+# Oui Verb 
 
-This should get you started with your Spaced Repetition app. We're giving you your basic directory structure, and the framework for authentication. However, we aren't persisting any information, and it will be your job to add Mongo/Mongoose. There are helpful comments in `server/index.js`.
+![Homepage image]()
 
-In development, the starter kit runs two servers. One of which is from `create-react-app`, so you get all the fancy hot reloading, etc, the other is the backend. In production, we generate a static folder with all our React stuff, and serve that with Express.
+## Description
 
-## Getting started
+Oui Verb provides beginner-level students of French with a platform for learning how to conjugate and translate French verbs.
 
-First, fork the repo on Github to your own account
+* [View the Deployed Site]()
 
-### Clone the repo
+**Target Audience: Students of French** 
+* Users can sign up using their google account
+* Users can take 24 different verb conjugation/ translation quizzes to improve their knowledge of the French language
+* Users are more likely to be tested on the verbs they struggle with the most thanks to our spaced-repetition algorithm
+* Users can view their progress over time
 
-```sh
-$ git clone https://github.com/YOUR_USERNAME_HERE/spaced-repetition-starter
-```
+# Spaced-Repetition Algorithm
 
-```sh
-$ cd spaced-repetition-starter
-```
+Spaced repetition is a learning technique that emphasizes the review of unlearned material over learned material. For example,  
 
-```sh
-$ npm install
-```
+# Getting Started with the project
 
-You can run it locally now with `npm run dev`, but the Google OAuth stuff won't work without your own credentials.
+### Set up
 
-### Get Google OAuth Credentials
+* Move into your projects directory: `cd ~/YOUR_PROJECTS_DIRECTORY`
+* Clone this repository: `https://github.com/wshuang6/french-verbs-app`
+* Install the dependencies: `npm install`
+* Run it locally with `npm run dev`
 
-Visit https://console.developers.google.com
+## Built With
+* CSS
+* React.js
+* React/Redux
+* Node.js
+* Express.js
+* MongoDB
+* Mongoose.js
+* Passport.js
+* Google OAuth API
 
-* Navigate to Library 
-* Under 'Social APIs', Click 'Google+ API'
-* Click 'Enable' at the top (if it isn't already)
+## Authors
 
-
-* Navigate to Credentials
-* It may require you to configure OAuth consent screen.
-* Click 'Create credentials'
-* Choose 'OAuth Client ID'
-* Choose 'Web application'
-* Add `http://localhost:8080` to Authorized JavaScript origins
-* Add `http://localhost:8080/api/auth/google/callback` to Authorized redirect URIs
-* Click 'Create'
-
-You should get a Client ID and Secret.
-
-Back in your project locally, create an `secret.js` file in the `/server` directory:
-
-(Use the client ID and secret we just got from Google)
-
-```js
-module.exports = {
-  CLIENT_ID: 'yourId123.apps.googleusercontent.com',
-  CLIENT_SECRET: 'yoursecret'
-}
-```
-
-This file is in ignored by git because it is in your `.gitignore`. Never commit or push 'secret.js', the client id and secret need to be kept safe like a password.
-
-### Local Development
-
-```sh
-  npm run dev
-```
-
-## Deployment to Heroku
-
-```sh
-$ heroku create
-```
-
-Configure your Google client id and secret on Heroku:
-
-```sh
-$ heroku config:set CLIENT_ID=yourId123.apps.googleusercontent.com CLIENT_SECRET=yoursecret
-```
-
-(You can also do this on dashboard.heroku.com under your app's settings.)
-
-### To deploy:
-
-```sh
-$ git push heroku master
-```
-
-Your app should be live on Heroku soon, but if you try to `Log in with Google`, you will get a 400 error. Take note of your new app's URL.
-
-
-#### Updating Google API authorized origins
-
-
-To fix this, go back to the Google API Dashboard and:
-
-(You might need to use `http` and or `http` for your Heroku URIs)
-
-- Add `http://your-app-name-123.herokuapp.com` to Authorized JavaScript origins
-- Add `http://your-app-name-123.herokuapp.com/api/auth/google/callback` to Authorized redirect URIs
-
-Try to log in  `Log in with Google` again, and you're golden!
+William Huang & Peter Szujewski
