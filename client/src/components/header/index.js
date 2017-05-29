@@ -2,7 +2,6 @@ import React from 'react';
 import {connect} from 'react-redux';
 import './index.css';
 import googLogo from './images/GGL_logo_googleg_18.png';
-import googSignIn from './images/g-sign-in.png';
 import { toggleSignOut } from '../app/actions';
 
 export function Header (props) {
@@ -41,7 +40,8 @@ export function Header (props) {
       return (
         <div className='google-container'>
           <a href={'/api/auth/google'}>
-            <img className='google-sign-in' src={googSignIn} alt="Sign in with Google" />
+            <img src={googLogo} alt='google' />          
+            <span>Sign in with Google</span>
           </a>
         </div>
       );

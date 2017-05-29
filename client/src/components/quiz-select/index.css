@@ -1,24 +1,36 @@
-.quiz-select-menu {
-  max-width: 350px;
-  text-align: center;
-}
-
 .quiz-select-menu ul {
   padding-left: 0;
 }
 
 .quiz-select-menu ul li {
   list-style: none;
-  margin-top: 15px;
+  display: inline-block;
+	margin: 0.75em;
+  padding: 1.35em 1.1em;
+	width: 15em;
+  background: #fffce1;
+  /*background: #f9efe5;*/
+  text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 800;
+	border-radius: 20px/50px;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid #D1D1D1;
 }
 
-.quiz-select-menu ul li span {
-  padding: 3px 40px 3px;
-  border-radius: 5px;
+.main-component .select-title {
+  margin-left: 0.75em;
+  width: 32.2em;
+  text-align: center;
+}
+
+.back-option {
+  margin-top: 35px;
   cursor: pointer;
 }
 
-.quiz-select-menu ul li span:hover {
-  background-color: #3796e1;
-  color: #fff;
+.back-option:hover {
+  color: #0066cc;
 }
+

@@ -3,6 +3,7 @@ import Header from '../header';
 import Sidebar from '../sidebar';
 import QuizSelect from '../quiz-select';
 import Quiz from '../quiz';
+import { Redirect } from 'react-router-dom';
 
 import './index.css';
 import {connect} from 'react-redux';
@@ -12,7 +13,8 @@ const logoColor = {
 };
 
 const headerBackground = {
-  backgroundColor: '#fff'
+  backgroundColor: '#fff',
+  padding: '40px 80px 10px'
 };
 
 export class Dashboard extends React.Component {
@@ -27,24 +29,29 @@ export class Dashboard extends React.Component {
   }
 
   render() {
-    return (
-      <div className='dashboard-container'>
-        <Header logoStyle={logoColor} backStyle={headerBackground}/>
-        <div className="under-header">
-          <Sidebar />
-          <div className="main-component-container">
-            {this.handleView()}
+    if (this.props.currentUser) {
+      return (
+        <div className='dashboard-container'>
+          <Header logoStyle={logoColor} backStyle={headerBackground}/>
+          <div className="under-header">
+            <Sidebar />
+            <div className="main-component-container">
+              {this.handleView()}
+            </div>
           </div>
         </div>
-      </div>
-    );
-  }
-
+      );
+    } 
+    else {
+      return (<Redirect to={'/'} />);
+    }
+  } 
 }
 
 const mapStateToProps = (state) => ({
+  currentUser: state.app.currentUser,
   quizCategory: state.quizSelect.quizCategory,
-  verbCategory: state.quizSelect.verbCategory,
+  verbCategory: state.quizSelect.verbCategory
 })
 
 export default connect(mapStateToProps)(Dashboard);

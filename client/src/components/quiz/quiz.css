@@ -1,8 +1,11 @@
 .quiz-wrapper {
   max-width: 500px;
-  margin: 20px auto;
   text-align: center;
-  padding-top: 20px;
+}
+
+.quiz-wrapper .title-container h1 {
+  font-size: 2.25em;
+  margin-bottom: 15px;
 }
 
 .quiz-wrapper .choices-bin {
@@ -14,13 +17,14 @@
 }
 
 .quiz-wrapper .choices-bin .choice {
-  border: 1px solid black;
+  border: 1px solid #2D2F31;
   width: 47%;
   text-align: center;
-  margin-top: 10px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  margin-top: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   border-radius: 3px;
+  font-size: 1.250em;
   cursor: pointer;
 }
 
@@ -41,18 +45,19 @@
   padding-right: 20px;
 }
 
-.quiz-wrapper .user-info {
-  text-align: center;
+.quiz-wrapper .user-info-flex h3 {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .quiz-wrapper button {
-  margin-top: 20px;
-  padding: 3px 40px;
+  margin-top: 25px;
+  padding: 5px 80px;
   background: none;
   border-radius: 5px;
   border: 1px solid #0066cc;
   color: #0066cc;
-  font-size: 15px;
+  font-size: 1.125em;
   cursor: pointer;
 }
 

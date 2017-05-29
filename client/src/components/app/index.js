@@ -18,7 +18,7 @@ class App extends React.Component {
 
     handleRouting() {
         if (this.props.loading) {
-            return (<p>Loading...</p>);
+            return (<p className='loading-prompt-login'>Loading...</p>);
         }
         else if (!this.props.loading && this.props.statusCode >= 400) {
             Cookies.remove('accessToken');
