@@ -1,6 +1,6 @@
 # Oui Verb 
 
-![Homepage image]()
+![Homepage image](https://github.com/wshuang6/french-verbs-app/tree/master/client/images/dash.png)
 
 ## Description
 
@@ -16,7 +16,7 @@ Oui Verb provides beginner-level students of French with a platform for learning
 
 # Spaced-Repetition Algorithm
 
-Spaced repetition is a learning technique that emphasizes the review of unlearned material over learned material. For example,  
+Spaced repetition is a learning technique that emphasizes the review of unlearned material over learned material. For example...  
 
 # Getting Started with the project
 
