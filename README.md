@@ -4,7 +4,7 @@
 
 ## Description
 
-Oui Verb provides beginner-level students of French with a platform for learning how to conjugate and translate French verbs.
+Oui Verb provides beginner-level students of French with a platform for learning how to conjugate and translate French verbs. To that end, Oui Verb implements the principles of spaced-repetition to build an effective learning experience.
 
 * [View the Deployed Site]()
 
@@ -16,7 +16,7 @@ Oui Verb provides beginner-level students of French with a platform for learning
 
 # Spaced-Repetition Algorithm
 
-Spaced repetition is a learning technique that emphasizes the review of unlearned material over learned material. For example...  
+Spaced repetition is a learning technique that emphasizes the review of unlearned over learned material. Oui Verb implements this approach by monitoring users' progress and recording their quiz results as they work through our content. When a user incorrectly conjugates or translates a verb during one of our quizzes, a reference to that verb is saved as a part of that user's data. Later, when the user takes another quiz, Oui Verb first checks these references to grab verbs that the user has struggled with in the past. 
 
 # Getting Started with the project
 
