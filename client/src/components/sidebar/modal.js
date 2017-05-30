@@ -10,7 +10,7 @@ export function Modal (props) {
   }
   else if (props.displayModal === 'help') {
     modalInfo = (
-      <div className='modalInfo'>
+      <div className='modalInfo help'>
         <h2>What am I being tested on?</h2>
         <p>
           These quizzes test your ability to conjugate different types of verbs in 

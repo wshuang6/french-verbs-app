@@ -40,6 +40,15 @@ tr:hover {
 	padding-right: 35%;
 }
 
+.help {
+	text-align: left;
+	padding: 10px 170px 60px;
+}
+
+.help h2 {
+	margin-top: 25px;
+}
+
 .modal-button {
 	display: inline;
 	padding-top: 3px;
