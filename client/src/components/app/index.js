@@ -20,16 +20,15 @@ class App extends React.Component {
         if (this.props.loading) {
             return (<p className='loading-prompt-login'>Loading...</p>);
         }
-        else if (!this.props.loading && this.props.statusCode >= 400) {
+        if (this.props.statusCode >= 400) {
             Cookies.remove('accessToken');
             return (<LoginPage />);
         }
-        else if (!this.props.loading && this.props.currentUser) {
+        if (this.props.currentUser) {
             return (<Redirect to={'/dashboard'} />);
         }
-        else {
-            return (<LoginPage />);
-        }
+
+        return (<LoginPage />);
     }
 
     render() {

@@ -30,7 +30,7 @@ function shuffleLast (array) {
 
 //Randomizes first four items as they may be struggle verbs
 function shuffleFirstFour (array) {
-  for (let i = 0; i < 4; i++) {
+  for (let i = 0; i < 4; i++) { // change to forEach for imperative style
     let randomIndex = Math.floor(Math.random()*array.length)
     let temp = array[randomIndex];
     array[randomIndex] = array[i];

@@ -196,7 +196,7 @@ export class Quiz extends React.Component {
 			})
 			.then(() => {
 				// Clear out state for the current quiz
-				this.props.dispatch(setCategory(null));
+				this.props.dispatch(setCategory(null)); // should use undefined instead
 				this.props.dispatch(setVerb(null));
 				return;
 			});

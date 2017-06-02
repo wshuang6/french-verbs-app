@@ -23,9 +23,7 @@ export class Dashboard extends React.Component {
     if (!this.props.quizCategory || !this.props.verbCategory) {
       return (<QuizSelect />);
     }
-    else {
-      return (<Quiz />);
-    }
+    return (<Quiz />);
   }
 
   render() {
