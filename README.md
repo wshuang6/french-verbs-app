@@ -6,7 +6,7 @@
 
 Oui Verb provides beginner-level students of French with a platform for learning how to conjugate and translate French verbs. To that end, Oui Verb implements the principles of spaced-repetition to build an effective learning experience.
 
-* [View the Deployed Site]()
+* [View the Deployed Site](https://ouiverb.herokuapp.com/)
 
 **Target Audience: Students of French** 
 * Users can sign up using their google account
