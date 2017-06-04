@@ -1,6 +1,12 @@
+.main-component-container {
+  width: 75%;
+  background-color: #E5EFF9;
+}
+
 .main-component {
   max-width: 700px;
-  margin: 50px auto 30px;
+  padding: 50px 0 30px;
+  margin: 0 auto;
 }
 
 .dashboard-container {
@@ -13,23 +19,16 @@
   background-color: #E5EFF9;
 }
 
-@media only screen and (max-width: 490px) {
+@media only screen and (max-width: 880px) {
 	.under-header {
-		display: block;
+		display: initial;
 	}
-}
-
-.main-component-container {
-  width: 100%;
-  background-color: #E5EFF9;
-}
-
-@media only screen and (max-width: 490px) {
   .main-component-container {
-    padding-right: 0;
-    margin: auto;
+    height: inherit;
+    width: initial;
   }
   .main-component {
-    margin: 20px;
+    height: inherit;
   }
 }
+

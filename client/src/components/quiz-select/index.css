@@ -8,7 +8,8 @@
 	margin: 0.75em;
   padding: 1.35em 1.1em;
 	width: 15em;
-  background: #fffce1;
+  background: #fff;
+  /*background: #fffce1;*/
   /*background: #f9efe5;*/
   text-transform: uppercase;
 	letter-spacing: 1px;
@@ -34,3 +35,15 @@
   color: #0066cc;
 }
 
+@media only screen and (max-width: 880px) {
+  .main-component .select-title h2 {
+    margin: 0;
+  }
+  .main-component .select-title {
+    margin: 0;
+    width: initial;
+  }
+  .quiz-select-menu ul {
+    text-align: center;
+  }
+}

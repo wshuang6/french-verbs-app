@@ -1,24 +1,19 @@
 .log-in {
- background-color: rgba(229, 239, 249, 0.88);
- color: #2D2F31;
- min-height: 100%;
+  background-color: rgba(229, 239, 249, 1);
+  color: #2D2F31;
+  min-height: 100%;
 }
 
 .bg {
-  min-width: 100%;
-  min-height: 100%;
-  width: 100%;
-  height: auto;
-  position: fixed;
-  top: 0;
-  left: 0;
+  display: none; 
   z-index: -1;
 }
 
 .log-in .global-container {
-  max-width: 700px;
+  max-width: 1020px;
   margin: 100px auto 30px;
   text-align: center;
+  padding: 0 20px;
 }
 
 .log-in .global-container h1 {
@@ -36,9 +31,37 @@
   padding-bottom: 5px;
   padding-left: 50px;
   padding-right: 50px;
-  border: 2px solid #0066cc;
+  border: none;
   background-color: transparent;
   color: #0066cc;
   border-radius: 5px;
   cursor: pointer;
+}
+
+
+@media only screen and (min-width: 800px) {
+  .log-in {
+    background-color: rgba(229, 239, 249, 0.75);
+    color: #2D2F31;
+  }
+  .bg {
+    display: initial;
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  .prompt-bin .btn-container button {
+    border: 1px solid #2D2F31;
+    color: #2D2F31;
+  }
+}
+
+@media only screen and (max-width: 399px) {
+  .log-in .global-container h1 {
+    font-size: 22px;
+  }
 }

@@ -3,9 +3,18 @@
   text-align: center;
 }
 
+.quiz-wrapper .title-container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .quiz-wrapper .title-container h1 {
   font-size: 2.25em;
   margin-bottom: 15px;
+}
+
+.quiz-wrapper .title-container h2 {
+  line-height: 46px;
 }
 
 .quiz-wrapper .choices-bin {
@@ -50,6 +59,11 @@
   margin-bottom: 0;
 }
 
+.quiz-wrapper .user-info-flex h3:last-child {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 .quiz-wrapper button {
   margin-top: 25px;
   padding: 5px 80px;
@@ -65,3 +79,16 @@
   background-color: #0066cc;
   color: #fff;
 } 
+
+@media only screen and (max-width: 880px) {
+  .quiz-wrapper {
+    padding-top: 30px;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .quiz-wrapper {
+    padding-top: 0;
+  }
+}

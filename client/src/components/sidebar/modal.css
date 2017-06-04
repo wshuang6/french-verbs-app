@@ -34,15 +34,15 @@ tr:hover {
 	background-color: #2c464f;
 }
 
-.overlay > p {
-	padding-top: 100px;
-	padding-left: 35%;
-	padding-right: 35%;
+.overlay p {
+	line-height: 26px;
 }
 
 .help {
+	max-width: 700px;
 	text-align: left;
-	padding: 10px 170px 60px;
+	padding: 10px 20px 60px;
+	margin: 0 auto;
 }
 
 .help h2 {
@@ -78,13 +78,6 @@ th, td {
 
 @media only screen and (max-width: 1041px) {
 	.modal-button-wrapper {
-		padding-right: 10%;
-	}
-}
-
-@media only screen and (max-width: 700px) {
-	.overlay > p {
-		padding-left: 10%;
 		padding-right: 10%;
 	}
 }
