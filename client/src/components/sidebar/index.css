@@ -1,5 +1,5 @@
 .sidebar {
-  width: 25%;
+  width: 22%;
   height: 100%;
   border-right: 1px solid #D1D1D1;
   color: #fff;
@@ -8,18 +8,20 @@
 
 .sidebar ul {
   padding-top: 20px;
+  padding-left: 20%;
 }
 
 .sidebar li {
   list-style: none;
-  font-size: 20px;
-  margin-top: 40px;
+  font-size: 22px;
+  margin-top: 60px;
   cursor: pointer;
 }
 
 .sidebar li .icon-wrapper {
   font-size: 26px;
-  margin-right: 10px;
+  margin-right: 12px;
+  vertical-align: text-bottom;
 }
 
 @media only screen and (max-width: 880px) {

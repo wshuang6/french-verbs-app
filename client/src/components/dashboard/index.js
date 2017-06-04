@@ -14,7 +14,7 @@ const logoColor = {
 
 const headerBackground = {
   backgroundColor: '#fff',
-  padding: '40px 80px 10px'
+  padding: '50px 100px 20px'
 };
 
 export class Dashboard extends React.Component {
